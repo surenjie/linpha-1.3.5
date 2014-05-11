@@ -33,135 +33,135 @@ Date     : 2007.03.10 for LinPHA Version 1.3.0
 ## linpha messages
 #################################################*/
 /* left menu */
-$album="ÎÒµÄÏà²á";
+$album="æˆ‘çš„ç›¸å†Œ";
 
 /* alerts */
-$alert_fopen="´íÎó! ÎÄ¼şÎŞ·¨´ò¿ª...";
-$printing_probs="´òÓ¡´íÎó";
-$printing_probs_msg="½ûÖ¹´òÓ¡£¡Çë¿´";
+$alert_fopen="é”™è¯¯! æ–‡ä»¶æ— æ³•æ‰“å¼€...";
+$printing_probs="æ‰“å°é”™è¯¯";
+$printing_probs_msg="ç¦æ­¢æ‰“å°ï¼è¯·çœ‹";
 
 /* global messages */
-$subfolders="×ÓÄ¿Â¼";
-$img_th="Í¼Æ¬";
-$in_th="Î»ÓÚ"; /* used for the photos in $foldername */
+$subfolders="å­ç›®å½•";
+$img_th="å›¾ç‰‡";
+$in_th="ä½äº"; /* used for the photos in $foldername */
 //$alb_th="Albums in subfolder";
-$thumb_hint_msg="µã»÷·Å´ó";
-$latest_photo="×îĞÂµÄ";
-$view_at="Ñ¡Ôñ·Ö±æÂÊ";
-$close_button="¹Ø±Õ";
-$help="°ïÖú";
+$thumb_hint_msg="ç‚¹å‡»æ”¾å¤§";
+$latest_photo="æœ€æ–°çš„";
+$view_at="é€‰æ‹©åˆ†è¾¨ç‡";
+$close_button="å…³é—­";
+$help="å¸®åŠ©";
 
 /*#################################################
 ## installation
 #################################################*/
 /* install.php (page 1) */
-$welc_header="»¶Ó­Ê¹ÓÃ LinPHA";
-$welc_text="àË£¬ÕâÊÇ &quot;The Linux Photo Archive&quot; LinPHA ÏµÍ³Ê×Ò³¡£<br><br>Ê×´ÎÊ¹ÓÃÇëÏÈ½øĞĞÏµÍ³°²×°¡£";
-$welc_hint="<b>¼ÌĞøÖ®Ç°:</b>";
-$welc_hint1="1. ½¨Á¢ÔÊĞíÄÜĞ´Èë×ÊÁÏµÄÄ¿Â¼&quot;<b>linpha/sql</b>&quot;! (ÀıÈç chmod 777 sql)";
-$next_button="ÏÂÒ»²½"; /* used as left menu header in all 4 stages */
-$inst_msg="°²×° LinPHA"; /* used as left menu header in all 4 stages */
-$inst_status_1="ÇëÑ¡ÔñÓïÑÔ²¢µã»÷&quot;ÏÂÒ»²½&quot;";
-$inst_status_step1="²½Öè 1 (¹²4²½)";
+$welc_header="æ¬¢è¿ä½¿ç”¨ LinPHA";
+$welc_text="å—¨ï¼Œè¿™æ˜¯ &quot;The Linux Photo Archive&quot; LinPHA ç³»ç»Ÿé¦–é¡µã€‚<br><br>é¦–æ¬¡ä½¿ç”¨è¯·å…ˆè¿›è¡Œç³»ç»Ÿå®‰è£…ã€‚";
+$welc_hint="<b>ç»§ç»­ä¹‹å‰:</b>";
+$welc_hint1="1. å»ºç«‹å…è®¸èƒ½å†™å…¥èµ„æ–™çš„ç›®å½•&quot;<b>linpha/sql</b>&quot;! (ä¾‹å¦‚ chmod 777 sql)";
+$next_button="ä¸‹ä¸€æ­¥"; /* used as left menu header in all 4 stages */
+$inst_msg="å®‰è£… LinPHA"; /* used as left menu header in all 4 stages */
+$inst_status_1="è¯·é€‰æ‹©è¯­è¨€å¹¶ç‚¹å‡»&quot;ä¸‹ä¸€æ­¥&quot;";
+$inst_status_step1="æ­¥éª¤ 1 (å…±4æ­¥)";
 
 /* sec_stage_install (page 2) */
-$inst_access_msg="ÉèÖÃÊı¾İ¿â·ÃÎÊÀàĞÍ";
-$inst_full_access_msg="<b>YES !</b><br> ÎÒÄÜÍêÈ«´æÈ¡ MySQL Êı¾İ¿â£¬ÎÒÄÜ½¨Á¢ĞÂµÄÊı¾İ¿â¼°ÓÃ»§¡£<br>Ò²¾ÍÊÇËµ£¬ÕâÊÇÎÒµÄÖ÷»ú£¡";
-$inst_limited_access_msg="<b>NO !</b><br> ÎÒ½öÄÜÓĞÏŞ¶È´æÈ¡MySQLÊı¾İ¿â¡£<br>ÎÒµÄISP²¢²»ÔÊĞíÎÒ½¨Á¢ĞÂµÄÊı¾İ¿â¼°ÓÃ»§¡£";
-$inst_status_2="ÇëÑ¡ÔñÊı¾İ¿â·ÃÎÊÀàĞÍ£¬Èô²»È·¶¨ÇëÑ¡ NO!";
-$inst_status_step2="²½Öè 2 (¹²4²½)";
+$inst_access_msg="è®¾ç½®æ•°æ®åº“è®¿é—®ç±»å‹";
+$inst_full_access_msg="<b>YES !</b><br> æˆ‘èƒ½å®Œå…¨å­˜å– MySQL æ•°æ®åº“ï¼Œæˆ‘èƒ½å»ºç«‹æ–°çš„æ•°æ®åº“åŠç”¨æˆ·ã€‚<br>ä¹Ÿå°±æ˜¯è¯´ï¼Œè¿™æ˜¯æˆ‘çš„ä¸»æœºï¼";
+$inst_limited_access_msg="<b>NO !</b><br> æˆ‘ä»…èƒ½æœ‰é™åº¦å­˜å–MySQLæ•°æ®åº“ã€‚<br>æˆ‘çš„ISPå¹¶ä¸å…è®¸æˆ‘å»ºç«‹æ–°çš„æ•°æ®åº“åŠç”¨æˆ·ã€‚";
+$inst_status_2="è¯·é€‰æ‹©æ•°æ®åº“è®¿é—®ç±»å‹ï¼Œè‹¥ä¸ç¡®å®šè¯·é€‰ NO!";
+$inst_status_step2="æ­¥éª¤ 2 (å…±4æ­¥)";
 
 /* requirements */
-$req_check_msg="¼ì²éÏµÍ³ĞèÇó";
-$req_found_msg="ÒÑÕÒµ½";
-$req_miss_msg="Î´ÕÒµ½";
-$req_safe_fail="¿ªÆô";
-$req_safe_ok="¹Ø±Õ";
-$php_safemode_check_msg="¼ì²é PHP µÄ°²È«Ä£Ê½...";
-$php_version_check_msg="¼ì²é PHP °æ±¾> 4.1.0...";
-$mem_check_msg="¼ì²é PHP ÄÚ´æÏŞÖÆ...";
-$gd_check_msg="¼ì²é GD º¯Êı¿â...";
-$convert_check_msg="¼ì²é ImageMagick...";
-$exif_check_msg="¼ì²é EXIF Ö§³Ö...";
-$summary_msg="ÕªÒª£º";
-$safe_mode_err="ÄúµÄ·şÎñÆ÷ÕıÔÚÊ¹ÓÃ PHP µÄ°²È«Ä£Ê½¡£µ± php.ini ÖĞµÄÉèÖÃ safe_mode = On Ê±£¬LinPHA ½«ÎŞ·¨ÔËĞĞ£¡";
-$inst_abort_msg="!!! °²×°Ê§°Ü !!!";
-$php_version_err="ÄúµÄ·şÎñÆ÷ÔËĞĞµÄ PHP °æ±¾µÍÓÚ 4.1.0¡£ÇëÉı¼¶ÄúµÄ PHP °æ±¾£¬·ñÔò LinPHA ½«ÎŞ·¨ÔËĞĞ£¡";
-$gd_convert_err="ImageMagick ¼° GD º¯Êı¿â¾ù¼ì²â²»µ½£¬ÏµÍ³½«ÎŞ·¨ÔËĞĞ¡£";
-$convert_sum_found_msg="·şÎñÆ÷ÉÏÒÑ¼ì²âµ½ ImageMagick £¬LinPHA ½«ÄÜ´´½¨¸ßÆ·ÖÊµÄËõÂÔÍ¼¡£";
-$convert_sum_miss_msg="·şÎñÆ÷ÉÏÎ´¼ì²âµ½ ImageMagick £¬ÏµÍ³½«½öÄÜÊä³öµÍÆ·ÖÊµÄËõÂÔÍ¼¡£";
-$exif_sum_found_msg="¼ì²âµ½ÄúµÄ PHP »·¾³Ö§³Ö EXIF ¡£Õâ½«ÔÊĞí LinPHA ÏÔÊ¾Í¼Æ¬µÄ EXIF ĞÅÏ¢¡£";
+$req_check_msg="æ£€æŸ¥ç³»ç»Ÿéœ€æ±‚";
+$req_found_msg="å·²æ‰¾åˆ°";
+$req_miss_msg="æœªæ‰¾åˆ°";
+$req_safe_fail="å¼€å¯";
+$req_safe_ok="å…³é—­";
+$php_safemode_check_msg="æ£€æŸ¥ PHP çš„å®‰å…¨æ¨¡å¼...";
+$php_version_check_msg="æ£€æŸ¥ PHP ç‰ˆæœ¬> 4.1.0...";
+$mem_check_msg="æ£€æŸ¥ PHP å†…å­˜é™åˆ¶...";
+$gd_check_msg="æ£€æŸ¥ GD å‡½æ•°åº“...";
+$convert_check_msg="æ£€æŸ¥ ImageMagick...";
+$exif_check_msg="æ£€æŸ¥ EXIF æ”¯æŒ...";
+$summary_msg="æ‘˜è¦ï¼š";
+$safe_mode_err="æ‚¨çš„æœåŠ¡å™¨æ­£åœ¨ä½¿ç”¨ PHP çš„å®‰å…¨æ¨¡å¼ã€‚å½“ php.ini ä¸­çš„è®¾ç½® safe_mode = On æ—¶ï¼ŒLinPHA å°†æ— æ³•è¿è¡Œï¼";
+$inst_abort_msg="!!! å®‰è£…å¤±è´¥ !!!";
+$php_version_err="æ‚¨çš„æœåŠ¡å™¨è¿è¡Œçš„ PHP ç‰ˆæœ¬ä½äº 4.1.0ã€‚è¯·å‡çº§æ‚¨çš„ PHP ç‰ˆæœ¬ï¼Œå¦åˆ™ LinPHA å°†æ— æ³•è¿è¡Œï¼";
+$gd_convert_err="ImageMagick åŠ GD å‡½æ•°åº“å‡æ£€æµ‹ä¸åˆ°ï¼Œç³»ç»Ÿå°†æ— æ³•è¿è¡Œã€‚";
+$convert_sum_found_msg="æœåŠ¡å™¨ä¸Šå·²æ£€æµ‹åˆ° ImageMagick ï¼ŒLinPHA å°†èƒ½åˆ›å»ºé«˜å“è´¨çš„ç¼©ç•¥å›¾ã€‚";
+$convert_sum_miss_msg="æœåŠ¡å™¨ä¸Šæœªæ£€æµ‹åˆ° ImageMagick ï¼Œç³»ç»Ÿå°†ä»…èƒ½è¾“å‡ºä½å“è´¨çš„ç¼©ç•¥å›¾ã€‚";
+$exif_sum_found_msg="æ£€æµ‹åˆ°æ‚¨çš„ PHP ç¯å¢ƒæ”¯æŒ EXIF ã€‚è¿™å°†å…è®¸ LinPHA æ˜¾ç¤ºå›¾ç‰‡çš„ EXIF ä¿¡æ¯ã€‚";
 
 /* TODO (change this one)
 $exif_sum_miss_msg="NO exif support found in your PHP installation. This will prevent LinPHA
 			from showing detailed Photo information.";
 to ==>*/
-$exif_sum_miss_msg="¼ì²âµ½ÄúµÄ PHP »·¾³²»Ö§³Ö EXIF ¡£LinPHA ½«Ê¹ÓÃ×Ô´øµÄ EXIF ·ÖÎö³ÌĞò¡£";
+$exif_sum_miss_msg="æ£€æµ‹åˆ°æ‚¨çš„ PHP ç¯å¢ƒä¸æ”¯æŒ EXIF ã€‚LinPHA å°†ä½¿ç”¨è‡ªå¸¦çš„ EXIF åˆ†æç¨‹åºã€‚";
 /* TODO next 3 */
-//$session_path_check_msg="¼ì²é session.save_path ÉèÖÃ";
-$session_path_found_msg="php.ini ÖĞ session.save_path ÉèÖÃµÄÂ·¾¶Îª£º";
-$session_path_miss_msg="session.save_path Â·¾¶Î´ÉèÖÃ¡£";
-$mem_limit_ok_msg="ºÜºÃ£¬ÄúµÄ PHP ÉèÖÃÖĞÄÚ´æÏŞÖÆÎª >= 16MB¡£ ÕâÑùÔÚÉú³ÉËõÍ¼Ê±²»»áÓĞÈÎºÎÎÊÌâ¡£";
-$mem_limit_low_msg="àÅ£¬ÄúµÄ PHP ÉèÖÃÖĞµÄÄÚ´æÏŞÖÆÎª <=16MB¡£Èç¹ûÔÚÉú³ÉËõÂÔÍ¼Ê±Óöµ½ÎÊÌâ£¬¿ÉÒÔÊÔ×ÅÔö´ó php.in ÖĞ memory_limit µÄÖµ£¬»òÕß½µµÍËõÂÔÍ¼·Ö±æÂÊÈ»ºóÔÙÊÔÊÔ¡­¡­";
-$choose_def_quali="ÇëÑ¡ÔñÍ¼Æ¬µÄÄ¬ÈÏÆ·ÖÊ";
-$choose_def_quali_warn="Èç¹ûÄúµÄ CPU &lt; 1Ghz£¬Çë²»ÒªÉèÎª¸ßÆ·ÖÊ";
+//$session_path_check_msg="æ£€æŸ¥ session.save_path è®¾ç½®";
+$session_path_found_msg="php.ini ä¸­ session.save_path è®¾ç½®çš„è·¯å¾„ä¸ºï¼š";
+$session_path_miss_msg="session.save_path è·¯å¾„æœªè®¾ç½®ã€‚";
+$mem_limit_ok_msg="å¾ˆå¥½ï¼Œæ‚¨çš„ PHP è®¾ç½®ä¸­å†…å­˜é™åˆ¶ä¸º >= 16MBã€‚ è¿™æ ·åœ¨ç”Ÿæˆç¼©å›¾æ—¶ä¸ä¼šæœ‰ä»»ä½•é—®é¢˜ã€‚";
+$mem_limit_low_msg="å—¯ï¼Œæ‚¨çš„ PHP è®¾ç½®ä¸­çš„å†…å­˜é™åˆ¶ä¸º <=16MBã€‚å¦‚æœåœ¨ç”Ÿæˆç¼©ç•¥å›¾æ—¶é‡åˆ°é—®é¢˜ï¼Œå¯ä»¥è¯•ç€å¢å¤§ php.in ä¸­ memory_limit çš„å€¼ï¼Œæˆ–è€…é™ä½ç¼©ç•¥å›¾åˆ†è¾¨ç‡ç„¶åå†è¯•è¯•â€¦â€¦";
+$choose_def_quali="è¯·é€‰æ‹©å›¾ç‰‡çš„é»˜è®¤å“è´¨";
+$choose_def_quali_warn="å¦‚æœæ‚¨çš„ CPU &lt; 1Ghzï¼Œè¯·ä¸è¦è®¾ä¸ºé«˜å“è´¨";
 
 /* third_stage_install (page 3) */
-$inst_superadmin_header="ÉèÖÃ MySQL Êı¾İ¿â";
-$inst_superadmin_name="MySQL Êı¾İ¿â ÓÃ»§Ãû£º";
-$inst_superadmin_name_info="&lt;-- MySQL µÄÓÃ»§Ãû(±ØĞë´æÔÚÓÚÊı¾İ¿âÖĞ)";
-$inst_superadmin_pass="MySQL Êı¾İ¿â ÃÜÂë£º";
-$inst_superadmin_pass_info="&lt;-- MySQL µÄÃÜÂë(±ØĞë´æÔÚÓÚÊı¾İ¿âÖĞ)";
+$inst_superadmin_header="è®¾ç½® MySQL æ•°æ®åº“";
+$inst_superadmin_name="MySQL æ•°æ®åº“ ç”¨æˆ·åï¼š";
+$inst_superadmin_name_info="&lt;-- MySQL çš„ç”¨æˆ·å(å¿…é¡»å­˜åœ¨äºæ•°æ®åº“ä¸­)";
+$inst_superadmin_pass="MySQL æ•°æ®åº“ å¯†ç ï¼š";
+$inst_superadmin_pass_info="&lt;-- MySQL çš„å¯†ç (å¿…é¡»å­˜åœ¨äºæ•°æ®åº“ä¸­)";
 
-$inst_admin_header="ÉèÖÃ LinPHA ÏµÍ³¹ÜÀíÔ±";
-$inst_admin_name="LinPHA ¹ÜÀíÔ±ÓÃ»§Ãû£º";
-$inst_admin_name_info="&lt;-- ¹ÜÀíÔ±µÄÓÃ»§Ãû";
-$inst_admin_pass="LinPHA ¹ÜÀíÔ±ÃÜÂë£º";
-$inst_admin_pass_info="&lt;-- ¹ÜÀíÔ±µÄÃÜÂë";
-$inst_admin_email="¹ÜÀíÔ± Email£º";
-$inst_admin_email_info="&lt;-ÉèÖÃ¹ÜÀíÔ±µÄµç×ÓÓÊ¼şµØÖ·";
+$inst_admin_header="è®¾ç½® LinPHA ç³»ç»Ÿç®¡ç†å‘˜";
+$inst_admin_name="LinPHA ç®¡ç†å‘˜ç”¨æˆ·åï¼š";
+$inst_admin_name_info="&lt;-- ç®¡ç†å‘˜çš„ç”¨æˆ·å";
+$inst_admin_pass="LinPHA ç®¡ç†å‘˜å¯†ç ï¼š";
+$inst_admin_pass_info="&lt;-- ç®¡ç†å‘˜çš„å¯†ç ";
+$inst_admin_email="ç®¡ç†å‘˜ Emailï¼š";
+$inst_admin_email_info="&lt;-è®¾ç½®ç®¡ç†å‘˜çš„ç”µå­é‚®ä»¶åœ°å€";
 
-$inst_db_header="ÉèÖÃ LinPHA Êı¾İ¿âÁ¬½Ó";
-$inst_db_host="Ö÷»úÃû³Æ£º";
-$inst_db_host_info="&lt;-Ö÷»úÃû³Æ£ºÍ¨³£Îª &quot;localhost&quot;";
-$inst_db_host_info2="&lt;-Ö÷»úÃû³Æ£ºMySQL Êı¾İ¿âÖ÷»úÃû³Æ";
-$inst_db_host_port="¶Ë¿Ú£º";
-$inst_db_host_port_info="&lt;-Á¬½Ó¶Ë¿Ú£ºÈô²»È·¶¨ÔòÊ¡ÂÔ£¡";
-$inst_db_name="LinPHA Êı¾İ¿âÃû³Æ£º";
-$inst_db_name_info="&lt;-- LinPHA ËùÊ¹ÓÃµÄÊı¾İ¿âÃû³Æ£¬Í¨³£Îª &quot;linpha&quot;";
-$inst_db_name2="Êı¾İ¿âÃû³Æ£º";
-$inst_db_name_info2="&lt;-ISPËùÌá¹©µÄÊı¾İ¿âÃû³Æ";
-$inst_table_prefix="Êı¾İ±íÇ°×º";
-$inst_table_prefix_info="&lt;-ÔÚËùÓĞÊı¾İ±íÃû³ÆÇ°×º";
+$inst_db_header="è®¾ç½® LinPHA æ•°æ®åº“è¿æ¥";
+$inst_db_host="ä¸»æœºåç§°ï¼š";
+$inst_db_host_info="&lt;-ä¸»æœºåç§°ï¼šé€šå¸¸ä¸º &quot;localhost&quot;";
+$inst_db_host_info2="&lt;-ä¸»æœºåç§°ï¼šMySQL æ•°æ®åº“ä¸»æœºåç§°";
+$inst_db_host_port="ç«¯å£ï¼š";
+$inst_db_host_port_info="&lt;-è¿æ¥ç«¯å£ï¼šè‹¥ä¸ç¡®å®šåˆ™çœç•¥ï¼";
+$inst_db_name="LinPHA æ•°æ®åº“åç§°ï¼š";
+$inst_db_name_info="&lt;-- LinPHA æ‰€ä½¿ç”¨çš„æ•°æ®åº“åç§°ï¼Œé€šå¸¸ä¸º &quot;linpha&quot;";
+$inst_db_name2="æ•°æ®åº“åç§°ï¼š";
+$inst_db_name_info2="&lt;-ISPæ‰€æä¾›çš„æ•°æ®åº“åç§°";
+$inst_table_prefix="æ•°æ®è¡¨å‰ç¼€";
+$inst_table_prefix_info="&lt;-åœ¨æ‰€æœ‰æ•°æ®è¡¨åç§°å‰ç¼€";
 
-$general_header="»ù±¾ÉèÖÃ";
-$general_album_title="Ïà²á±êÌâ";
-$general_album_title_info="&lt;- Áô¿ÕÔòÊ¹ÓÃÄ¬ÈÏÃû³Æ";
-$general_photos_row="ÏÔÊ¾ĞĞÊı£º";
-$general_photos_row_info="&lt;-- Ò²¾ÍÊÇÃ¿Ò»ÁĞÏÔÊ¾µÄÊıÁ¿";
-$general_photos_col="ÏÔÊ¾ÁĞÊı£º";
-$general_photos_col_info="&lt;-- Ò²¾ÍÊÇÃ¿Ò»ĞĞÏÔÊ¾µÄÊıÁ¿";
-$general_photos_width="Í¼Æ¬ÏÔÊ¾¿í¶È£º";
-$general_photos_width_info="&lt;- 512 (Ä¬ÈÏ)";
-$general_photos_height="Í¼Æ¬ÏÔÊ¾¸ß¶È£º";
-$general_photos_height_info="&lt;- 384 (Ä¬ÈÏ)";
-$general_img_quality="Í¼Æ¬Æ·ÖÊ£º";
-$general_img_quality_info="&lt;- µ÷ÕûÍ¼Æ¬Æ·ÖÊ 0-100 (Ä¬ÈÏÎª 75)";
+$general_header="åŸºæœ¬è®¾ç½®";
+$general_album_title="ç›¸å†Œæ ‡é¢˜";
+$general_album_title_info="&lt;- ç•™ç©ºåˆ™ä½¿ç”¨é»˜è®¤åç§°";
+$general_photos_row="æ˜¾ç¤ºè¡Œæ•°ï¼š";
+$general_photos_row_info="&lt;-- ä¹Ÿå°±æ˜¯æ¯ä¸€åˆ—æ˜¾ç¤ºçš„æ•°é‡";
+$general_photos_col="æ˜¾ç¤ºåˆ—æ•°ï¼š";
+$general_photos_col_info="&lt;-- ä¹Ÿå°±æ˜¯æ¯ä¸€è¡Œæ˜¾ç¤ºçš„æ•°é‡";
+$general_photos_width="å›¾ç‰‡æ˜¾ç¤ºå®½åº¦ï¼š";
+$general_photos_width_info="&lt;- 512 (é»˜è®¤)";
+$general_photos_height="å›¾ç‰‡æ˜¾ç¤ºé«˜åº¦ï¼š";
+$general_photos_height_info="&lt;- 384 (é»˜è®¤)";
+$general_img_quality="å›¾ç‰‡å“è´¨ï¼š";
+$general_img_quality_info="&lt;- è°ƒæ•´å›¾ç‰‡å“è´¨ 0-100 (é»˜è®¤ä¸º 75)";
 
-$inst_status_3="ÇëÌîĞ´ËùÓĞÏîÄ¿!";
-$inst_status_step3="²½Öè 3(¹²4²½)";
+$inst_status_3="è¯·å¡«å†™æ‰€æœ‰é¡¹ç›®!";
+$inst_status_step3="æ­¥éª¤ 3(å…±4æ­¥)";
 
 /* forth_stage_install (page 4) */
-$inst_status_4="¹§Ï²£¬°²×°ÒÑÍê³É£¡LinPHA ÏÖÔÚÒÑ¾­¿ÉÒÔÊ¹ÓÃÁË¡£";
-$inst_status_step4="²½Öè 4(¹²4²½)";
-$inst_submit="Íê³É";
-$inst_db_tryconn="³¢ÊÔÁ¬½Óµ½Êı¾İ¿âÖ÷»ú";
-$inst_db_tryconn_error="Á¬½Óµ½Êı¾İ¿âÖ÷»úÊ±·¢Éú´íÎó£¬ using:";
-$inst_db_tryconn_ok="Á¬½Ó³É¹¦!";
-$inst_db_tryinst="³¢ÊÔ´´½¨ĞÂÊı¾İ¿â£º";
-$inst_db_tryinst_error="´´½¨ĞÂÊı¾İ¿âÊ±·¢Éú´íÎó£º";
-$inst_db_tryinst_ok="´´½¨³É¹¦£¡";
-$inst_create_tb_msg="´´½¨ËùĞèµÄÊı¾İ±í";
+$inst_status_4="æ­å–œï¼Œå®‰è£…å·²å®Œæˆï¼LinPHA ç°åœ¨å·²ç»å¯ä»¥ä½¿ç”¨äº†ã€‚";
+$inst_status_step4="æ­¥éª¤ 4(å…±4æ­¥)";
+$inst_submit="å®Œæˆ";
+$inst_db_tryconn="å°è¯•è¿æ¥åˆ°æ•°æ®åº“ä¸»æœº";
+$inst_db_tryconn_error="è¿æ¥åˆ°æ•°æ®åº“ä¸»æœºæ—¶å‘ç”Ÿé”™è¯¯ï¼Œ using:";
+$inst_db_tryconn_ok="è¿æ¥æˆåŠŸ!";
+$inst_db_tryinst="å°è¯•åˆ›å»ºæ–°æ•°æ®åº“ï¼š";
+$inst_db_tryinst_error="åˆ›å»ºæ–°æ•°æ®åº“æ—¶å‘ç”Ÿé”™è¯¯ï¼š";
+$inst_db_tryinst_ok="åˆ›å»ºæˆåŠŸï¼";
+$inst_create_tb_msg="åˆ›å»ºæ‰€éœ€çš„æ•°æ®è¡¨";
 
 /* ------------------------------------------------------------------
  * Note: The two following messages are used to generate the sql/db_connect.php
@@ -175,286 +175,286 @@ $inst_create_tb_msg="´´½¨ËùĞèµÄÊı¾İ±í";
  * As consequence, YOU CANNOT USE QUOTES INSIDE THE STRINGS. If you really need
  * to use single quotes, remember to escape them: \'
  */
-$inst_db_connect_inc_msg="Á¬½ÓÊı¾İ¿âÖ÷»ú·¢Éú´íÎó!";
-$inst_db_connect_inc_msg1="Ñ¡È¡Êı¾İ¿â ".@$db_realname." Ê±·¢Éú´íÎó<br>Èç¹û´ËĞÅÏ¢ÊÇÔÚ°²×°Ê±·¢Éú£¬Çë½« LinPHA ÎÄ¼ş¼Ğ &quot;sql&quot; ÖĞµÄ db_connect.php ÎÄ¼şÉ¾³ı£¡";
+$inst_db_connect_inc_msg="è¿æ¥æ•°æ®åº“ä¸»æœºå‘ç”Ÿé”™è¯¯!";
+$inst_db_connect_inc_msg1="é€‰å–æ•°æ®åº“ ".@$db_realname." æ—¶å‘ç”Ÿé”™è¯¯<br>å¦‚æœæ­¤ä¿¡æ¯æ˜¯åœ¨å®‰è£…æ—¶å‘ç”Ÿï¼Œè¯·å°† LinPHA æ–‡ä»¶å¤¹ &quot;sql&quot; ä¸­çš„ db_connect.php æ–‡ä»¶åˆ é™¤ï¼";
 /* ------------------------------------------------------------------ */
 
-$table_create="´´½¨±í£º";
-$table_create_error="´´½¨±íÊ±·¢Éú´íÎó£¡";
-$table_create_ok="´´½¨Íê³É£¡";
-$table_insert_admin="½¨Á¢ÏµÍ³¹ÜÀíÔ±£º";
-$table_insert_admin_error="½¨Á¢¹ÜÀíÔ±Ê±·¢Éú´íÎó!";
-$table_insert_admin_ok="½¨Á¢Íê³É£¡";
-$write_db_config="±£´æÊı¾İ¿âÅäÖÃÎÄ¼ş";
-$fopen_error="ÎÄ¼ş sql/db_config.php ÎŞ·¨Ğ´Èë£¬ÇëÉèÖÃÎÄ¼ş¼ĞÈ¨ÏŞÎª 777¡£";
-$fopen_ok="ÅäÖÃÎÄ¼şÒÑ±£´æ£¡";
-$install_finish_msg="°²×°Íê³É£¡£¡";
-$admin_task="µã»÷¼ÌĞø";
-$file_create_ok="´´½¨³É¹¦£¡";
-$configure_error="ÇëÌîĞ´ËùÓĞ±ØÒªÏîÄ¿£¡£¡£¡";
-$could_not_open="´íÎó£¬ÎŞ·¨·ÃÎÊ users Êı¾İ±í! ¿ÉÄÜÄúÃ»ÓĞÔÚÊı¾İ¿âÖĞÔö¼ÓĞÂÓÃ»§µÄÈ¨ÏŞ£¬<br>Çë·µ»Ø°²×°µÚ¶şÒ³Ñ¡ÔñÆäËûµÄÊı¾İ¿â·ÃÎÊ·½Ê½¡£";
+$table_create="åˆ›å»ºè¡¨ï¼š";
+$table_create_error="åˆ›å»ºè¡¨æ—¶å‘ç”Ÿé”™è¯¯ï¼";
+$table_create_ok="åˆ›å»ºå®Œæˆï¼";
+$table_insert_admin="å»ºç«‹ç³»ç»Ÿç®¡ç†å‘˜ï¼š";
+$table_insert_admin_error="å»ºç«‹ç®¡ç†å‘˜æ—¶å‘ç”Ÿé”™è¯¯!";
+$table_insert_admin_ok="å»ºç«‹å®Œæˆï¼";
+$write_db_config="ä¿å­˜æ•°æ®åº“é…ç½®æ–‡ä»¶";
+$fopen_error="æ–‡ä»¶ sql/db_config.php æ— æ³•å†™å…¥ï¼Œè¯·è®¾ç½®æ–‡ä»¶å¤¹æƒé™ä¸º 777ã€‚";
+$fopen_ok="é…ç½®æ–‡ä»¶å·²ä¿å­˜ï¼";
+$install_finish_msg="å®‰è£…å®Œæˆï¼ï¼";
+$admin_task="ç‚¹å‡»ç»§ç»­";
+$file_create_ok="åˆ›å»ºæˆåŠŸï¼";
+$configure_error="è¯·å¡«å†™æ‰€æœ‰å¿…è¦é¡¹ç›®ï¼ï¼ï¼";
+$could_not_open="é”™è¯¯ï¼Œæ— æ³•è®¿é—® users æ•°æ®è¡¨! å¯èƒ½æ‚¨æ²¡æœ‰åœ¨æ•°æ®åº“ä¸­å¢åŠ æ–°ç”¨æˆ·çš„æƒé™ï¼Œ<br>è¯·è¿”å›å®‰è£…ç¬¬äºŒé¡µé€‰æ‹©å…¶ä»–çš„æ•°æ®åº“è®¿é—®æ–¹å¼ã€‚";
 
 /*#################################################
 ## header.php
 #################################################*/
 $page_title="LinPHA - The PHP Photo Archive";
 $head_title="The PHP Photo Archive";
-$book_home="Ê×Ò³";
-$book_about="¹ØÓÚ";
-$book_admin="¹ÜÀí";
-$book_admin_user="¸öÈËÉèÖÃ";
-$book_links="Á´½Ó";
-$book_search="ËÑË÷";
-$book_logout="ÍË³ö";
-$book_login="µÇÂ¼";
-$num_pictures="Í¼Æ¬×ÜÊı:";
-$user_visits="·ÃÎÊÈË´Î";
-$user_online="Î»ÔÚÏßÓÃ»§";
-$guest="ÓÎ¿Í";
-$html_lang="ZH-CN";
-$html_charset="GB2312";
+$book_home="é¦–é¡µ";
+$book_about="å…³äº";
+$book_admin="ç®¡ç†";
+$book_admin_user="ä¸ªäººè®¾ç½®";
+$book_links="é“¾æ¥";
+$book_search="æœç´¢";
+$book_logout="é€€å‡º";
+$book_login="ç™»å½•";
+$num_pictures="å›¾ç‰‡æ€»æ•°:";
+$user_visits="è®¿é—®äººæ¬¡";
+$user_online="ä½åœ¨çº¿ç”¨æˆ·";
+$guest="æ¸¸å®¢";
+$html_lang="zh-CN";
+$html_charset="utf8";
 
 /*#################################################
 ## index.php
 #################################################*/
-$index_welc_text="àË£¬»¶Ó­·ÃÎÊ &quot;The PHP Photo Archive&quot; " .
-		"<a href='http://linpha.sf.net/'><u>LinPHA.</u></a>¹Ù·½ÍøÕ¾¡£";
+$index_welc_text="å—¨ï¼Œæ¬¢è¿è®¿é—® &quot;The PHP Photo Archive&quot; " .
+		"<a href='http://linpha.sf.net/'><u>LinPHA.</u></a>å®˜æ–¹ç½‘ç«™ã€‚";
 
 /*#################################################
 ## search.php
 #################################################*/
-$search_header="ËÑË÷";
-$radio_all="È«²¿";
-$radio_descript="ÃèÊö";
-$radio_comment="ÆÀÂÛ";
-$radio_category="·ÖÀà";
-$radio_file="ÎÄ¼şÃû";
-$search_in="ËÑË÷Ïà²á";
-$search_all="ËùÓĞÏà²á";
-$search_for="ËÑË÷¹Ø¼ü×Ö";
-$search_button="ËÑË÷";
-$photos_found="·ûºÏÌõ¼ş";
-$search_info="ÏµÍ³ËÑË÷Ò³";
-$search_msg="ÔÚÊı¾İ¿âÖĞ¸ù¾İÒÔÏÂĞÅÏ¢ËÑË÷Í¼Æ¬£º";
+$search_header="æœç´¢";
+$radio_all="å…¨éƒ¨";
+$radio_descript="æè¿°";
+$radio_comment="è¯„è®º";
+$radio_category="åˆ†ç±»";
+$radio_file="æ–‡ä»¶å";
+$search_in="æœç´¢ç›¸å†Œ";
+$search_all="æ‰€æœ‰ç›¸å†Œ";
+$search_for="æœç´¢å…³é”®å­—";
+$search_button="æœç´¢";
+$photos_found="ç¬¦åˆæ¡ä»¶";
+$search_info="ç³»ç»Ÿæœç´¢é¡µ";
+$search_msg="åœ¨æ•°æ®åº“ä¸­æ ¹æ®ä»¥ä¸‹ä¿¡æ¯æœç´¢å›¾ç‰‡ï¼š";
 
 /*#################################################
 ## img_view.php
 #################################################*/
-$img_detail="Í¼Æ¬ĞÅÏ¢";
-$img_size="×î´ó";
-$img_com="¼ò½é";
-$img_des="Í¼Æ¬ÃèÊö";
-$img_cat="ËùÊô·ÖÀà";
-$img_name="Ãû³Æ";
-$img_info_stored="ÆÀÂÛÒÑ±£´æÖÁÊı¾İ¿âÖĞ";
-$please_login="Çë <a href='login.php'><font color='#000099'><u>µÇÂ¼</u></font></a> ÒÔ±ã·¢±íÆÀÂÛ";
-$back_to_thumbs="<b><u>·µ»ØËõÂÔÍ¼Ä£Ê½</u></b>";
-$back_to_search="<b><u>·µ»ØËÑË÷Ò³Ãæh</u></b>";
-$button_next="ÏÂÒ»ÕÅ";
-$button_prev="ÉÏÒ»ÕÅ";
-$exif_ext_error="±§Ç¸£¬PHP Ã»ÓĞÆôÓÃ EXIF";
-$exif_error="±§Ç¸£¬Í¼Æ¬²»°üº¬ÈÎºÎ EXIF ĞÅÏ¢!";
-$exif_more="¸ü¶àÏ¸½Ú";
-$exif_less="¼òÂÔĞÅÏ¢";
-$detail_header="Í¼Æ¬";
+$img_detail="å›¾ç‰‡ä¿¡æ¯";
+$img_size="æœ€å¤§";
+$img_com="ç®€ä»‹";
+$img_des="å›¾ç‰‡æè¿°";
+$img_cat="æ‰€å±åˆ†ç±»";
+$img_name="åç§°";
+$img_info_stored="è¯„è®ºå·²ä¿å­˜è‡³æ•°æ®åº“ä¸­";
+$please_login="è¯· <a href='login.php'><font color='#000099'><u>ç™»å½•</u></font></a> ä»¥ä¾¿å‘è¡¨è¯„è®º";
+$back_to_thumbs="<b><u>è¿”å›ç¼©ç•¥å›¾æ¨¡å¼</u></b>";
+$back_to_search="<b><u>è¿”å›æœç´¢é¡µé¢h</u></b>";
+$button_next="ä¸‹ä¸€å¼ ";
+$button_prev="ä¸Šä¸€å¼ ";
+$exif_ext_error="æŠ±æ­‰ï¼ŒPHP æ²¡æœ‰å¯ç”¨ EXIF";
+$exif_error="æŠ±æ­‰ï¼Œå›¾ç‰‡ä¸åŒ…å«ä»»ä½• EXIF ä¿¡æ¯!";
+$exif_more="æ›´å¤šç»†èŠ‚";
+$exif_less="ç®€ç•¥ä¿¡æ¯";
+$detail_header="å›¾ç‰‡";
 $detail_header1="/";
-$detail_header2="ÕÅÍ¼Æ¬ÔÚ´ËÏà²á";
-$php_to_old="PHP < 4.2.0 EXIF ½ûÓÃ£¡";
-$views="´Îä¯ÀÀ";
-$slideshow="»ÃµÆÆ¬";
-$seconds="Ãë";
+$detail_header2="å¼ å›¾ç‰‡åœ¨æ­¤ç›¸å†Œ";
+$php_to_old="PHP < 4.2.0 EXIF ç¦ç”¨ï¼";
+$views="æ¬¡æµè§ˆ";
+$slideshow="å¹»ç¯ç‰‡";
+$seconds="ç§’";
 $go="Go";
-$stopslide="Í£Ö¹»ÃµÆÆ¬";
+$stopslide="åœæ­¢å¹»ç¯ç‰‡";
 /* image rotating */ /* TODO next */
-$img_rotate_ok="Ğı×ªÍ¼Æ¬";
-$img_rotating="Ğı×ªÍ¼Æ¬´íÎó"; // TOC entry
-$img_rotating_hint1="²»¿ÉĞı×ªÍ¼Æ¬£¡Çë°´ÕâÀï";
-$img_rotating_hint2="²é¿´Ô­Òò";
+$img_rotate_ok="æ—‹è½¬å›¾ç‰‡";
+$img_rotating="æ—‹è½¬å›¾ç‰‡é”™è¯¯"; // TOC entry
+$img_rotating_hint1="ä¸å¯æ—‹è½¬å›¾ç‰‡ï¼è¯·æŒ‰è¿™é‡Œ";
+$img_rotating_hint2="æŸ¥çœ‹åŸå› ";
 
 /*#################################################
 ## login.php
 #################################################*/
-$login_msg="ÇëµÇÂ¼£¡";
-$login_error="ÓÃ»§Ãû»òÃÜÂë²»ÕıÈ·";
-$login_name="ÓÃ»§Ãû";
-$login_pass="ÃÜÂë";
-$login_info="µÇÂ¼Ò³Ãæ";
-$login_request_account_info="ÉêÇëÕÊºÅ£º";
-$login_request_target="ÇëÓë¹ÜÀíÔ±ÁªÏµ¡£";
-$login_admin_info="Ö´ĞĞ¹ÜÀíÈÎÎñ±ØĞëÊ¹ÓÃ¹ÜÀíÔ±ÕÊºÅµÇÂ¼¡£";
-$login_friend_account_info="Èç¹ûÄúÒÑ¾­ÓµÓĞÁËÒ»¸öÕÊºÅ£¬ÄÇÃ´µÇÂ¼ºó¿ÉÒÔĞŞ¸Ä¸öÈËµÄ×ÊÁÏĞÅÏ¢¡£";
+$login_msg="è¯·ç™»å½•ï¼";
+$login_error="ç”¨æˆ·åæˆ–å¯†ç ä¸æ­£ç¡®";
+$login_name="ç”¨æˆ·å";
+$login_pass="å¯†ç ";
+$login_info="ç™»å½•é¡µé¢";
+$login_request_account_info="ç”³è¯·å¸å·ï¼š";
+$login_request_target="è¯·ä¸ç®¡ç†å‘˜è”ç³»ã€‚";
+$login_admin_info="æ‰§è¡Œç®¡ç†ä»»åŠ¡å¿…é¡»ä½¿ç”¨ç®¡ç†å‘˜å¸å·ç™»å½•ã€‚";
+$login_friend_account_info="å¦‚æœæ‚¨å·²ç»æ‹¥æœ‰äº†ä¸€ä¸ªå¸å·ï¼Œé‚£ä¹ˆç™»å½•åå¯ä»¥ä¿®æ”¹ä¸ªäººçš„èµ„æ–™ä¿¡æ¯ã€‚";
 
 
 /*#################################################
 ## admin.php
 #################################################*/
 /* other messages */
-$admin_page_header="ÏµÍ³¹ÜÀí";
-$please_turn_off_msg="µ±Í¼Æ¬Ìí¼ÓÍê±Ïºó£¬Çë½« '×Ô¶¯´´½¨/É¾³ıËõÂÔÍ¼' ÉèÖÃÎª¹Ø±Õ¡£<br> LinPHA ÏµÍ³½«ÔËĞĞµÄ¸ü¼ÓÑ¸ËÙ :)";
+$admin_page_header="ç³»ç»Ÿç®¡ç†";
+$please_turn_off_msg="å½“å›¾ç‰‡æ·»åŠ å®Œæ¯•åï¼Œè¯·å°† 'è‡ªåŠ¨åˆ›å»º/åˆ é™¤ç¼©ç•¥å›¾' è®¾ç½®ä¸ºå…³é—­ã€‚<br> LinPHA ç³»ç»Ÿå°†è¿è¡Œçš„æ›´åŠ è¿…é€Ÿ :)";
 /* left menu */
-$logout_msg="ÍË³ö";
-$welc_msg="»¶Ó­¹âÁÙ ";
-$stat_msg="ÄúÒÑ¾­ÊÚÈ¨½øĞĞ¹ÜÀí¹¤×÷£¬Èç·¢±íÆÀÂÛ¡¢Ìí¼ÓÍ¼Æ¬ÃèÊö¡£";
-$back_to_msg="<b>·µ»ØÏÔÊ¾Ïà²á</b>";
-$href_general_conf="»ù±¾ÉèÖÃ";
-$href_user_conf="ÓÃ»§¹ÜÀí";
-$href_folder_conf="Ä¿Â¼¹ÜÀí";
-$href_sql="MySQLÊı¾İ¿â¹ÜÀí";
-$href_ftp="ÎÄ¼ş¹ÜÀí";
-$href_stats="Í³¼Æ×ÊÁÏ";
-$href_other_conf="Éú³ÉËõÂÔÍ¼";
+$logout_msg="é€€å‡º";
+$welc_msg="æ¬¢è¿å…‰ä¸´ ";
+$stat_msg="æ‚¨å·²ç»æˆæƒè¿›è¡Œç®¡ç†å·¥ä½œï¼Œå¦‚å‘è¡¨è¯„è®ºã€æ·»åŠ å›¾ç‰‡æè¿°ã€‚";
+$back_to_msg="<b>è¿”å›æ˜¾ç¤ºç›¸å†Œ</b>";
+$href_general_conf="åŸºæœ¬è®¾ç½®";
+$href_user_conf="ç”¨æˆ·ç®¡ç†";
+$href_folder_conf="ç›®å½•ç®¡ç†";
+$href_sql="MySQLæ•°æ®åº“ç®¡ç†";
+$href_ftp="æ–‡ä»¶ç®¡ç†";
+$href_stats="ç»Ÿè®¡èµ„æ–™";
+$href_other_conf="ç”Ÿæˆç¼©ç•¥å›¾";
 
 
 /* general config */
 /* uses also entries from install.php */
-$default_language="Ä¬ÈÏÓïÑÔ";
-$default_language_info="&lt;-- ÉèÖÃÄ¬ÈÏÓïÑÔ";
-$general_auto_lang="×Ô¶¯¼ì²âÓïÑÔ"; /* TODO 2 lines*/
-$general_auto_lang_info="&lt;-- ×Ô¶¯¼ì²âä¯ÀÀÆ÷Ê¹ÓÃÓïÑÔ";
-$general_success_msg="! ĞŞ¸Ä³É¹¦ !";
+$default_language="é»˜è®¤è¯­è¨€";
+$default_language_info="&lt;-- è®¾ç½®é»˜è®¤è¯­è¨€";
+$general_auto_lang="è‡ªåŠ¨æ£€æµ‹è¯­è¨€"; /* TODO 2 lines*/
+$general_auto_lang_info="&lt;-- è‡ªåŠ¨æ£€æµ‹æµè§ˆå™¨ä½¿ç”¨è¯­è¨€";
+$general_success_msg="! ä¿®æ”¹æˆåŠŸ !";
 
 /* TODO 6 lines (addition and REPLACEMENT)*/
-$general_rotate="Í¼Æ¬Ğı×ª¹¦ÄÜ";
-$general_rotate_info="&lt;-- <b>ÌØ±ğ×¢Òâ£¡Çë²é¿´°ïÖú</b>";
-$general_exifinfo="Í¼Ïñ EXIF ĞÅÏ¢";
-$general_exifinfo_info="&lt;-- ¿ªÆô/¹Ø±Õ Í¼Ïñ EXIF ĞÅÏ¢Ö§³Ö";
-$general_exifdefault="Ä¬ÈÏÏÔÊ¾ EXIF ĞÅÏ¢";
-$general_exifdefault_info="&lt;-- Ä¬ÈÏ¼¤»îÏÔÊ¾Í¼Ïñ EXIF ĞÅÏ¢";
+$general_rotate="å›¾ç‰‡æ—‹è½¬åŠŸèƒ½";
+$general_rotate_info="&lt;-- <b>ç‰¹åˆ«æ³¨æ„ï¼è¯·æŸ¥çœ‹å¸®åŠ©</b>";
+$general_exifinfo="å›¾åƒ EXIF ä¿¡æ¯";
+$general_exifinfo_info="&lt;-- å¼€å¯/å…³é—­ å›¾åƒ EXIF ä¿¡æ¯æ”¯æŒ";
+$general_exifdefault="é»˜è®¤æ˜¾ç¤º EXIF ä¿¡æ¯";
+$general_exifdefault_info="&lt;-- é»˜è®¤æ¿€æ´»æ˜¾ç¤ºå›¾åƒ EXIF ä¿¡æ¯";
 
-$general_exiflevel="ÏÔÊ¾ EXIF ĞÅÏ¢µÄ³Ì¶È";
-$general_exiflevel_info="&lt;-- ÉèÖÃ EXIF ĞÅÏ¢µÄ·±¼ò³Ì¶È";
-$exif_low="×îÉÙ";
-$exif_medium="ÖĞµÈ";
-$exif_high="×î¶à";
-$general_filename="ÏÔÊ¾ÎÄ¼şÃû";
-$general_filename_info="&lt;-- ÔÚËõÂÔÍ¼ÏÂÏÔÊ¾ÎÄ¼şÃû";
-$general_thumb_order="ËõÂÔÍ¼ÅÅĞò·½Ê½";
-$general_thumb_order_info="&lt;-- ÉèÖÃËõÂÔÍ¼°´ÕÕÎÄ¼şÃû»òÈÕÆÚÅÅĞò";
-$thumb_order_date="ÈÕÆÚ";
-$thumb_order_file="ÎÄ¼şÃû";
-$general_autoconf="×Ô¶¯ ´´½¨/É¾³ı ËõÍ¼";
-$general_autoconf_info="&lt;-- <b>¹Ø±Õ´ËÏî£¬ÏµÍ³ĞÔÄÜ½«´ó·ùÌáÉı¡£</b>";
-$general_counterstat="¼ÆÊıÆ÷";
-$general_counterstat_info="&lt;-- Ä¬ÈÏ¿ªÆô";
-$general_blocking="Ëø¶¨ IP Ê±¼ä£¨·ÖÖÓ£©";
-$general_blocking_info="&lt;-- ÔÚÖ¸¶¨Ê±¼äÄÚÍ¬Ò»IPµØÖ·½«²»»á×÷ÎªĞÂµÄ·ÃÎÊÍ³¼Æ";
-$general_theme="Ñ¡ÔñÖ÷Ìâ·ç¸ñ";
-$general_theme_info="&lt;-- ÉèÖÃÄ¬ÈÏ·ç¸ñÖ÷Ìâ";
+$general_exiflevel="æ˜¾ç¤º EXIF ä¿¡æ¯çš„ç¨‹åº¦";
+$general_exiflevel_info="&lt;-- è®¾ç½® EXIF ä¿¡æ¯çš„ç¹ç®€ç¨‹åº¦";
+$exif_low="æœ€å°‘";
+$exif_medium="ä¸­ç­‰";
+$exif_high="æœ€å¤š";
+$general_filename="æ˜¾ç¤ºæ–‡ä»¶å";
+$general_filename_info="&lt;-- åœ¨ç¼©ç•¥å›¾ä¸‹æ˜¾ç¤ºæ–‡ä»¶å";
+$general_thumb_order="ç¼©ç•¥å›¾æ’åºæ–¹å¼";
+$general_thumb_order_info="&lt;-- è®¾ç½®ç¼©ç•¥å›¾æŒ‰ç…§æ–‡ä»¶åæˆ–æ—¥æœŸæ’åº";
+$thumb_order_date="æ—¥æœŸ";
+$thumb_order_file="æ–‡ä»¶å";
+$general_autoconf="è‡ªåŠ¨ åˆ›å»º/åˆ é™¤ ç¼©å›¾";
+$general_autoconf_info="&lt;-- <b>å…³é—­æ­¤é¡¹ï¼Œç³»ç»Ÿæ€§èƒ½å°†å¤§å¹…æå‡ã€‚</b>";
+$general_counterstat="è®¡æ•°å™¨";
+$general_counterstat_info="&lt;-- é»˜è®¤å¼€å¯";
+$general_blocking="é”å®š IP æ—¶é—´ï¼ˆåˆ†é’Ÿï¼‰";
+$general_blocking_info="&lt;-- åœ¨æŒ‡å®šæ—¶é—´å†…åŒä¸€IPåœ°å€å°†ä¸ä¼šä½œä¸ºæ–°çš„è®¿é—®ç»Ÿè®¡";
+$general_theme="é€‰æ‹©ä¸»é¢˜é£æ ¼";
+$general_theme_info="&lt;-- è®¾ç½®é»˜è®¤é£æ ¼ä¸»é¢˜";
 $aqua_theme="Aqua";
 $colored_theme="Colored";
 $neptune_theme="Neptune";
 $shadow_theme="Shadow";
-$general_hq="ÎªËõÂÔÍ¼ºÍÍ¼Æ¬Ê¹ÓÃ¸ßÆ·ÖÊ";
-$general_hq_info="&lt;-- ¹Ø±Õ´ËÏî£¬ÏµÍ³ĞÔÄÜ½«´ó·ùÌáÉı¡£";
-$submit_button_general="±£´æĞŞ¸Ä";
-$button_on_msg="ÆôÓÃ";
-$button_off_msg="½ûÓÃ";
-$basic_opts="»ù±¾";
-$advanced_opts="¸ß¼¶";
-$show_basics="µã»÷ÏÔÊ¾»ù±¾Ñ¡ÏîÉèÖÃ";
-$show_advanced="µã»÷ÏÔÊ¾¸ß¼¶Ñ¡ÏîÉèÖÃ";
-$general_printing="ÓÎ¿Í´òÓ¡¹¦ÄÜ";
-$general_printing_info="&lt;-- ÆôÓÃÔòÈÎºÎÈË¾ùÔÊĞí´òÓ¡Í¼Æ¬";
-$general_slideshow="»ÃµÆÆ¬ÏÔÊ¾";
-$general_slideshow_info="&lt;-- ÊÇ·ñÔÊĞíÒÔ»ÃµÆÆ¬·½Ê½ÏÔÊ¾";
-$general_mini_preview="ÉÏÏÂÕÅÍ¼ÅÌ°´Å¥ÑùÊ½/³ß´ç";
-$general_mini_preview_info="&lt;-- Èç¹û´ó¶àÊıÓÃ»§´ø¿í½ÏµÍ£¬ÄÇÃ´Çë½ûÓÃ¡£";
+$general_hq="ä¸ºç¼©ç•¥å›¾å’Œå›¾ç‰‡ä½¿ç”¨é«˜å“è´¨";
+$general_hq_info="&lt;-- å…³é—­æ­¤é¡¹ï¼Œç³»ç»Ÿæ€§èƒ½å°†å¤§å¹…æå‡ã€‚";
+$submit_button_general="ä¿å­˜ä¿®æ”¹";
+$button_on_msg="å¯ç”¨";
+$button_off_msg="ç¦ç”¨";
+$basic_opts="åŸºæœ¬";
+$advanced_opts="é«˜çº§";
+$show_basics="ç‚¹å‡»æ˜¾ç¤ºåŸºæœ¬é€‰é¡¹è®¾ç½®";
+$show_advanced="ç‚¹å‡»æ˜¾ç¤ºé«˜çº§é€‰é¡¹è®¾ç½®";
+$general_printing="æ¸¸å®¢æ‰“å°åŠŸèƒ½";
+$general_printing_info="&lt;-- å¯ç”¨åˆ™ä»»ä½•äººå‡å…è®¸æ‰“å°å›¾ç‰‡";
+$general_slideshow="å¹»ç¯ç‰‡æ˜¾ç¤º";
+$general_slideshow_info="&lt;-- æ˜¯å¦å…è®¸ä»¥å¹»ç¯ç‰‡æ–¹å¼æ˜¾ç¤º";
+$general_mini_preview="ä¸Šä¸‹å¼ å›¾ç›˜æŒ‰é’®æ ·å¼/å°ºå¯¸";
+$general_mini_preview_info="&lt;-- å¦‚æœå¤§å¤šæ•°ç”¨æˆ·å¸¦å®½è¾ƒä½ï¼Œé‚£ä¹ˆè¯·ç¦ç”¨ã€‚";
 
 /* modify existing user table */
-$mod_user_header="ĞŞ¸ÄÒÑ´æÔÚµÄÓÃ»§";
-$submit_button_mod_user="ĞŞ¸ÄÓÃ»§";
-$mod_user_success_msg="! ÓÃ»§ÒÑĞŞ¸Ä !";
-$submit_button_delete="É¾³ı";
-$del_user_success_msg="! ÓÃ»§ÒÑÉ¾³ı !";
+$mod_user_header="ä¿®æ”¹å·²å­˜åœ¨çš„ç”¨æˆ·";
+$submit_button_mod_user="ä¿®æ”¹ç”¨æˆ·";
+$mod_user_success_msg="! ç”¨æˆ·å·²ä¿®æ”¹ !";
+$submit_button_delete="åˆ é™¤";
+$del_user_success_msg="! ç”¨æˆ·å·²åˆ é™¤ !";
 
 /* add new user table */
-$new_user_header="ĞÂÔöÓÃ»§";
-$new_user_name_info="ÓÃ»§Ãû";
-$new_user_pass_info="ÃÜÂë";
-$new_user_mail_info="µç×ÓÓÊ¼ş";
-$new_user_level_info="È¨ÏŞÉèÖÃ";
-$friend="ºÃÓÑ";
-$submit_button_new_user="ĞÂÔöÓÃ»§";
-$new_user_success_msg="! ÓÃ»§ÒÑĞÂÔö !";
+$new_user_header="æ–°å¢ç”¨æˆ·";
+$new_user_name_info="ç”¨æˆ·å";
+$new_user_pass_info="å¯†ç ";
+$new_user_mail_info="ç”µå­é‚®ä»¶";
+$new_user_level_info="æƒé™è®¾ç½®";
+$friend="å¥½å‹";
+$submit_button_new_user="æ–°å¢ç”¨æˆ·";
+$new_user_success_msg="! ç”¨æˆ·å·²æ–°å¢ !";
 
 /* friends account table */
-$friend_user_header="ÕÊ»§ÉèÖÃ";
-$submit_button_friend_user="¸üĞÂÕÊ»§";
-$delete_button_friend_user="É¾³ıÕÊ»§";
-$friend_info_msg="ÉèÖÃ/ĞŞ¸ÄÄúµÄÕÊ»§";
+$friend_user_header="å¸æˆ·è®¾ç½®";
+$submit_button_friend_user="æ›´æ–°å¸æˆ·";
+$delete_button_friend_user="åˆ é™¤å¸æˆ·";
+$friend_info_msg="è®¾ç½®/ä¿®æ”¹æ‚¨çš„å¸æˆ·";
 
 /* add new category table */
-$new_cat_header="ĞÂÔö·ÖÀà";
-$new_cat_info="ĞÂ·ÖÀàÃû³Æ";
-$submit_button_new_cat="ĞÂÔö·ÖÀà";
-$new_cat_success_msg="! ·ÖÀàÒÑĞÂÔö !";
-$mod_cat_header="ĞŞ¸Ä/É¾³ı ·ÖÀà";
-$cat_name_header="·ÖÀàÃû³Æ";
-$cat_mod_header="ĞŞ¸Ä·ÖÀà";
-$cat_del_header="É¾³ı·ÖÀà";
-$submit_button_mod_cat="ĞŞ¸Ä";
+$new_cat_header="æ–°å¢åˆ†ç±»";
+$new_cat_info="æ–°åˆ†ç±»åç§°";
+$submit_button_new_cat="æ–°å¢åˆ†ç±»";
+$new_cat_success_msg="! åˆ†ç±»å·²æ–°å¢ !";
+$mod_cat_header="ä¿®æ”¹/åˆ é™¤ åˆ†ç±»";
+$cat_name_header="åˆ†ç±»åç§°";
+$cat_mod_header="ä¿®æ”¹åˆ†ç±»";
+$cat_del_header="åˆ é™¤åˆ†ç±»";
+$submit_button_mod_cat="ä¿®æ”¹";
 
 /* set directory permissions */
-$set_dir_perms_header="ÉèÖÃÎÄ¼ş¼ĞÈ¨ÏŞ";
-$dir_name="ÎÄ¼ş¼Ğ";
-$dir_perms="È¨ÏŞÉèÖÃ";
-$action="²Ù×÷";
-$submit_button_folder="Ìá½»";
-$public="¹«¿ª";
-$friends="ºÃÓÑ";
-$private="Ë½ÈË";
-$new_perms_success_msg="! È¨ÏŞÒÑ¸Ä±ä !";
+$set_dir_perms_header="è®¾ç½®æ–‡ä»¶å¤¹æƒé™";
+$dir_name="æ–‡ä»¶å¤¹";
+$dir_perms="æƒé™è®¾ç½®";
+$action="æ“ä½œ";
+$submit_button_folder="æäº¤";
+$public="å…¬å¼€";
+$friends="å¥½å‹";
+$private="ç§äºº";
+$new_perms_success_msg="! æƒé™å·²æ”¹å˜ !";
 
 /*#################################################
 ## build_stats.php (called by admin.php)
 #################################################*/
-$stats_over_header="×ÜÌåÍ³¼Æ";
-$stats_over_photos="Í¼Æ¬ÊıÁ¿£º";
-$stats_over_views="×Üä¯ÀÀ´ÎÊı£º";
-$stats_over_albums="Ïà²áÊıÁ¿£º";
-$stats_over_most_alb_visists="×îÈÈÃÅµÄÏà²á£º";
-$stats_over_space="´ÅÅÌÊ¹ÓÃ¿Õ¼ä(ËùÓĞÏà²á)£º";
-$stats_over_visitors="Æù½ñ·ÃÎÊÈËÊı£º";
-$stats_over_users="ÒÑ×¢²áÓÃ»§Êı£º";
-$stats_top_ten="Ê®´óÈÈÃÅä¯ÀÀ";
-$stats_rank="ÅÅÃû";
-$stats_no_views="ä¯ÀÀ´ÎÊı£º";
-$stats_last_view="×îºóä¯ÀÀÊ±¼ä£º";
-$stats_alb_name="Ïà²áÃû³Æ£º";
+$stats_over_header="æ€»ä½“ç»Ÿè®¡";
+$stats_over_photos="å›¾ç‰‡æ•°é‡ï¼š";
+$stats_over_views="æ€»æµè§ˆæ¬¡æ•°ï¼š";
+$stats_over_albums="ç›¸å†Œæ•°é‡ï¼š";
+$stats_over_most_alb_visists="æœ€çƒ­é—¨çš„ç›¸å†Œï¼š";
+$stats_over_space="ç£ç›˜ä½¿ç”¨ç©ºé—´(æ‰€æœ‰ç›¸å†Œ)ï¼š";
+$stats_over_visitors="è¿„ä»Šè®¿é—®äººæ•°ï¼š";
+$stats_over_users="å·²æ³¨å†Œç”¨æˆ·æ•°ï¼š";
+$stats_top_ten="åå¤§çƒ­é—¨æµè§ˆ";
+$stats_rank="æ’å";
+$stats_no_views="æµè§ˆæ¬¡æ•°ï¼š";
+$stats_last_view="æœ€åæµè§ˆæ—¶é—´ï¼š";
+$stats_alb_name="ç›¸å†Œåç§°ï¼š";
 
 /*#################################################
 ## create_all_thumbs.php
 #################################################*/
-$parse_first="µÚÒ»½×¶Î";
-$parse_sec="µÚ¶ş½×¶Î";
-$parse_third="µÚÈı½×¶Î";
-$parse="ÕıÔÚ·ÖÎö";
-$parsed="·ÖÎö£º";
-$dirs="×ÓÄ¿Â¼";
-$done="È«²¿Íê³É...";
-$not_allowed_msg="±§Ç¸£¬ÄúÃ»ÓĞÈ¨ÏŞÖ´ĞĞÕâ¸ö½Å±¾£¡";
+$parse_first="ç¬¬ä¸€é˜¶æ®µ";
+$parse_sec="ç¬¬äºŒé˜¶æ®µ";
+$parse_third="ç¬¬ä¸‰é˜¶æ®µ";
+$parse="æ­£åœ¨åˆ†æ";
+$parsed="åˆ†æï¼š";
+$dirs="å­ç›®å½•";
+$done="å…¨éƒ¨å®Œæˆ...";
+$not_allowed_msg="æŠ±æ­‰ï¼Œæ‚¨æ²¡æœ‰æƒé™æ‰§è¡Œè¿™ä¸ªè„šæœ¬ï¼";
 /* these entries are called from within admin.php */
-$th_msg="Á¢¼´´´½¨ËùÓĞËõÂÔÍ¼£¡";
-$table_hint_msg="µã»÷¿ªÊ¼Á¢¼´´´½¨ËùÓĞ×ÓÄ¿Â¼ÏÂµÄËõÂÔÍ¼£¡";
-$start_button="¿ªÊ¼£¡";
-$recreate_thumbs_header="ÖØĞÂÉú³ÉËùÓĞËõÂÔÍ¼";
-$recreate_thums_msg="½«ÖØĞÂÉú³ÉËùÓĞËõÂÔÍ¼£¡ËùÓĞµÄÍ³¼Æ×ÊÁÏ½«»á¶ªÊ§£¡";
-$recreate_thums_warning="ÇëÈ·ÈÏÄúÊÇ·ñÕæµÄÒªÖØĞÂÉú³ÉËùÓĞµÄËõÂÔÍ¼£¬²¢ÇÒÒªÉ¾³ıËùÓĞµÄÆÀÂÛ£¬ÃèÊö¼°Í³¼Æ×ÊÁÏ£¡Çë×¢Òâ£¬Õâ¸ö²Ù×÷²»ÄÜ»Ö¸´¡£È·¶¨¼ÌĞø½øĞĞÂğ£¿";
+$th_msg="ç«‹å³åˆ›å»ºæ‰€æœ‰ç¼©ç•¥å›¾ï¼";
+$table_hint_msg="ç‚¹å‡»å¼€å§‹ç«‹å³åˆ›å»ºæ‰€æœ‰å­ç›®å½•ä¸‹çš„ç¼©ç•¥å›¾ï¼";
+$start_button="å¼€å§‹ï¼";
+$recreate_thumbs_header="é‡æ–°ç”Ÿæˆæ‰€æœ‰ç¼©ç•¥å›¾";
+$recreate_thums_msg="å°†é‡æ–°ç”Ÿæˆæ‰€æœ‰ç¼©ç•¥å›¾ï¼æ‰€æœ‰çš„ç»Ÿè®¡èµ„æ–™å°†ä¼šä¸¢å¤±ï¼";
+$recreate_thums_warning="è¯·ç¡®è®¤æ‚¨æ˜¯å¦çœŸçš„è¦é‡æ–°ç”Ÿæˆæ‰€æœ‰çš„ç¼©ç•¥å›¾ï¼Œå¹¶ä¸”è¦åˆ é™¤æ‰€æœ‰çš„è¯„è®ºï¼Œæè¿°åŠç»Ÿè®¡èµ„æ–™ï¼è¯·æ³¨æ„ï¼Œè¿™ä¸ªæ“ä½œä¸èƒ½æ¢å¤ã€‚ç¡®å®šç»§ç»­è¿›è¡Œå—ï¼Ÿ";
 
 /*#################################################
 ## Printing, all files
 #################################################*/
-$print_layout="ÇëÑ¡Ôñ´òÓ¡°æÊ½";
-$images_page="ÕÅ/Ò³";
-$indexprint="Ë÷Òı´òÓ¡ (28)";
-$note="<strong>×¢Òâ£º</strong> ÔÚ´òÓ¡Ö®Ç°Äú¿ÉÒÔµ÷Õûä¯ÀÀÆ÷ÖĞµÄ \"ÉèÖÃ´òÓ¡¸ñÊ½\"È·±£ËùÓĞµÄÍ¼Æ¬¶¼ÄÜ·ûºÏ´òÓ¡Ò³ÃæµÄ´óĞ¡£¡£¡£¡";
-$print_button="´òÓ¡Ô¤ÀÀ";
-$href_check_all="È«²¿Ñ¡¶¨";
-$href_clear_all="È«²¿È¡Ïû";
-$print_error="´íÎó£¬Ã»ÓĞÑ¡ÔñÈÎºÎÍ¼Æ¬£¡£¡£¡";
-$print_mode="´òÓ¡Ä£Ê½";
-$print_image="´òÓ¡Í¼Æ¬";
-$videos_msg="²»ÄÜ´òÓ¡¶¯Ì¬Í¼Æ¬";
+$print_layout="è¯·é€‰æ‹©æ‰“å°ç‰ˆå¼";
+$images_page="å¼ /é¡µ";
+$indexprint="ç´¢å¼•æ‰“å° (28)";
+$note="<strong>æ³¨æ„ï¼š</strong> åœ¨æ‰“å°ä¹‹å‰æ‚¨å¯ä»¥è°ƒæ•´æµè§ˆå™¨ä¸­çš„ \"è®¾ç½®æ‰“å°æ ¼å¼\"ç¡®ä¿æ‰€æœ‰çš„å›¾ç‰‡éƒ½èƒ½ç¬¦åˆæ‰“å°é¡µé¢çš„å¤§å°ï¼ï¼ï¼";
+$print_button="æ‰“å°é¢„è§ˆ";
+$href_check_all="å…¨éƒ¨é€‰å®š";
+$href_clear_all="å…¨éƒ¨å–æ¶ˆ";
+$print_error="é”™è¯¯ï¼Œæ²¡æœ‰é€‰æ‹©ä»»ä½•å›¾ç‰‡ï¼ï¼ï¼";
+$print_mode="æ‰“å°æ¨¡å¼";
+$print_image="æ‰“å°å›¾ç‰‡";
+$videos_msg="ä¸èƒ½æ‰“å°åŠ¨æ€å›¾ç‰‡";
 
 /*#################################################
 ## FTP, all files
@@ -464,115 +464,115 @@ $videos_msg="²»ÄÜ´òÓ¡¶¯Ì¬Í¼Æ¬";
 /*#################################################
 ## MySQL backup, most files ;-)
 #################################################*/
-$mysql_info_header="LinPHA MySQL Êı¾İ¿â¹ÜÀíÏµÍ³ ver.";
-$mysql_cancel="È¡Ïû";
-$mysql_DHTML_hint="¹Ø±Õ DHTML ÏÔÊ¾ - ±¸·İÍê³ÉÖ®Ç°½«²»»áÏÔÊ¾ÈÎºÎĞÅÏ¢¡£";
-$mysql_select_all="È«²¿Ñ¡¶¨";
-$mysql_deselect_all="È«²¿È¡Ïû";
-$mysql_create_backup="´´½¨±¸·İ";
-$mysql_back_menu="·µ»ØÖ÷²Ëµ¥";
-$mysql_table_checks="¼ì²éÊı¾İ±í...";
-$mysql_table_check="Êı¾İ±í¼ì²éÖĞ";
+$mysql_info_header="LinPHA MySQL æ•°æ®åº“ç®¡ç†ç³»ç»Ÿ ver.";
+$mysql_cancel="å–æ¶ˆ";
+$mysql_DHTML_hint="å…³é—­ DHTML æ˜¾ç¤º - å¤‡ä»½å®Œæˆä¹‹å‰å°†ä¸ä¼šæ˜¾ç¤ºä»»ä½•ä¿¡æ¯ã€‚";
+$mysql_select_all="å…¨éƒ¨é€‰å®š";
+$mysql_deselect_all="å…¨éƒ¨å–æ¶ˆ";
+$mysql_create_backup="åˆ›å»ºå¤‡ä»½";
+$mysql_back_menu="è¿”å›ä¸»èœå•";
+$mysql_table_checks="æ£€æŸ¥æ•°æ®è¡¨...";
+$mysql_table_check="æ•°æ®è¡¨æ£€æŸ¥ä¸­";
 $mysql_struct_msg="Creating structure for";
 $mysql_in_file_dump_msg="dumping data for";
-$mysql_progress="ÕûÌå½ø¶È£º";
-$mysql_back_complete="Íê³É±¸·İÓÃÊ±";
-$mysql_back_menu_long="·µ»Ø MySQL Êı¾İ¿â±¸·İÊ×Ò³";
-$mysql_open_warn1="<B>¾¯¸æ:</B> ´ò¿ªÊ§°Ü ";
-$mysql_open_warn2="ÎŞ·¨Ğ´Èë£¡ÇëĞŞ¸ÄÎÄ¼ş¼ĞÈ¨ÏŞÎª<BR><BR><I>CHMOD 777</I>";
-$mysql_date_msg="ÏÖÔÚÊ±¼ä "; // it follows time of the day...
-$mysql_last_backup="×îºóÍêÕû±¸·İ MySQL Êı¾İ¿â£º";
-$mysql_backup_hint="Í¨³£Ã¿ÖÜ±¸·İÒ»´Î¼´¿É¡£";
-$mysql_down_backup="ÏÂÔØÍêÕûÊı¾İ¿â±¸·İÎÄ¼ş";
-$mysql_down_backup_part="ÏÂÔØÒÔÑ¡Ôñ·½Ê½½øĞĞ±¸·İµÄ±¸·İÎÄ¼ş";
-$mysql_down_backup_struct="ÏÂÔØ½ö°üº¬Êı¾İ¿â½á¹¹µÄ±¸·İÎÄ¼ş";
-$mysql_down_backup1="(Êó±êÓÒ¼ü£¬Ä¿±êÁí´æÎª...)";
-$mysql_unknown_backup="×îºó±¸·İ MySQL Êı¾İ¿âÊ±¼ä£º<I>Î´Öª</I>";
-$mysql_href_recom="´´½¨ĞÂµÄÍêÕû±¸·İ£¬ÍêÈ«²åÈë£¨ÍÆ¼ö£©";
-$mysql_href_standard="´´½¨ĞÂµÄÍêÕû±¸·İ£¬±ê×¼²åÈë£¨½ÏĞ¡£©";
-$mysql_href_partial="´´½¨Ñ¡ÔñĞÔ±¸·İ£¬Ö»±¸·İÑ¡ÔñµÄ±í£¨°üº¬ÍêÕû²åÈë£©";
-$mysql_href_structure="´´½¨ĞÂµÄÍêÕû±¸·İ£¬Ö»±¸·İ±í½á¹¹";
-$mysql_days_last="Ìì";
-$mysql_hours_last="Ğ¡Ê±";
-$mysql_min_last="·ÖÖÓ";
-$mysql_sec_last="Ãë";
-$ago="Ç°"; // reads in context "some days ago"
-$backup="±¸·İ";
-$restore="»¹Ô­";
-$optimize="ÓÅ»¯";
-$optimize_tables="ÓÅ»¯±í";
-$opt_table_name="±íÃû³Æ";
-$opt_table_check="¼ì²é±í";
-$opt_table_optimize="ÓÅ»¯±í";
+$mysql_progress="æ•´ä½“è¿›åº¦ï¼š";
+$mysql_back_complete="å®Œæˆå¤‡ä»½ç”¨æ—¶";
+$mysql_back_menu_long="è¿”å› MySQL æ•°æ®åº“å¤‡ä»½é¦–é¡µ";
+$mysql_open_warn1="<B>è­¦å‘Š:</B> æ‰“å¼€å¤±è´¥ ";
+$mysql_open_warn2="æ— æ³•å†™å…¥ï¼è¯·ä¿®æ”¹æ–‡ä»¶å¤¹æƒé™ä¸º<BR><BR><I>CHMOD 777</I>";
+$mysql_date_msg="ç°åœ¨æ—¶é—´ "; // it follows time of the day...
+$mysql_last_backup="æœ€åå®Œæ•´å¤‡ä»½ MySQL æ•°æ®åº“ï¼š";
+$mysql_backup_hint="é€šå¸¸æ¯å‘¨å¤‡ä»½ä¸€æ¬¡å³å¯ã€‚";
+$mysql_down_backup="ä¸‹è½½å®Œæ•´æ•°æ®åº“å¤‡ä»½æ–‡ä»¶";
+$mysql_down_backup_part="ä¸‹è½½ä»¥é€‰æ‹©æ–¹å¼è¿›è¡Œå¤‡ä»½çš„å¤‡ä»½æ–‡ä»¶";
+$mysql_down_backup_struct="ä¸‹è½½ä»…åŒ…å«æ•°æ®åº“ç»“æ„çš„å¤‡ä»½æ–‡ä»¶";
+$mysql_down_backup1="(é¼ æ ‡å³é”®ï¼Œç›®æ ‡å¦å­˜ä¸º...)";
+$mysql_unknown_backup="æœ€åå¤‡ä»½ MySQL æ•°æ®åº“æ—¶é—´ï¼š<I>æœªçŸ¥</I>";
+$mysql_href_recom="åˆ›å»ºæ–°çš„å®Œæ•´å¤‡ä»½ï¼Œå®Œå…¨æ’å…¥ï¼ˆæ¨èï¼‰";
+$mysql_href_standard="åˆ›å»ºæ–°çš„å®Œæ•´å¤‡ä»½ï¼Œæ ‡å‡†æ’å…¥ï¼ˆè¾ƒå°ï¼‰";
+$mysql_href_partial="åˆ›å»ºé€‰æ‹©æ€§å¤‡ä»½ï¼Œåªå¤‡ä»½é€‰æ‹©çš„è¡¨ï¼ˆåŒ…å«å®Œæ•´æ’å…¥ï¼‰";
+$mysql_href_structure="åˆ›å»ºæ–°çš„å®Œæ•´å¤‡ä»½ï¼Œåªå¤‡ä»½è¡¨ç»“æ„";
+$mysql_days_last="å¤©";
+$mysql_hours_last="å°æ—¶";
+$mysql_min_last="åˆ†é’Ÿ";
+$mysql_sec_last="ç§’";
+$ago="å‰"; // reads in context "some days ago"
+$backup="å¤‡ä»½";
+$restore="è¿˜åŸ";
+$optimize="ä¼˜åŒ–";
+$optimize_tables="ä¼˜åŒ–è¡¨";
+$opt_table_name="è¡¨åç§°";
+$opt_table_check="æ£€æŸ¥è¡¨";
+$opt_table_optimize="ä¼˜åŒ–è¡¨";
 $opt_table_msg="Type of message";
-$opt_start_msg="¿ªÊ¼¼ì²é²¢ÓÅ»¯Êı¾İ¿âËùÓĞ±í";
-$fullback_hint_msg="Èç¹ûÓµÓĞ¶à¸öÊı¾İ¿â£¬ÇëÊ¹ÓÃÑ¡ÔñĞÔ±¸·İ¡£";
-$restore_last_fullback="»¹Ô­×îºó<b>ÍêÕû</b>±¸·İ£º";
-$restore_last_partback="»¹Ô­×îºó<b>Ñ¡ÔñĞÔ</b>±¸·İ£º";
-$restore_error="·ÃÎÊ±¸·İÎÄ¼ş·¢Éú´íÎó¡£ÎÄ¼şÎ´ÕÒµ½£¡";
-$restore_success="»¹Ô­³É¹¦£¡!";
+$opt_start_msg="å¼€å§‹æ£€æŸ¥å¹¶ä¼˜åŒ–æ•°æ®åº“æ‰€æœ‰è¡¨";
+$fullback_hint_msg="å¦‚æœæ‹¥æœ‰å¤šä¸ªæ•°æ®åº“ï¼Œè¯·ä½¿ç”¨é€‰æ‹©æ€§å¤‡ä»½ã€‚";
+$restore_last_fullback="è¿˜åŸæœ€å<b>å®Œæ•´</b>å¤‡ä»½ï¼š";
+$restore_last_partback="è¿˜åŸæœ€å<b>é€‰æ‹©æ€§</b>å¤‡ä»½ï¼š";
+$restore_error="è®¿é—®å¤‡ä»½æ–‡ä»¶å‘ç”Ÿé”™è¯¯ã€‚æ–‡ä»¶æœªæ‰¾åˆ°ï¼";
+$restore_success="è¿˜åŸæˆåŠŸï¼!";
 
 /*########################################################################
 ### FILEMANGER
 ########################################################################*/
 
-define('STR_ACCESS_DENIED','<H1>½ûÖ¹·ÃÎÊ</H1> ÄúÃ»ÓĞÈ¨ÏŞ·ÃÎÊ¸ÃÄ¿Â¼');
-define('STR_BACK',	'·µ»Ø');
-define('STR_LESS',	'½ÏÉÙ');
-define('STR_MORE',	'¸ü¶à');
-define('STR_LINES',	'ĞĞ');
-define('STR_FUNCTIONLIST', '¹¦ÄÜÁĞ±í');
-define('STR_EDIT',	'±à¼­');
-define('STR_VIEW',	'²é¿´');
-define('STR_RENAME',	'ÖØÃüÃû');
-define('STR_MKDIR',		'ĞÂ½¨Ä¿Â¼');
-define('STR_DELETE',	'É¾³ı');
-define('STR_BOTTOM',	'µ×²¿');
-define('STR_TOP',		'¶¥²¿');
-define('STR_FILENAME',	  'ÎÄ¼şÃû');
-define('STR_FILESIZE',	  '´óĞ¡');
-define('STR_LASTMODIFIED', 'ĞŞ¸ÄÊ±¼ä');
-define('STR_SUM', '<B>%s</B> ×Ö½Ú£¬¹² <B>%s</B> ¸ö¶ÔÏó¡£');
-define('STR_CREATEDIRLEGEND', 'ĞÂ½¨Ä¿Â¼');
-define('STR_CREATEDIR',       'ĞÂ½¨Ä¿Â¼Ãû³Æ£º');
-define('STR_CREATEDIRBUTTON', 'ĞÂ½¨Ä¿Â¼');
-define('STR_RENAMELEGEND',       'ÖØÃüÃû');
-define('STR_RENAMEENTERNEWNAME', 'ÊäÈë %s ĞÂÃû³Æ:');
-define('STR_RENAMEBUTTON',       'ÖØÃüÃû');
-define('STR_ERROR_DIR','´íÎó£ºÎŞ·¨¶ÁÈ¡Ä¿Â¼ÄÚÈİ');
-define('STR_AUDIO',            'ÒôÆµÎÄ¼ş');
-define('STR_COMPRESSED',       'Ñ¹ËõÎÄ¼ş');
-define('STR_EXECUTABLE',       'Ó¦ÓÃ³ÌĞò');
-define('STR_IMAGE',            'Í¼ÏñÎÄ¼ş');
-define('STR_SOURCE_CODE',      '´úÂëÎÄ¼ş');
-define('STR_TEXT_OR_DOCUMENT', 'ÎÄ±¾ÎÄµµ');
-define('STR_WEB_ENABLED_FILE', 'ÍøÒ³ÎÄ¼ş');
-define('STR_VIDEO',            'ÊÓÆµÎÄ¼ş');
-define('STR_DIRECTORY',        'ÎÄ¼ş¼Ğ');
-define('STR_PARENT_DIRECTORY', 'ÉÏ¼¶Ä¿Â¼');
-define('STR_EDITOR_SAVE',      '±£´æÎÄ¼ş');
-define('STR_EDITOR_SAVE_ERROR','ÎÄ¼ş <I>%s</I> ÎªÖ»¶Á»òÊÇÒÑ²»´æÔÚ');
+define('STR_ACCESS_DENIED','<H1>ç¦æ­¢è®¿é—®</H1> æ‚¨æ²¡æœ‰æƒé™è®¿é—®è¯¥ç›®å½•');
+define('STR_BACK',	'è¿”å›');
+define('STR_LESS',	'è¾ƒå°‘');
+define('STR_MORE',	'æ›´å¤š');
+define('STR_LINES',	'è¡Œ');
+define('STR_FUNCTIONLIST', 'åŠŸèƒ½åˆ—è¡¨');
+define('STR_EDIT',	'ç¼–è¾‘');
+define('STR_VIEW',	'æŸ¥çœ‹');
+define('STR_RENAME',	'é‡å‘½å');
+define('STR_MKDIR',		'æ–°å»ºç›®å½•');
+define('STR_DELETE',	'åˆ é™¤');
+define('STR_BOTTOM',	'åº•éƒ¨');
+define('STR_TOP',		'é¡¶éƒ¨');
+define('STR_FILENAME',	  'æ–‡ä»¶å');
+define('STR_FILESIZE',	  'å¤§å°');
+define('STR_LASTMODIFIED', 'ä¿®æ”¹æ—¶é—´');
+define('STR_SUM', '<B>%s</B> å­—èŠ‚ï¼Œå…± <B>%s</B> ä¸ªå¯¹è±¡ã€‚');
+define('STR_CREATEDIRLEGEND', 'æ–°å»ºç›®å½•');
+define('STR_CREATEDIR',       'æ–°å»ºç›®å½•åç§°ï¼š');
+define('STR_CREATEDIRBUTTON', 'æ–°å»ºç›®å½•');
+define('STR_RENAMELEGEND',       'é‡å‘½å');
+define('STR_RENAMEENTERNEWNAME', 'è¾“å…¥ %s æ–°åç§°:');
+define('STR_RENAMEBUTTON',       'é‡å‘½å');
+define('STR_ERROR_DIR','é”™è¯¯ï¼šæ— æ³•è¯»å–ç›®å½•å†…å®¹');
+define('STR_AUDIO',            'éŸ³é¢‘æ–‡ä»¶');
+define('STR_COMPRESSED',       'å‹ç¼©æ–‡ä»¶');
+define('STR_EXECUTABLE',       'åº”ç”¨ç¨‹åº');
+define('STR_IMAGE',            'å›¾åƒæ–‡ä»¶');
+define('STR_SOURCE_CODE',      'ä»£ç æ–‡ä»¶');
+define('STR_TEXT_OR_DOCUMENT', 'æ–‡æœ¬æ–‡æ¡£');
+define('STR_WEB_ENABLED_FILE', 'ç½‘é¡µæ–‡ä»¶');
+define('STR_VIDEO',            'è§†é¢‘æ–‡ä»¶');
+define('STR_DIRECTORY',        'æ–‡ä»¶å¤¹');
+define('STR_PARENT_DIRECTORY', 'ä¸Šçº§ç›®å½•');
+define('STR_EDITOR_SAVE',      'ä¿å­˜æ–‡ä»¶');
+define('STR_EDITOR_SAVE_ERROR','æ–‡ä»¶ <I>%s</I> ä¸ºåªè¯»æˆ–æ˜¯å·²ä¸å­˜åœ¨');
 define('STR_EDITOR_SAVE_ERROR_WRONG_VALUE','while editing the file <I>%s</I>, you have given the following value at byteposition #%s: %s.');
 define('STR_EDITOR_SAVE_ERROR_HEX_VALUE_NEEDED','according to the settings, you have to provide a positive hexadecimal value between 00 and FF.');
 define('STR_EDITOR_SAVE_ERROR_DEC_VALUE_NEEDED','according to the settings, you have to provide a whole, positive decimal value between 0 and 255.');
-define('STR_FILE_UPLOAD_NAVI_HINT', '¿ìËÙµ¼º½');
-define('STR_FILE_UPLOAD_DRIVES', 'Ó²ÅÌ:');
-define('STR_FILE_UPLOAD', 'ÉÏ´«');
-define('STR_FILE_UPLOAD_MAIN', 'ÉÏ´«');
-define('STR_FILE_UPLOAD_DISABLED', '±§Ç¸£¬php.ini ÖĞ½ûÓÃÎÄ¼şÉÏ´«¡£');
-define('STR_FILE_UPLOAD_DESC','ÇëÑ¡ÔñÒªÉÏ´«µÄÎÄ¼ş£¬²¢Éè¶¨´«ÊäÍê³ÉÊ±Òª½øĞĞµÄ²Ù×÷¡£');
-define('STR_FILE_UPLOAD_FILE','ÎÄ¼ş');
-define('STR_FILE_UPLOAD_TARGET','ÉÏ´«ÎÄ¼şµ½');
-define('STR_FILE_UPLOAD_ACTION','´«ÊäÍê³Éºó½øĞĞ:');
-define('STR_FILE_UPLOAD_NOTHING','¿ÕÏĞ');
-define('STR_FILE_UPLOAD_DROPFILE','µ±ËùÑ¡ÔñµÄ²Ù×÷½øĞĞÍêÖ®ºóÉ¾³ıÒÑÉÏ´«µÄÎÄ¼ş');
-define('STR_FILE_UPLOAD_MAXFILESIZE','php.ini ÖĞÉèÖÃÔÊĞíÉÏ´«µÄµ¥¸öÎÄ¼ş×î´óÎª£º');
-define('STR_FILE_UPLOAD_ERROR',        '´íÎó: ÎŞ·¨ÒÆ¶¯ÎÄ¼ş %s µ½Ä¿Â¼ %s');
-define('STR_FILE_UPLOAD_CHDIR_ERROR',  '´íÎó: ÎŞ·¨ÇĞ»» (chdir) µ½ %s Ä¿Â¼. ÎÄ¼şÒÑ¾­´¦Àí: %s');
-define('STR_FILE_UPLOAD_UNLINK_ERROR', '´íÎó: ÎŞ·¨É¾³ı %s .');
-define('STR_FILE_UPLOAD_ERROR_FILE_EXCEEDS_INI_SIZE', '´íÎó: ÉÏ´«ÎÄ¼ş %s ³¬¹ı php.ini ÉèÖÃÖĞÖ¸¶¨µÄ´óĞ¡ - %s');
-define('STR_FILE_UPLOAD_ERROR_FILE_EXCEEDS_FORM_SIZE','´íÎó: ÉÏ´«ÎÄ¼ş %s µÄ´óĞ¡³¬¹ı HTML ±íµ¥µÄÉèÖÃ');
-define('STR_FILE_UPLOAD_ERROR_FILE_PARTIAL',          '´íÎó: ÉÏ´«ÎÄ¼ş %s Ö»ÓĞ²¿·ÖÉÏ´«Íê±Ï');
+define('STR_FILE_UPLOAD_NAVI_HINT', 'å¿«é€Ÿå¯¼èˆª');
+define('STR_FILE_UPLOAD_DRIVES', 'ç¡¬ç›˜:');
+define('STR_FILE_UPLOAD', 'ä¸Šä¼ ');
+define('STR_FILE_UPLOAD_MAIN', 'ä¸Šä¼ ');
+define('STR_FILE_UPLOAD_DISABLED', 'æŠ±æ­‰ï¼Œphp.ini ä¸­ç¦ç”¨æ–‡ä»¶ä¸Šä¼ ã€‚');
+define('STR_FILE_UPLOAD_DESC','è¯·é€‰æ‹©è¦ä¸Šä¼ çš„æ–‡ä»¶ï¼Œå¹¶è®¾å®šä¼ è¾“å®Œæˆæ—¶è¦è¿›è¡Œçš„æ“ä½œã€‚');
+define('STR_FILE_UPLOAD_FILE','æ–‡ä»¶');
+define('STR_FILE_UPLOAD_TARGET','ä¸Šä¼ æ–‡ä»¶åˆ°');
+define('STR_FILE_UPLOAD_ACTION','ä¼ è¾“å®Œæˆåè¿›è¡Œ:');
+define('STR_FILE_UPLOAD_NOTHING','ç©ºé—²');
+define('STR_FILE_UPLOAD_DROPFILE','å½“æ‰€é€‰æ‹©çš„æ“ä½œè¿›è¡Œå®Œä¹‹ååˆ é™¤å·²ä¸Šä¼ çš„æ–‡ä»¶');
+define('STR_FILE_UPLOAD_MAXFILESIZE','php.ini ä¸­è®¾ç½®å…è®¸ä¸Šä¼ çš„å•ä¸ªæ–‡ä»¶æœ€å¤§ä¸ºï¼š');
+define('STR_FILE_UPLOAD_ERROR',        'é”™è¯¯: æ— æ³•ç§»åŠ¨æ–‡ä»¶ %s åˆ°ç›®å½• %s');
+define('STR_FILE_UPLOAD_CHDIR_ERROR',  'é”™è¯¯: æ— æ³•åˆ‡æ¢ (chdir) åˆ° %s ç›®å½•. æ–‡ä»¶å·²ç»å¤„ç†: %s');
+define('STR_FILE_UPLOAD_UNLINK_ERROR', 'é”™è¯¯: æ— æ³•åˆ é™¤ %s .');
+define('STR_FILE_UPLOAD_ERROR_FILE_EXCEEDS_INI_SIZE', 'é”™è¯¯: ä¸Šä¼ æ–‡ä»¶ %s è¶…è¿‡ php.ini è®¾ç½®ä¸­æŒ‡å®šçš„å¤§å° - %s');
+define('STR_FILE_UPLOAD_ERROR_FILE_EXCEEDS_FORM_SIZE','é”™è¯¯: ä¸Šä¼ æ–‡ä»¶ %s çš„å¤§å°è¶…è¿‡ HTML è¡¨å•çš„è®¾ç½®');
+define('STR_FILE_UPLOAD_ERROR_FILE_PARTIAL',          'é”™è¯¯: ä¸Šä¼ æ–‡ä»¶ %s åªæœ‰éƒ¨åˆ†ä¸Šä¼ å®Œæ¯•');
 
 /*########################################################################
 ### BIG FAT NOTICE !
@@ -580,566 +580,566 @@ define('STR_FILE_UPLOAD_ERROR_FILE_PARTIAL',          '´íÎó: ÉÏ´«ÎÄ¼ş %s Ö»ÓĞ²¿·
 ### DEVELOPERS PLEASE MAKE USE OF THE "LANGUPDATE.PHP" SCRIPT!
 ########################################################################*/
 
-$pano_view="È«ÆÁÄ£Ê½"; /* (img_view.php) -- new [panorama view] href  */
-$close_win="¹Ø±Õ´°¿Ú"; /* (various files) -- javascript close window */
-$nav_hint="ÇëÊ¹ÓÃÊó±ê»ò·½Ïò¼ü½øĞĞ²Ù×÷£¡"; /* (image_panorama_view.php) --  */
-$pano_view_of="È«ÆÁ²é¿´Í¼Æ¬"; /* (image_panorama_view.php) -- header message */
-$php_basedir_check_msg="¼ì²â php ÊÇ·ñÉèÖÃÁËopen_basedir..."; /* (sec_stage_install.php) --  */
-$req_basedir_fail="·ñ"; /* (sec_stage_install.php) -- YES, it\'s really just no/nein ;-) */
-$basedir_active_msg="Ôã¸â£¬ÄúµÄphpÉèÖÃÁË open_basedir Â·¾¶ \"open_basedir\". £¡<br>"; /* (sec_stage_install.php) --  */
-//$basedir_active_msg1="+ LinPHA ½«»áÊ¹ÓÃ GD º¯Êı¿âÀ´´´½¨ËõÂÔÍ¼£¬µ«¿ÉÄÜ»áÓĞÎÊÌâ<br>"; /* (sec_stage_install.php) --  */
-$basedir_active_msg2="+ Èç¹ûÔÊĞí£¬Çë²»ÒªÔÚ PHP.ini ÖĞÉèÖÃ \"open_basedir\""; /* (sec_stage_install.php) --  */
-//$gd_basedir_err="+ Èç¹ûÔÊĞí£¬Çë²»ÒªÔÚ PHP.ini ÖĞÉèÖÃ \"open_basedir\" »òÊÇÖØĞÂ±àÒë PHP ²¢¼ÓÉÏ GDº¯Êı¿âµÄÖ§³Ö(--with-gd)"; /* (sec_stage_install.php) --  */
-$extract_tar_gz="½âÑ¹Ëõ *.tar.gz µµ°¸ÎÄ¼ş (UNIX)"; /* (index.php) -- filemanger upload select */
-$extract_tar_bz2="½âÑ¹Ëõ *.tar.bz2 µµ°¸ÎÄ¼ş (UNIX)"; /* (index.php) --  */
-$extract_gz="Ê¹ÓÃ gzip ½âÑ¹Ëõ (UNIX)"; /* (index.php) -- filemanger upload select */
-$extract_zip="Ê¹ÓÃ unzip ½âÑ¹Ëõ (UNIX)"; /* (index.php) -- filemanger upload select */
-$extract_winzip="Ê¹ÓÃ pkzip ½âÑ¹Ëõ (WINDOWS WINZIP)"; /* (index.php) -- filemanger upload select */
-$new_group_success_msg="! ÓÃ»§×éÒÑÔö¼Ó !"; /* (admin.php) -- redirect message */
-$mod_group_success_msg="! ÓÃ»§×éÒÑĞŞ¸Ä !"; /* (admin.php) -- redirect message */
-$del_group_success_msg="! ÓÃ»§×éÒÑÉ¾³ı !"; /* (admin.php) -- redirect message */
-$mod_cat_success_msg="! ·ÖÀàÒÑĞŞ¸Ä !"; /* (admin.php) -- redirect message */
-$del_cat_success_msg="! ·ÖÀàÒÑÉ¾³ı !"; /* (admin.php) -- redirect message */
-$href_groups="µã»÷ĞÂÔö»òĞŞ¸ÄÓÃ»§×é"; /* (build_user_conf/build_folder_conf) -- href message to group management */
-$del_warning="¾¯¸æ£ºÇëÓÃÄúµÄĞÂÕÊºÅ½øĞĞµÇÂ¼£¡£¡£¡"; /* (build_user_conf.php) -- java popup to notify admin user */
-$href_to_folder_conf="·µ»ØÄ¿Â¼¹ÜÀíÊ×Ò³"; /* (build_user_conf.php) -- navi href  */
-$href_to_user_conf="·µ»ØÓÃ»§¹ÜÀíÊ×Ò³"; /* (build_user_conf.php) -- navi href  */
-$header_new_group="ĞÂÔöÓÃ»§×é"; /* (build_user_conf.php) -- table header */
-$header_groupname="ÓÃ»§×éÃû³Æ"; /* (build_user_conf.php) -- table header */
-$button_addgroup="ĞÂÔöÓÃ»§×é"; /* (build_user_conf.php) -- submit button */
-$header_mod_group="ĞŞ¸Ä/É¾³ı ÓÃ»§×é"; /* (build_user_conf.php) -- table header */
-$mod_group_header="ĞŞ¸ÄÓÃ»§×é"; /* (build_user_conf.php) -- table header */
-$del_group_header="É¾³ıÓÃ»§×é"; /* (build_user_conf.php) -- table header */
-$search_to_short="ËÑË÷¹Ø¼ü×ÖÌ«¶Ì, ×îÉÙ2¸ö×Ö·û!"; /* (search.php) --  */
-$general_thumb_size="ĞŞ¸ÄËõÂÔÍ¼³ß´ç"; /* (build_general_conf.php) -- thumbsize stuff */
-$general_thumb_size_info="<-- ÉèÖÃËõÂÔÍ¼×î´ó³ß´ç£¬µ¥Î»£ºÏñËØ"; /* (build_general_conf.php) -- thumbsize stuff */
-//$general_thumb_border="ËõÂÔÍ¼±ß¿ò"; /* (build_general_conf.php) -- thumb border stuff */
-//$general_thumb_border_info="<-- ÎªËõÂÔÍ¼¼ÓÉÏ±ß¿ò"; /* (build_general_conf.php) -- thumb border stuff */
-$inst_thumbsize_header="ÇëÑ¡ÔñËõÂÔÍ¼´óĞ¡"; /* (third_stage_install.php) -- thumb size stuff */
-$inst_thumbborder_header="±ß¿òÉèÖÃ"; /* (third_stage_install.php) -- thumb border stuff */
-$inst_thumbborder_enable="¿ªÆôÍ¼Æ¬±ß¿ò"; /* (third_stage_install.php) -- thumb border checkbox msg */
-$inst_thumbborder_disable="¹Ø±ÕÍ¼Æ¬±ß¿ò"; /* (third_stage_install.php) -- thumb border checkbox msg */
-$safemode_active_msg="Ôã¸â£¬ÄúµÄ PHP ÔËĞĞÓÚ°²È«Ä£Ê½ \"safe_mode\" £¡<br />"; /* (sec_stage_install.php) --  */
-$safemode_active_msg2="+ Èç¹ûÔÊĞí£¬Çë²»ÒªÔÚ PHP.ini ÖĞÆôÓÃ°²È«Ä£Ê½ \"safe_mode\""; /* (sec_stage_install.php) --  */
-$general_anon_post="ÄäÃû·¢²¼"; /* (build_general_conf.php) --  */
-$general_anon_post_info="<-- ÔÊĞíÄäÃû·¢±íÆÀÂÛ"; /* (build_general_conf.php) --  */
-$stats_over_comment="ÆÀÂÛÊı"; /* (build_stats.php) --  */
-$top10_downs_href="Ê®´óÈÈÃÅÏÂÔØ"; /* (build_stats.php) --  */
-$top10_views_href="Ê®´óÈÈÃÅÍ¼Æ¬"; /* (build_stats.php) --  */
-$stats_head_downs="Ê®´óÈÈÃÅÏÂÔØ"; /* (build_stats.php) --  */
-$no_downloads="ÏÂÔØ´ÎÊı"; /* (build_stats.php) --  */
-$general_anon_download="ÓÎ¿ÍÏÂÔØ"; /* (build_genera_config.php) --  */
-$general_anon_download_info="<-- ÏÔÊ¾/Òş²Ø Í¼Æ¬ÏÂÔØÁ´½ÓµØÖ·"; /* (build_general_config.php) --  */
-$seach_multiple_select_use="¶àÑ¡ÇëÊ¹ÓÃ"; /* (search.php) --  */
+$pano_view="å…¨å±æ¨¡å¼"; /* (img_view.php) -- new [panorama view] href  */
+$close_win="å…³é—­çª—å£"; /* (various files) -- javascript close window */
+$nav_hint="è¯·ä½¿ç”¨é¼ æ ‡æˆ–æ–¹å‘é”®è¿›è¡Œæ“ä½œï¼"; /* (image_panorama_view.php) --  */
+$pano_view_of="å…¨å±æŸ¥çœ‹å›¾ç‰‡"; /* (image_panorama_view.php) -- header message */
+$php_basedir_check_msg="æ£€æµ‹ php æ˜¯å¦è®¾ç½®äº†open_basedir..."; /* (sec_stage_install.php) --  */
+$req_basedir_fail="å¦"; /* (sec_stage_install.php) -- YES, it\'s really just no/nein ;-) */
+$basedir_active_msg="ç³Ÿç³•ï¼Œæ‚¨çš„phpè®¾ç½®äº† open_basedir è·¯å¾„ \"open_basedir\". ï¼<br>"; /* (sec_stage_install.php) --  */
+//$basedir_active_msg1="+ LinPHA å°†ä¼šä½¿ç”¨ GD å‡½æ•°åº“æ¥åˆ›å»ºç¼©ç•¥å›¾ï¼Œä½†å¯èƒ½ä¼šæœ‰é—®é¢˜<br>"; /* (sec_stage_install.php) --  */
+$basedir_active_msg2="+ å¦‚æœå…è®¸ï¼Œè¯·ä¸è¦åœ¨ PHP.ini ä¸­è®¾ç½® \"open_basedir\""; /* (sec_stage_install.php) --  */
+//$gd_basedir_err="+ å¦‚æœå…è®¸ï¼Œè¯·ä¸è¦åœ¨ PHP.ini ä¸­è®¾ç½® \"open_basedir\" æˆ–æ˜¯é‡æ–°ç¼–è¯‘ PHP å¹¶åŠ ä¸Š GDå‡½æ•°åº“çš„æ”¯æŒ(--with-gd)"; /* (sec_stage_install.php) --  */
+$extract_tar_gz="è§£å‹ç¼© *.tar.gz æ¡£æ¡ˆæ–‡ä»¶ (UNIX)"; /* (index.php) -- filemanger upload select */
+$extract_tar_bz2="è§£å‹ç¼© *.tar.bz2 æ¡£æ¡ˆæ–‡ä»¶ (UNIX)"; /* (index.php) --  */
+$extract_gz="ä½¿ç”¨ gzip è§£å‹ç¼© (UNIX)"; /* (index.php) -- filemanger upload select */
+$extract_zip="ä½¿ç”¨ unzip è§£å‹ç¼© (UNIX)"; /* (index.php) -- filemanger upload select */
+$extract_winzip="ä½¿ç”¨ pkzip è§£å‹ç¼© (WINDOWS WINZIP)"; /* (index.php) -- filemanger upload select */
+$new_group_success_msg="! ç”¨æˆ·ç»„å·²å¢åŠ  !"; /* (admin.php) -- redirect message */
+$mod_group_success_msg="! ç”¨æˆ·ç»„å·²ä¿®æ”¹ !"; /* (admin.php) -- redirect message */
+$del_group_success_msg="! ç”¨æˆ·ç»„å·²åˆ é™¤ !"; /* (admin.php) -- redirect message */
+$mod_cat_success_msg="! åˆ†ç±»å·²ä¿®æ”¹ !"; /* (admin.php) -- redirect message */
+$del_cat_success_msg="! åˆ†ç±»å·²åˆ é™¤ !"; /* (admin.php) -- redirect message */
+$href_groups="ç‚¹å‡»æ–°å¢æˆ–ä¿®æ”¹ç”¨æˆ·ç»„"; /* (build_user_conf/build_folder_conf) -- href message to group management */
+$del_warning="è­¦å‘Šï¼šè¯·ç”¨æ‚¨çš„æ–°å¸å·è¿›è¡Œç™»å½•ï¼ï¼ï¼"; /* (build_user_conf.php) -- java popup to notify admin user */
+$href_to_folder_conf="è¿”å›ç›®å½•ç®¡ç†é¦–é¡µ"; /* (build_user_conf.php) -- navi href  */
+$href_to_user_conf="è¿”å›ç”¨æˆ·ç®¡ç†é¦–é¡µ"; /* (build_user_conf.php) -- navi href  */
+$header_new_group="æ–°å¢ç”¨æˆ·ç»„"; /* (build_user_conf.php) -- table header */
+$header_groupname="ç”¨æˆ·ç»„åç§°"; /* (build_user_conf.php) -- table header */
+$button_addgroup="æ–°å¢ç”¨æˆ·ç»„"; /* (build_user_conf.php) -- submit button */
+$header_mod_group="ä¿®æ”¹/åˆ é™¤ ç”¨æˆ·ç»„"; /* (build_user_conf.php) -- table header */
+$mod_group_header="ä¿®æ”¹ç”¨æˆ·ç»„"; /* (build_user_conf.php) -- table header */
+$del_group_header="åˆ é™¤ç”¨æˆ·ç»„"; /* (build_user_conf.php) -- table header */
+$search_to_short="æœç´¢å…³é”®å­—å¤ªçŸ­, æœ€å°‘2ä¸ªå­—ç¬¦!"; /* (search.php) --  */
+$general_thumb_size="ä¿®æ”¹ç¼©ç•¥å›¾å°ºå¯¸"; /* (build_general_conf.php) -- thumbsize stuff */
+$general_thumb_size_info="<-- è®¾ç½®ç¼©ç•¥å›¾æœ€å¤§å°ºå¯¸ï¼Œå•ä½ï¼šåƒç´ "; /* (build_general_conf.php) -- thumbsize stuff */
+//$general_thumb_border="ç¼©ç•¥å›¾è¾¹æ¡†"; /* (build_general_conf.php) -- thumb border stuff */
+//$general_thumb_border_info="<-- ä¸ºç¼©ç•¥å›¾åŠ ä¸Šè¾¹æ¡†"; /* (build_general_conf.php) -- thumb border stuff */
+$inst_thumbsize_header="è¯·é€‰æ‹©ç¼©ç•¥å›¾å¤§å°"; /* (third_stage_install.php) -- thumb size stuff */
+$inst_thumbborder_header="è¾¹æ¡†è®¾ç½®"; /* (third_stage_install.php) -- thumb border stuff */
+$inst_thumbborder_enable="å¼€å¯å›¾ç‰‡è¾¹æ¡†"; /* (third_stage_install.php) -- thumb border checkbox msg */
+$inst_thumbborder_disable="å…³é—­å›¾ç‰‡è¾¹æ¡†"; /* (third_stage_install.php) -- thumb border checkbox msg */
+$safemode_active_msg="ç³Ÿç³•ï¼Œæ‚¨çš„ PHP è¿è¡Œäºå®‰å…¨æ¨¡å¼ \"safe_mode\" ï¼<br />"; /* (sec_stage_install.php) --  */
+$safemode_active_msg2="+ å¦‚æœå…è®¸ï¼Œè¯·ä¸è¦åœ¨ PHP.ini ä¸­å¯ç”¨å®‰å…¨æ¨¡å¼ \"safe_mode\""; /* (sec_stage_install.php) --  */
+$general_anon_post="åŒ¿åå‘å¸ƒ"; /* (build_general_conf.php) --  */
+$general_anon_post_info="<-- å…è®¸åŒ¿åå‘è¡¨è¯„è®º"; /* (build_general_conf.php) --  */
+$stats_over_comment="è¯„è®ºæ•°"; /* (build_stats.php) --  */
+$top10_downs_href="åå¤§çƒ­é—¨ä¸‹è½½"; /* (build_stats.php) --  */
+$top10_views_href="åå¤§çƒ­é—¨å›¾ç‰‡"; /* (build_stats.php) --  */
+$stats_head_downs="åå¤§çƒ­é—¨ä¸‹è½½"; /* (build_stats.php) --  */
+$no_downloads="ä¸‹è½½æ¬¡æ•°"; /* (build_stats.php) --  */
+$general_anon_download="æ¸¸å®¢ä¸‹è½½"; /* (build_genera_config.php) --  */
+$general_anon_download_info="<-- æ˜¾ç¤º/éšè— å›¾ç‰‡ä¸‹è½½é“¾æ¥åœ°å€"; /* (build_general_config.php) --  */
+$seach_multiple_select_use="å¤šé€‰è¯·ä½¿ç”¨"; /* (search.php) --  */
 $search_and="AND"; /* (search.php) --  */
 $search_or="OR"; /* (search.php) --  */
-$search_categories="·ÖÀà"; /* (search.php) --  */
+$search_categories="åˆ†ç±»"; /* (search.php) --  */
 $search_with_available_filters="With available filters"; /* (search.php) --  */
-$search_select_album="Ñ¡ÔñÏà²á"; /* (search.php) --  */
-$search_date_from_to="ÈÕÆÚ ´Ó / µ½"; /* (search.php) --  */
+$search_select_album="é€‰æ‹©ç›¸å†Œ"; /* (search.php) --  */
+$search_date_from_to="æ—¥æœŸ ä» / åˆ°"; /* (search.php) --  */
 $search_combination_and_or="In combination with AND and OR"; /* (search.php) --  */
-$new_user_new_password="ĞÂÃÜÂë"; /* (build_user_conf.php) --  */
-$new_user_error4="ÓÃ»§Ãû²»ÄÜÎª¿Õ°×"; /* (admin.php) --  */
-$new_user_error5="ÓÃ»§ÃûÒÑ¾­´æÔÚ"; /* (admin.php) --  */
-$new_user_error1="¾ÉÃÜÂë²»ÕıÈ·"; /* (admin.php) --  */
-$new_user_error2="Á½´ÎÊäÈëµÄĞÂÃÜÂë²»Ò»ÖÂ"; /* (admin.php) --  */
-$new_user_error3="µç×ÓÓÊ¼ş²»ÕıÈ·"; /* (admin.php) --  */
-$new_user_old_password="¾ÉÃÜÂë"; /* (admin.php) --  */
-$new_user_retype_password="ÔÙ´ÎÊäÈëĞÂÃÜÂë"; /* (admin.php) --  */
-$select_db_header="ÇëÑ¡ÔñÊı¾İ¿âÀàĞÍ"; /* (sec_stage_install.php) --  */
-$mysql_info="Ê¹ÓÃ MySQL Êı¾İ¿âÇëÑ¡´ËÏî"; /* (sec_stage_install.php) --  */
-$postgres_info="Ê¹ÓÃ PostgreSQL Êı¾İ¿âÇëÑ¡´ËÏî¡£Çë¿´"; /* (sec_stage_install.php) -- reads: ...Please see info */
-$login_autologin="×Ô¶¯µÇÂ¼"; /* (toc.php) --  */
-$login_autologin_user="×Ô¶¯µÇÂ¼ÓÃ»§ĞÅÏ¢"; /* (toc.php) --  */
-$toc_timer="¼ÆÊ±Æ÷"; /* (toc.php) --  */
-$general_autologin="×Ô¶¯µÇÂ¼"; /* (build_general_conf.php) --  */
-$general_autologin_info="<-- ÆôÓÃ×Ô¶¯µÇÂ¼¹¦ÄÜ"; /* (build_general_conf.php) --  */
-$general_timer="¼ÆÊ±Æ÷"; /* (build_general_conf.php) --  */
-$general_timer_info="<-- ÔÚÒ³½ÅÏÔÊ¾Ò³ÃæÖ´ĞĞÊ±¼ä"; /* (build_general_conf.php) --  */
-$login_autlogin="×Ô¶¯µÇÂ¼"; /* (login.php) --  */
-$lostpw_title="Íü¼ÇÃÜÂë"; /* (login.php) --  */
-$lostpw_question="Íü¼ÇÁËÃÜÂë£¿"; /* (login.php) --  */
-$lostpw_type_user_or_email="ÊäÈëÄúµÄÓÃ»§Ãû»òµç×ÓÓÊ¼şµØÖ·"; /* (login.php) --  */
-$lostpw_email1="ÓĞÈËÊ¹ÓÃÁËÕÒ»ØÃÜÂë¹¦ÄÜ¡£Èç¹û²»ÊÇÄúµÄ»°£¬Äú¿ÉÒÔºöÂÔÕâ·âĞÅÏ¢¡£Èç¹ûÕâÊÇÄú·¢³öÀ´µÄÒªÇó£¬ÇëÊäÈëÒÔÏÂÃÜÂëµ½ĞèÒªµÄÏîÄ¿Àï£º"; /* (login.php) --  */
-$lostpw_email1_part2="(Çë×¢Òâ£ºÕâ²¢²»ÊÇÄúµÄĞÂÃÜÂë£¡)"; /* (login.php) --  */
-$lostpw_email1_part3="ÏµÍ³¹ÜÀíÔ±"; /* (login.php) --  */
-$lostpw_email_error="´íÎó£ºÓÊ¼şÎŞ·¨·¢ËÍ£¬ÇëÓë¹ÜÀíÔ±ÁªÏµ¡£"; /* (login.php) --  */
-$lostpw_error_nothing_found="±§Ç¸£¬Ã»ÓĞÓëÄúÊäÈëµÄ×ÊÁÏÏà·ûµÄÓÃ»§Ãû»òÃÜÂë¡£"; /* (login.php) --  */
-$lostpw_email_sent="ÄúµÄµç×ÓÓÊ¼şÒÑ¼Ä³ö¡£"; /* (login.php) --  */
-$lostpw_should_receive="ÉÔºóÄú½«ÊÕµ½Ò»·âµç×ÓÓÊ¼ş£¬ÇëÔÚÕâÀïÊäÈëÓÊ¼şÀïÌá¹©µÄÃÜÂë£º"; /* (login.php) --  */
-$lostpw_go_back="·µ»Ø"; /* (login.php) --  */
-$lostpw_email2="ÃÜÂëĞŞ¸Ä³É¹¦¡£ÄúµÄĞÂÃÜÂëÊÇ£º"; /* (login.php) --  */
-$lostpw_email2_part2="ÉÔºóÄú¿ÉÒÔÔÚ \"¸öÈËÉèÖÃ\" ÖĞ½øĞĞ¸ü¸Ä¡£"; /* (login.php) --  */
-$lostpw_new_password="ĞÂÃÜÂë"; /* (login.php) --  */
-$lostpw_successfully_changed="ÃÜÂëĞŞ¸Ä³É¹¦£¬ÉÔºóÄú½«ÊÕµ½°üº¬ĞÂÃÜÂëµÄµç×ÓÓÊ¼ş¡£"; /* (login.php) --  */
-$lostpw_error_wrong_code="±§Ç¸£¬ÊäÈë²»ÕıÈ·."; /* (login.php) --  */
-$lostpw_enter_correct_code="ÇëÊäÈëÕıÈ·µÄµç×ÓÓÊ¼şµØÖ·£º"; /* (login.php) --  */
-$lang_plugins['plugins']="LinPHA ²å¼ş"; /* (admin.php) --  */
-$lang_plugins['watermark']="Ë®Ó¡¹ÜÀí"; /* (admin.php, toc.php) --  */
-$lang_plugins['benchmark']="ÏµÍ³»ù×¼²âÊÔ"; /* (admin.php, toc.php) --  */
-$lang_plugins['sql']="Êı¾İ¿â¹ÜÀí"; /* (admin.php, toc.php) --  */
-$lang_plugins['active_plugins']="ÒÑÆôÓÃ²å¼ş"; /* (admin.php) --  */
-$lang_plugins['enabled']="ÆôÓÃ"; /* (plugins.php) --  */
-$lang_plugins['disabled']="½ûÓÃ"; /* (plugins.php) --  */
-$lang_plugins['update']="¸üĞÂ"; /* (plugins.php) --  */
-$lang_plugins['plugins_updated']="²å¼şÒÑ¸üĞÂ"; /* (admin.php, plugins.php) --  */
-$wm_wm_man="Ë®Ó¡¹ÜÀí "; /* (watermark.php) --  */
-$wm_disable="½ûÓÃË®Ó¡¹¦ÄÜ "; /* (watermark.php) --  */
-$wm_change_example_img="Ñ¡ÔñÊ¾ÀıÍ¼Æ¬"; /* (watermark.php) --  */
-$wm_no_input_files_found="ÊäÈëÎÄ¼ş²»´æÔÚ "; /* (watermark.php) --  */
-$wm_image_quality="Í¼Æ¬Æ·ÖÊ(½ö¹©Ô¤ÀÀÓÃ)"; /* (watermark.php) --  */
-$wm_enable_text="ÆôÓÃ£ºÎÄ×ÖË®Ó¡"; /* (watermark.php) --  */
-$wm_text="ÎÄ×Ö"; /* (watermark.php) --  */
-$wm_font="×ÖÌå"; /* (watermark.php) --  */
-$wm_fontsize="×ÖÌå´óĞ¡"; /* (watermark.php) --  */
-$wm_fontcolor="×ÖÌåÑÕÉ«"; /* (watermark.php) --  */
-$wm_align="Ë®Ó¡Î»ÖÃ"; /* (watermark.php) --  */
-$wm_pos_hor="Ë®Æ½Î»ÖÃ"; /* (watermark.php) --  */
-$wm_pos_ver="´¹Ö±Î»ÖÃ"; /* (watermark.php) --  */
-$wm_height="ÎÄ×ÖÇøÓò¸ß¶È"; /* (watermark.php) --  */
-$wm_width="ÎÄ×ÖÇøÓò¿í¶È"; /* (watermark.php) --  */
-$wm_shadow_size="ÒõÓ°´óĞ¡"; /* (watermark.php) --  */
-$wm_shadow_color="ÒõÓ°ÑÕÉ«"; /* (watermark.php) --  */
-$wm_enable_image="ÆôÓÃ£ºÍ¼Æ¬Ë®Ó¡"; /* (watermark.php) --  */
-$wm_available_images="¿ÉÓÃÍ¼Æ¬"; /* (watermark.php) --  */
-$wm_no_images_found="ÕÒ²»µ½Í¼Æ¬ÎÄ¼ş"; /* (watermark.php) --  */
-$wm_dissolve="Í¸Ã÷¶È"; /* (watermark.php) --  */
-$wm_preview="Ô¤ÀÀ"; /* (watermark.php) --  */
+$new_user_new_password="æ–°å¯†ç "; /* (build_user_conf.php) --  */
+$new_user_error4="ç”¨æˆ·åä¸èƒ½ä¸ºç©ºç™½"; /* (admin.php) --  */
+$new_user_error5="ç”¨æˆ·åå·²ç»å­˜åœ¨"; /* (admin.php) --  */
+$new_user_error1="æ—§å¯†ç ä¸æ­£ç¡®"; /* (admin.php) --  */
+$new_user_error2="ä¸¤æ¬¡è¾“å…¥çš„æ–°å¯†ç ä¸ä¸€è‡´"; /* (admin.php) --  */
+$new_user_error3="ç”µå­é‚®ä»¶ä¸æ­£ç¡®"; /* (admin.php) --  */
+$new_user_old_password="æ—§å¯†ç "; /* (admin.php) --  */
+$new_user_retype_password="å†æ¬¡è¾“å…¥æ–°å¯†ç "; /* (admin.php) --  */
+$select_db_header="è¯·é€‰æ‹©æ•°æ®åº“ç±»å‹"; /* (sec_stage_install.php) --  */
+$mysql_info="ä½¿ç”¨ MySQL æ•°æ®åº“è¯·é€‰æ­¤é¡¹"; /* (sec_stage_install.php) --  */
+$postgres_info="ä½¿ç”¨ PostgreSQL æ•°æ®åº“è¯·é€‰æ­¤é¡¹ã€‚è¯·çœ‹"; /* (sec_stage_install.php) -- reads: ...Please see info */
+$login_autologin="è‡ªåŠ¨ç™»å½•"; /* (toc.php) --  */
+$login_autologin_user="è‡ªåŠ¨ç™»å½•ç”¨æˆ·ä¿¡æ¯"; /* (toc.php) --  */
+$toc_timer="è®¡æ—¶å™¨"; /* (toc.php) --  */
+$general_autologin="è‡ªåŠ¨ç™»å½•"; /* (build_general_conf.php) --  */
+$general_autologin_info="<-- å¯ç”¨è‡ªåŠ¨ç™»å½•åŠŸèƒ½"; /* (build_general_conf.php) --  */
+$general_timer="è®¡æ—¶å™¨"; /* (build_general_conf.php) --  */
+$general_timer_info="<-- åœ¨é¡µè„šæ˜¾ç¤ºé¡µé¢æ‰§è¡Œæ—¶é—´"; /* (build_general_conf.php) --  */
+$login_autlogin="è‡ªåŠ¨ç™»å½•"; /* (login.php) --  */
+$lostpw_title="å¿˜è®°å¯†ç "; /* (login.php) --  */
+$lostpw_question="å¿˜è®°äº†å¯†ç ï¼Ÿ"; /* (login.php) --  */
+$lostpw_type_user_or_email="è¾“å…¥æ‚¨çš„ç”¨æˆ·åæˆ–ç”µå­é‚®ä»¶åœ°å€"; /* (login.php) --  */
+$lostpw_email1="æœ‰äººä½¿ç”¨äº†æ‰¾å›å¯†ç åŠŸèƒ½ã€‚å¦‚æœä¸æ˜¯æ‚¨çš„è¯ï¼Œæ‚¨å¯ä»¥å¿½ç•¥è¿™å°ä¿¡æ¯ã€‚å¦‚æœè¿™æ˜¯æ‚¨å‘å‡ºæ¥çš„è¦æ±‚ï¼Œè¯·è¾“å…¥ä»¥ä¸‹å¯†ç åˆ°éœ€è¦çš„é¡¹ç›®é‡Œï¼š"; /* (login.php) --  */
+$lostpw_email1_part2="(è¯·æ³¨æ„ï¼šè¿™å¹¶ä¸æ˜¯æ‚¨çš„æ–°å¯†ç ï¼)"; /* (login.php) --  */
+$lostpw_email1_part3="ç³»ç»Ÿç®¡ç†å‘˜"; /* (login.php) --  */
+$lostpw_email_error="é”™è¯¯ï¼šé‚®ä»¶æ— æ³•å‘é€ï¼Œè¯·ä¸ç®¡ç†å‘˜è”ç³»ã€‚"; /* (login.php) --  */
+$lostpw_error_nothing_found="æŠ±æ­‰ï¼Œæ²¡æœ‰ä¸æ‚¨è¾“å…¥çš„èµ„æ–™ç›¸ç¬¦çš„ç”¨æˆ·åæˆ–å¯†ç ã€‚"; /* (login.php) --  */
+$lostpw_email_sent="æ‚¨çš„ç”µå­é‚®ä»¶å·²å¯„å‡ºã€‚"; /* (login.php) --  */
+$lostpw_should_receive="ç¨åæ‚¨å°†æ”¶åˆ°ä¸€å°ç”µå­é‚®ä»¶ï¼Œè¯·åœ¨è¿™é‡Œè¾“å…¥é‚®ä»¶é‡Œæä¾›çš„å¯†ç ï¼š"; /* (login.php) --  */
+$lostpw_go_back="è¿”å›"; /* (login.php) --  */
+$lostpw_email2="å¯†ç ä¿®æ”¹æˆåŠŸã€‚æ‚¨çš„æ–°å¯†ç æ˜¯ï¼š"; /* (login.php) --  */
+$lostpw_email2_part2="ç¨åæ‚¨å¯ä»¥åœ¨ \"ä¸ªäººè®¾ç½®\" ä¸­è¿›è¡Œæ›´æ”¹ã€‚"; /* (login.php) --  */
+$lostpw_new_password="æ–°å¯†ç "; /* (login.php) --  */
+$lostpw_successfully_changed="å¯†ç ä¿®æ”¹æˆåŠŸï¼Œç¨åæ‚¨å°†æ”¶åˆ°åŒ…å«æ–°å¯†ç çš„ç”µå­é‚®ä»¶ã€‚"; /* (login.php) --  */
+$lostpw_error_wrong_code="æŠ±æ­‰ï¼Œè¾“å…¥ä¸æ­£ç¡®."; /* (login.php) --  */
+$lostpw_enter_correct_code="è¯·è¾“å…¥æ­£ç¡®çš„ç”µå­é‚®ä»¶åœ°å€ï¼š"; /* (login.php) --  */
+$lang_plugins['plugins']="LinPHA æ’ä»¶"; /* (admin.php) --  */
+$lang_plugins['watermark']="æ°´å°ç®¡ç†"; /* (admin.php, toc.php) --  */
+$lang_plugins['benchmark']="ç³»ç»ŸåŸºå‡†æµ‹è¯•"; /* (admin.php, toc.php) --  */
+$lang_plugins['sql']="æ•°æ®åº“ç®¡ç†"; /* (admin.php, toc.php) --  */
+$lang_plugins['active_plugins']="å·²å¯ç”¨æ’ä»¶"; /* (admin.php) --  */
+$lang_plugins['enabled']="å¯ç”¨"; /* (plugins.php) --  */
+$lang_plugins['disabled']="ç¦ç”¨"; /* (plugins.php) --  */
+$lang_plugins['update']="æ›´æ–°"; /* (plugins.php) --  */
+$lang_plugins['plugins_updated']="æ’ä»¶å·²æ›´æ–°"; /* (admin.php, plugins.php) --  */
+$wm_wm_man="æ°´å°ç®¡ç† "; /* (watermark.php) --  */
+$wm_disable="ç¦ç”¨æ°´å°åŠŸèƒ½ "; /* (watermark.php) --  */
+$wm_change_example_img="é€‰æ‹©ç¤ºä¾‹å›¾ç‰‡"; /* (watermark.php) --  */
+$wm_no_input_files_found="è¾“å…¥æ–‡ä»¶ä¸å­˜åœ¨ "; /* (watermark.php) --  */
+$wm_image_quality="å›¾ç‰‡å“è´¨(ä»…ä¾›é¢„è§ˆç”¨)"; /* (watermark.php) --  */
+$wm_enable_text="å¯ç”¨ï¼šæ–‡å­—æ°´å°"; /* (watermark.php) --  */
+$wm_text="æ–‡å­—"; /* (watermark.php) --  */
+$wm_font="å­—ä½“"; /* (watermark.php) --  */
+$wm_fontsize="å­—ä½“å¤§å°"; /* (watermark.php) --  */
+$wm_fontcolor="å­—ä½“é¢œè‰²"; /* (watermark.php) --  */
+$wm_align="æ°´å°ä½ç½®"; /* (watermark.php) --  */
+$wm_pos_hor="æ°´å¹³ä½ç½®"; /* (watermark.php) --  */
+$wm_pos_ver="å‚ç›´ä½ç½®"; /* (watermark.php) --  */
+$wm_height="æ–‡å­—åŒºåŸŸé«˜åº¦"; /* (watermark.php) --  */
+$wm_width="æ–‡å­—åŒºåŸŸå®½åº¦"; /* (watermark.php) --  */
+$wm_shadow_size="é˜´å½±å¤§å°"; /* (watermark.php) --  */
+$wm_shadow_color="é˜´å½±é¢œè‰²"; /* (watermark.php) --  */
+$wm_enable_image="å¯ç”¨ï¼šå›¾ç‰‡æ°´å°"; /* (watermark.php) --  */
+$wm_available_images="å¯ç”¨å›¾ç‰‡"; /* (watermark.php) --  */
+$wm_no_images_found="æ‰¾ä¸åˆ°å›¾ç‰‡æ–‡ä»¶"; /* (watermark.php) --  */
+$wm_dissolve="é€æ˜åº¦"; /* (watermark.php) --  */
+$wm_preview="é¢„è§ˆ"; /* (watermark.php) --  */
 $wm_linebreak="for linebreak"; /* (watermark.php) --  */
-$wm_enable_shadow="ÆôÓÃÎÄ×ÖÒõÓ°"; /* (watermark.php) --  */
-$wm_enable_rectangle="ÆôÓÃ¾ØĞÎ"; /* (watermark.php) --  */
-$wm_rectangle_color="ÑÕÉ«"; /* (watermark.php) --  */
-$wm_enable_ext_shadow="ÆôÓÃÑÓÉìÒõÓ°"; /* (watermark.php) --  */
-$wm_status="×´Ì¬"; /* (watermark.php) --  */
-$wm_enabled="ÆôÓÃ"; /* (watermark.php) --  */
-$wm_disabled="½ûÓÃ"; /* (watermark.php) --  */
-$wm_restore_to="»¹Ô­ÖÁ"; /* (watermark.php) --  */
-$wm_inital_settings="³õÊ¼Éè¶¨"; /* (watermark.php) --  */
-$wm_add_more_examples="Äú¿ÉÒÔÔÚ linpha ¶ÔÓ¦ÎÄ¼ş¼ĞÖĞÌí¼Ó¸ü¶àµÄÊ¾ÀıÍ¼Æ¬"; /* (watermark.php) --  */
-$wm_example="Ê¾Àı"; /* (watermark.php) --  */
-$wm_shadow_fontsize="ÒõÓ°×ÖÌå´óĞ¡"; /* (watermark.php) --  */
-$wm_settings_for_both="Í¼Æ¬ÓëÎÄ×ÖµÄÉèÖÃ"; /* (watermark.php) --  */
-$wm_center="¾ÓÖĞ"; /* (watermark.php) --  */
-$wm_north="¶¥²¿"; /* (watermark.php) --  */
-$wm_northeast="¶¥²¿¾ÓÓÒ"; /* (watermark.php) --  */
-$wm_northwest="¶¥²¿¾Ó×ó"; /* (watermark.php) --  */
-$wm_south="µ×²¿"; /* (watermark.php) --  */
-$wm_southeast="µ×²¿¾ÓÓÒ"; /* (watermark.php) --  */
-$wm_southwest="µ×²¿¾Ó×ó"; /* (watermark.php) --  */
-$wm_east="¾ÓÓÒ"; /* (watermark.php) --  */
-$wm_west="¾Ó×ó"; /* (watermark.php) --  */
-$bm_file_err="´íÎó£¬Ã»ÓĞÖ¸¶¨ÎÄ¼ş";
-$bm_var_err="´íÎó£¬Çë¼ì²éÊäÈë±äÁ¿";
-$bm_notfound_err="´íÎó£¬ÎÄ¼ş²»´æÔÚ";
-$bm_noimg_err="´íÎó£¬²»ÊÇÍ¼Æ¬ÎÄ¼ş";
-$bm_tmpfile_err="´íÎó£¬µ±Éú³ÉÁÙÊ±Í¼Æ¬ÎÄ¼şÊ±";
-$bm_tmpfile_warn="¾¯¸æ£ºÁÙÊ±Í¼Æ¬ÎÄ¼şÎŞ·¨É¾³ı";
-$bm_time_total="×Ü¹²Ö´ĞĞÊ±¼ä: ";
-$bm_img_sec="Ã¿ÃëÖÓÍ¼Æ¬Êı: ";
-$bm_avg_img="´¦ÀíÃ¿ÕÅÍ¼Æ¬Æ½¾ùÓÃÊ± (ÒÆ¶¯Êó±ê½«ÏÔÊ¾ÏàÓ¦µÄÍ¼Æ¬): ";
-$bm_qual_size="Æ·ÖÊ/´óĞ¡";
-$bm_quality="Æ·ÖÊ";
-$bm_height="¸ß¶È: ";
-$bm_width="¿í¶È: ";
-$bm_size="Í¼Æ¬´óĞ¡: ";
-$bm_create = "¶ÔËùÑ¡ÔñµÄ×ª»»¹¤¾ß½øĞĞ»ù×¼²âÊÔ";
-$bm_interval = "¼ä¸ô";
-$bm_calc = "¼ÆËãÁË";
-$bm_img = "ÕÅÍ¼Æ¬";
-$bm_inloop="Ñ­»·ÔËĞĞ";
-$bm_qual_range="Æ·ÖÊ·¶Î§: ";
-$bm_size_range="´óĞ¡·¶Î§(½öÖ¸¸ß¶È)";
-$bm_repeats="ÖØ¸´´ÎÊı: ";
-$bm_con_util="ÇëÑ¡Ôñ×ª»»¹¤¾ß£º";
-$bm_current_settings="µ±Ç°ÉèÖÃ"; /* (benchmark.php) --  */
-$bm_preview="Ô¤ÀÀ"; /* (benchmark.php) --  */
-$bm_save_settings="±£´æÉèÖÃ"; /* (benchmark.php) --  */
-$wm_addexamples="Ë®Ó¡£ºÌí¼Ó¸ü¶àÊ¾ÀıÍ¼Æ¬"; /* (watermark.php) --  */
-$wm_addimg="Ë®Ó¡£ºÌí¼Ó¸ü¶àÍ¼Æ¬Ë®Ó¡"; /* (watermark.php) --  */
-$wm_addfont="Ë®Ó¡£ºÌí¼Ó¸ü¶à×ÖÌå"; /* (watermark.php) --  */
-$wm_colorsetting="Ë®Ó¡: ÑÕÉ«ÉèÖÃ"; /* (watermark.php) --  */
-$comment_hint="ÌáÊ¾£ºµã»÷ÉÏ·½»òÏÂ·½Í¼Æ¬ÄÜÊ¹Ïà²á¹ö¶¯"; /* (linpha_comments.php) --  */
-$comment_end="Ïà²áÖĞÃ»ÓĞÍ¼Æ¬"; /* (linpha_comments.php) --  */
-$comment_beginning="Ã»ÓĞÇ°Ò»ÕÅÍ¼Æ¬"; /* (linpha_comments.php) --  */
-$comment_back="·µ»ØÍ¼Æ¬ÏÔÊ¾"; /* (linpha_comments.php) --  */
-$comment_edit_img="±à¼­ ·ÖÀà/ÆÀÂÛ"; /* (linpha_comments.php) --  */
-$comment_change_img_details="ĞŞ¸ÄÍ¼Æ¬µÄÏêÏ¸ËµÃ÷"; /* (linpha_comments.php) --  */
-$comment_last_comments="×îĞÂÆÀÂÛ"; /* (linpha_comments.php) --  */
-$comment_comment_by="ÆÀÂÛÈË"; /* (linpha_comments.php) --  */
-$category_delete_warning="¾¯¸æ£º·ÖÀàÒÑ´æÔÚ£¬ÖØ¸´Ö¸¶¨½«»áÊ§È¥Í¼Æ¬"; /* (build_category_conf.php) --  */
-$pass_2_short="´íÎó£¬ÃÜÂë³¤¶È×îÉÙÒª3Î»..."; /* (various) --  */
-$album_edit="±à¼­Ïà²á¼ò½é"; /* (linpha_comments.php) --  */
-$album_details="Ïà²áµÄÏêÏ¸ËµÃ÷"; /* (linpha_comments.php) --  */
-$wm_save_note="×¢Òâ£º×¢²áÓÃ»§½«¿´²»µ½Ë®Ó¡Ğ§¹û£¡Äú±ØĞëÍË³öµÇÂ¼£¨³ÉÎª·Ã¿Í£©ÔÙ½øĞĞä¯ÀÀ²ÅÄÜ¿´µ½Ë®Ó¡Ğ§¹û£¡"; /* (watermark.php) --  */
-$lang_plugins['guestbook']="ÁôÑÔ±¾"; /* (admin.php) --  */
-$print_low_quality="µÍÆ·ÖÊ"; /* (printing_view.php) --  */
-$print_high_quality="¸ßÆ·ÖÊ (ºÜÂı£¡)"; /* (printing_view.php) --  */
-$gb_title="LinPHA ÁôÑÔ±¾";
-$gb_sign="·¢±íÁôÑÔ";
-$gb_from="À´×Ô";
-$gb_from_no="Î´Ìá¹©À´×ÔºÎ´¦";
-$gb_pages="Ò³";
-$gb_messages="ÌõÁôÑÔ";
-$gb_msg_error="±§Ç¸£¬ĞÕÃûÓëÁôÑÔ²»¿ÉÒÔÎª¿Õ°×";
-$gb_new_msg="ÎÒÒªÁôÑÔ";
-$gb_name="ĞÕÃû";
+$wm_enable_shadow="å¯ç”¨æ–‡å­—é˜´å½±"; /* (watermark.php) --  */
+$wm_enable_rectangle="å¯ç”¨çŸ©å½¢"; /* (watermark.php) --  */
+$wm_rectangle_color="é¢œè‰²"; /* (watermark.php) --  */
+$wm_enable_ext_shadow="å¯ç”¨å»¶ä¼¸é˜´å½±"; /* (watermark.php) --  */
+$wm_status="çŠ¶æ€"; /* (watermark.php) --  */
+$wm_enabled="å¯ç”¨"; /* (watermark.php) --  */
+$wm_disabled="ç¦ç”¨"; /* (watermark.php) --  */
+$wm_restore_to="è¿˜åŸè‡³"; /* (watermark.php) --  */
+$wm_inital_settings="åˆå§‹è®¾å®š"; /* (watermark.php) --  */
+$wm_add_more_examples="æ‚¨å¯ä»¥åœ¨ linpha å¯¹åº”æ–‡ä»¶å¤¹ä¸­æ·»åŠ æ›´å¤šçš„ç¤ºä¾‹å›¾ç‰‡"; /* (watermark.php) --  */
+$wm_example="ç¤ºä¾‹"; /* (watermark.php) --  */
+$wm_shadow_fontsize="é˜´å½±å­—ä½“å¤§å°"; /* (watermark.php) --  */
+$wm_settings_for_both="å›¾ç‰‡ä¸æ–‡å­—çš„è®¾ç½®"; /* (watermark.php) --  */
+$wm_center="å±…ä¸­"; /* (watermark.php) --  */
+$wm_north="é¡¶éƒ¨"; /* (watermark.php) --  */
+$wm_northeast="é¡¶éƒ¨å±…å³"; /* (watermark.php) --  */
+$wm_northwest="é¡¶éƒ¨å±…å·¦"; /* (watermark.php) --  */
+$wm_south="åº•éƒ¨"; /* (watermark.php) --  */
+$wm_southeast="åº•éƒ¨å±…å³"; /* (watermark.php) --  */
+$wm_southwest="åº•éƒ¨å±…å·¦"; /* (watermark.php) --  */
+$wm_east="å±…å³"; /* (watermark.php) --  */
+$wm_west="å±…å·¦"; /* (watermark.php) --  */
+$bm_file_err="é”™è¯¯ï¼Œæ²¡æœ‰æŒ‡å®šæ–‡ä»¶";
+$bm_var_err="é”™è¯¯ï¼Œè¯·æ£€æŸ¥è¾“å…¥å˜é‡";
+$bm_notfound_err="é”™è¯¯ï¼Œæ–‡ä»¶ä¸å­˜åœ¨";
+$bm_noimg_err="é”™è¯¯ï¼Œä¸æ˜¯å›¾ç‰‡æ–‡ä»¶";
+$bm_tmpfile_err="é”™è¯¯ï¼Œå½“ç”Ÿæˆä¸´æ—¶å›¾ç‰‡æ–‡ä»¶æ—¶";
+$bm_tmpfile_warn="è­¦å‘Šï¼šä¸´æ—¶å›¾ç‰‡æ–‡ä»¶æ— æ³•åˆ é™¤";
+$bm_time_total="æ€»å…±æ‰§è¡Œæ—¶é—´: ";
+$bm_img_sec="æ¯ç§’é’Ÿå›¾ç‰‡æ•°: ";
+$bm_avg_img="å¤„ç†æ¯å¼ å›¾ç‰‡å¹³å‡ç”¨æ—¶ (ç§»åŠ¨é¼ æ ‡å°†æ˜¾ç¤ºç›¸åº”çš„å›¾ç‰‡): ";
+$bm_qual_size="å“è´¨/å¤§å°";
+$bm_quality="å“è´¨";
+$bm_height="é«˜åº¦: ";
+$bm_width="å®½åº¦: ";
+$bm_size="å›¾ç‰‡å¤§å°: ";
+$bm_create = "å¯¹æ‰€é€‰æ‹©çš„è½¬æ¢å·¥å…·è¿›è¡ŒåŸºå‡†æµ‹è¯•";
+$bm_interval = "é—´éš”";
+$bm_calc = "è®¡ç®—äº†";
+$bm_img = "å¼ å›¾ç‰‡";
+$bm_inloop="å¾ªç¯è¿è¡Œ";
+$bm_qual_range="å“è´¨èŒƒå›´: ";
+$bm_size_range="å¤§å°èŒƒå›´(ä»…æŒ‡é«˜åº¦)";
+$bm_repeats="é‡å¤æ¬¡æ•°: ";
+$bm_con_util="è¯·é€‰æ‹©è½¬æ¢å·¥å…·ï¼š";
+$bm_current_settings="å½“å‰è®¾ç½®"; /* (benchmark.php) --  */
+$bm_preview="é¢„è§ˆ"; /* (benchmark.php) --  */
+$bm_save_settings="ä¿å­˜è®¾ç½®"; /* (benchmark.php) --  */
+$wm_addexamples="æ°´å°ï¼šæ·»åŠ æ›´å¤šç¤ºä¾‹å›¾ç‰‡"; /* (watermark.php) --  */
+$wm_addimg="æ°´å°ï¼šæ·»åŠ æ›´å¤šå›¾ç‰‡æ°´å°"; /* (watermark.php) --  */
+$wm_addfont="æ°´å°ï¼šæ·»åŠ æ›´å¤šå­—ä½“"; /* (watermark.php) --  */
+$wm_colorsetting="æ°´å°: é¢œè‰²è®¾ç½®"; /* (watermark.php) --  */
+$comment_hint="æç¤ºï¼šç‚¹å‡»ä¸Šæ–¹æˆ–ä¸‹æ–¹å›¾ç‰‡èƒ½ä½¿ç›¸å†Œæ»šåŠ¨"; /* (linpha_comments.php) --  */
+$comment_end="ç›¸å†Œä¸­æ²¡æœ‰å›¾ç‰‡"; /* (linpha_comments.php) --  */
+$comment_beginning="æ²¡æœ‰å‰ä¸€å¼ å›¾ç‰‡"; /* (linpha_comments.php) --  */
+$comment_back="è¿”å›å›¾ç‰‡æ˜¾ç¤º"; /* (linpha_comments.php) --  */
+$comment_edit_img="ç¼–è¾‘ åˆ†ç±»/è¯„è®º"; /* (linpha_comments.php) --  */
+$comment_change_img_details="ä¿®æ”¹å›¾ç‰‡çš„è¯¦ç»†è¯´æ˜"; /* (linpha_comments.php) --  */
+$comment_last_comments="æœ€æ–°è¯„è®º"; /* (linpha_comments.php) --  */
+$comment_comment_by="è¯„è®ºäºº"; /* (linpha_comments.php) --  */
+$category_delete_warning="è­¦å‘Šï¼šåˆ†ç±»å·²å­˜åœ¨ï¼Œé‡å¤æŒ‡å®šå°†ä¼šå¤±å»å›¾ç‰‡"; /* (build_category_conf.php) --  */
+$pass_2_short="é”™è¯¯ï¼Œå¯†ç é•¿åº¦æœ€å°‘è¦3ä½..."; /* (various) --  */
+$album_edit="ç¼–è¾‘ç›¸å†Œç®€ä»‹"; /* (linpha_comments.php) --  */
+$album_details="ç›¸å†Œçš„è¯¦ç»†è¯´æ˜"; /* (linpha_comments.php) --  */
+$wm_save_note="æ³¨æ„ï¼šæ³¨å†Œç”¨æˆ·å°†çœ‹ä¸åˆ°æ°´å°æ•ˆæœï¼æ‚¨å¿…é¡»é€€å‡ºç™»å½•ï¼ˆæˆä¸ºè®¿å®¢ï¼‰å†è¿›è¡Œæµè§ˆæ‰èƒ½çœ‹åˆ°æ°´å°æ•ˆæœï¼"; /* (watermark.php) --  */
+$lang_plugins['guestbook']="ç•™è¨€æœ¬"; /* (admin.php) --  */
+$print_low_quality="ä½å“è´¨"; /* (printing_view.php) --  */
+$print_high_quality="é«˜å“è´¨ (å¾ˆæ…¢ï¼)"; /* (printing_view.php) --  */
+$gb_title="LinPHA ç•™è¨€æœ¬";
+$gb_sign="å‘è¡¨ç•™è¨€";
+$gb_from="æ¥è‡ª";
+$gb_from_no="æœªæä¾›æ¥è‡ªä½•å¤„";
+$gb_pages="é¡µ";
+$gb_messages="æ¡ç•™è¨€";
+$gb_msg_error="æŠ±æ­‰ï¼Œå§“åä¸ç•™è¨€ä¸å¯ä»¥ä¸ºç©ºç™½";
+$gb_new_msg="æˆ‘è¦ç•™è¨€";
+$gb_name="å§“å";
 $gb_email="Email";
-$gb_hp="Ö÷Ò³";
-$gb_country="À´×Ô(¹ú¼Ò)";
-$gb_header="LinPHA ÁôÑÔ±¾";
-$gb_opts="ÁôÑÔ±¾Ñ¡Ïî";
-$gb_rows="Ã¿Ò³ÁôÑÔÊı";
-$gb_anon="ÔÊĞíÄäÃûÓÃ»§ÁôÑÔ";
-$gb_order="ÏÔÊ¾Ë³Ğò";
-$wm_resize="Ë®Ó¡Ê¼ÖÕÒÔÍ¼Æ¬´óĞ¡±ÈÀıÏÔÊ¾"; /* (watermark.php) --  */
-$wm_help_and_descr="°ïÖúÓëËµÃ÷"; /* (watermark.php) --  */
-$folder_remove_hint="Èç¹ûÒ»ÇĞ¶¼Ã»ÓĞÎÊÌâ£¬³öÓÚ°²È«¿¼ÂÇÄúÏÖÔÚ¿ÉÒÔÉ¾³ı /install ÎÄ¼ş¼Ğ¡£"; /* (forth_stage_install.php) --  */
-$add_alb_com="Ìí¼ÓÏà²á¼ò½é"; /* (img_view.php) --  */
-$add_img_com="¶ÔÍ¼Æ¬·¢±íÆÀÂÛ"; /* (img_view.php) --  */
-$album_com="Ïà²á¼ò½é"; /* (*_stage_album.php) --  */
-$formatting_possibilities="HTML ¸ñÊ½±êÇ©"; /* (various) --  */
-$stat_cache_elements="ÒÑ»º´æÏîÄ¿"; /* (build_stats.php) --  */
-$stat_cache_first="ĞÂ»º´æÏîÄ¿"; /* (build_stats.php) --  */
-$stat_cache_hits="»º´æÇëÇó"; /* (build_stats.php) --  */
-$stat_cache_hits_max="×î¸ß»º´æÇëÇóÁ¿ (µ¥Ò»Í¼Æ¬)"; /* (build_stats.php) --  */
-$stat_cache_hits_avg="Æ½¾ù»º´æÇëÇóÁ¿ (ËùÓĞÍ¼Æ¬)"; /* (build_stats.php) --  */
-$stat_cache_size="»º´æ´óĞ¡"; /* (build_stats.php) --  */
-$stat_cache_convert_time="»º´æ¼ÓËÙÊ±¼ä"; /* (build_stats.php) --  */
-$stat_cache_size="»º´æÒÑÊ¹ÓÃ¿Õ¼ä"; /* (build_stats.php) --  */
-$cache_options="Í¼Æ¬»º´æÑ¡Ïî";
-$cache_max_size="×î´ó»º´æÏŞÖÆ£¬µ¥Î»£ºbytes (0 = ÎŞÏŞÖÆ)";
-$path_2_cache="»º´æÄ¿Â¼ (Ä¬ÈÏÎª sql/cache)";
-$cache_optimize="ÓÅ»¯/ÇåÀí Í¼Æ¬»º´æÊı¾İ"; 
-$cache_maintain="Í¼Æ¬»º´æÎ¬»¤";
-$cache_opt_msg="!! »º´æÒÑ¾­ÓÅ»¯ !!";
-$lang_plugins['cache']="Í¼Æ¬»º´æ"; /* () --  */
-$stat_cache_title="Í¼Æ¬»º´æÍ³¼Æ"; /* (cache.php) --  */
-$bm_saved="ÉèÖÃÒÑ±£´æ"; /* (admin.php) --  */
-$cache_optimize_by_size="É¾³ıËùÓĞ´óÓÚµÈÓÚÖ¸¶¨´óĞ¡µÄ»º´æÏîÄ¿ (µ¥Î»£ºkb)"; /* (cache.php) --  */
-$cache_optimize_by_date="É¾³ıËùÓĞÖ¸¶¨ÌìÊıÖ®ÄÚÎ´Ê¹ÓÃµÄ»º´æÏîÄ¿£º"; /* (cache.php) --  */
-$elements_rem="ÏîÄ¿ÒÑÉ¾³ı"; /* (cache.php) --  */
-$general_anon_album_downs="ÔÊĞí/½ûÖ¹ ÄäÃûÑ¹ËõÏà²áÏÂÔØ"; /* (build_general_conf.php) --  */
-$general_anon_album_downs_info="<-- ÔÊĞíÄäÃûÓÃ»§ÏÂÔØÑ¹ËõµÄÏà²á"; /* (build_general_conf.php) --  */
-$general_download_speed="ÏÂÔØËÙ¶ÈÏŞÖÆ kb/sec (0=ÎŞÏŞÖÆ)"; /* (build_general_conf.php) --  */
-$general_download_speed_info="<-- ÉèÖÃÍ¼Æ¬ÏÂÔØµÄËÙ¶ÈÏŞÖÆ"; /* (build_general_conf.php) --  */
-$general_navigation="µ¼º½À¸"; /* (build_general_conf.php) --  */
-$general_navigation_info="<-- ÔÚËõÂÔÍ¼Ò³ÃæÆôÓÃµ¼º½À¸"; /* (build_general_conf.php) --  */
-$toc_navigation="µ¼º½À¸"; /* (doc/) --  */
-$toc_zip_download="ÄäÃûÓÃ»§ÏÂÔØÏà²á"; /* (doc/) --  */
-$toc_albdownlimit="ÏÂÔØËÙ¶ÈÏŞÖÆ"; /* (doc/) --  */
-$choose_zips_msg="Ñ¡ÔñÒªÏÂÔØµÄÍ¼Æ¬"; /* (build_zip_view.php) --  */
-$zip_button="ÏÂÔØÑ¹ËõÎÄ¼ş"; /* (build_zip_view.php) --  */
-$type_of_archive="Ñ¡ÔñÏÂÔØÎÄ¼şÀàĞÍ"; /* (build_zip_view.php) --  */
-$create_tar="Éú³É tar ÎÄ¼ş"; /* (build_zip_view.php) --  */
-$create_tgz="Éú³É tar.gz ÎÄ¼ş"; /* (build_zip_view.php) --  */
-$create_bz2="Éú³É tar.bz2 ÎÄ¼ş"; /* (build_zip_view.php) --  */
-$create_zip="Éú³É zip ÎÄ¼ş"; /* (build_zip_view.php) --  */
-$create_rar="Éú³É rar ÎÄ¼ş"; /* (build_zip_view.php) --  */
-$menumsg['advanced']="¸ß¼¶¹¦ÄÜÑ¡Ïî"; /* () --  */
-$menumsg['printmode']="´òÓ¡Ä£Ê½"; /* () --  */
-$menumsg['printprobs']="¹Ø±Õ´òÓ¡?"; /* () --  */
-$menumsg['downloadmode']="ÏÂÔØÄ£Ê½"; /* () --  */
-$menumsg['mailmode']="ÓÊ¼ÄÄ£Ê½"; /* () --  */
-$menumsg['addcomment']="Ìí¼ÓÏà²á¼ò½é"; /* () --  */
-$menumsg['delcomment']="É¾³ıÏà²á¼ò½é"; /* () --  */
-$menumsg['editcomment']="±à¼­Ïà²á¼ò½é"; /* () --  */
-$album_up="ÒÑ¸üĞÂ"; /* (album_comment.php) --  */
-$album_ins="ÒÑ²åÈë"; /* (album_comment.php) --  */
-$mail_link="ÓÊ¼şÁĞ±í"; /* (header.php) --  */
-$mail_title="LinPHA ÓÊ¼şÁĞ±í"; /* (mail.php) --  */
-$mail_send_link="·¢ËÍÓÊ¼ş"; /* (mail.php) --  */
-$mail_return_address="¼ÄĞÅÈË£º"; /* (mail.php) --  */
-$mail_block="ÓÊ¼ş×é´óĞ¡£º"; /* (mail.php) --  */
-$mail_block_help="# Ã¿´Î·¢ËÍÓÊ¼şµÄÊıÁ¿£¬ÒÔ±ÜÃâPHPµÄ³¬Ê±¡£"; /* (mail.php) --  */
-$mail_options="ÓÊ¼şÁĞ±íÑ¡Ïî"; /* (mail.php) --  */
-$mail_go_back="·µ»Ø"; /* (various mail plugin files) --  */
-$mail_form_title="ÓÊ¼şĞÅÏ¢"; /* (mail_form.php) --  */
-$mail_form_subject="Ö÷Ìâ:"; /* (mail_form.php) --  */
-$mail_form_msg="ÕıÎÄ£º"; /* (mail_form.php) --  */
-$mail_total_sent="ÒÑ·¢ËÍÓÊ¼ş£º"; /* (mail_form.php) --  */
-$mail_subscribe="¶©ÔÄ"; /* (mail_users.php) --  */
-$mail_unsubscribe="ÍË¶©"; /* (mail_users.php) --  */
-$mail_activate="¼¤»î"; /* (mail_users.php) --  */
-$mail_user_name="ÄúµÄĞÕÃû£º"; /* (mail_users.php) --  */
-$mail_user_email="ÄúµÄµç×ÓÓÊ¼ş:"; /* (mail_users.php) --  */
-$mail_user_email_confirm="È·ÈÏÓÊ¼ş£º"; /* (mail_users.php) --  */
-$mail_user_code="¼¤»îÂë:"; /* (mail_users.php) --  */
-$mail_user_code_sent="Ò»·â´øÓĞ¼¤»îÂëµÄÓÊ¼şÒÑ¾­·¢ÍùÄúµÄĞÅÏä¡£"; /* (mail_users.php) --  */
-$mail_user_code_subject="LinPHA ÓÊ¼şÁĞ±í¼¤»î"; /* (mail_users.php) --  */
-$mail_user_activated="ÄúµÄÕË»§ÒÑ¾­¼¤»î£¡"; /* (mail_users.php) --  */
-$mail_user_activate_error="¼¤»îÄúµÄÕÊºÅÊ±·¢ÉúÒ»¸ö´íÎó£¡"; /* (mail_users.php) --  */
-$mail_user_email_not_found="²¢²»´æÔÚÓÚÎÒÃÇµÄÓÊ¼şÁĞ±íÖĞ."; /* (mail_users.php) --  */
-$mail_user_remove_ok="ÒÑ¾­´ÓÎÒÃÇµÄÓÊ¼şÁĞ±íÖĞÉ¾³ı."; /* (mail_users.php) --  */
-$mail_user_remove_fail="ÎŞ·¨´ÓÎÒÃÇµÄÓÊ¼şÁĞ±íÖĞÉ¾³ı."; /* (mail_users.php) --  */
-$mail_user_empty="ÇëÌîĞ´ËùÓĞÏîÄ¿."; /* () --  */
-$mail_user_no_match="µç×ÓÓÊ¼ş²»·û."; /* () --  */
-$mail_user_exists="µç×ÓÓÊ¼şÒÑ´æÔÚÓÚÎÒÃÇµÄÓÊ¼şÁĞ±í."; /* (mail_users.php) --  */
-$lang_plugins['mail']="ÓÊ¼şÁĞ±í"; /* (admin.php) --  */
-$mail_activate_message="×ğ¾´µÄ %s,\n\nÇëÊäÈëÒÔÏÂĞÅÏ¢¼¤»îÄãµÄÓÊ¼şÁĞ±íÕË»§.\n\n¼¤»îÂë: %s\n\nĞ»Ğ»!\n¹ÜÀíÔ±"; /* (submit_users.php) -- dont delete the %s and the \n ! */
-$mail_hint="ÌáÊ¾"; /* (mail.php) --  */
-$mail_user_permission="'mail' ×éÖĞµÄËùÓĞÓÃ»§¶¼¿ÉÒÔ·¢ËÍĞÅÏ¢µ½ÓÊ¼şÁĞ±í¡£"; /* (mail.php) --  */
-$mail_current_subscribers="µ±Ç°¶©ÔÄÓÃ»§"; /* (mail.php) --  */
-$mail_name="Ãû³Æ"; /* (mail.php) --  */
+$gb_hp="ä¸»é¡µ";
+$gb_country="æ¥è‡ª(å›½å®¶)";
+$gb_header="LinPHA ç•™è¨€æœ¬";
+$gb_opts="ç•™è¨€æœ¬é€‰é¡¹";
+$gb_rows="æ¯é¡µç•™è¨€æ•°";
+$gb_anon="å…è®¸åŒ¿åç”¨æˆ·ç•™è¨€";
+$gb_order="æ˜¾ç¤ºé¡ºåº";
+$wm_resize="æ°´å°å§‹ç»ˆä»¥å›¾ç‰‡å¤§å°æ¯”ä¾‹æ˜¾ç¤º"; /* (watermark.php) --  */
+$wm_help_and_descr="å¸®åŠ©ä¸è¯´æ˜"; /* (watermark.php) --  */
+$folder_remove_hint="å¦‚æœä¸€åˆ‡éƒ½æ²¡æœ‰é—®é¢˜ï¼Œå‡ºäºå®‰å…¨è€ƒè™‘æ‚¨ç°åœ¨å¯ä»¥åˆ é™¤ /install æ–‡ä»¶å¤¹ã€‚"; /* (forth_stage_install.php) --  */
+$add_alb_com="æ·»åŠ ç›¸å†Œç®€ä»‹"; /* (img_view.php) --  */
+$add_img_com="å¯¹å›¾ç‰‡å‘è¡¨è¯„è®º"; /* (img_view.php) --  */
+$album_com="ç›¸å†Œç®€ä»‹"; /* (*_stage_album.php) --  */
+$formatting_possibilities="HTML æ ¼å¼æ ‡ç­¾"; /* (various) --  */
+$stat_cache_elements="å·²ç¼“å­˜é¡¹ç›®"; /* (build_stats.php) --  */
+$stat_cache_first="æ–°ç¼“å­˜é¡¹ç›®"; /* (build_stats.php) --  */
+$stat_cache_hits="ç¼“å­˜è¯·æ±‚"; /* (build_stats.php) --  */
+$stat_cache_hits_max="æœ€é«˜ç¼“å­˜è¯·æ±‚é‡ (å•ä¸€å›¾ç‰‡)"; /* (build_stats.php) --  */
+$stat_cache_hits_avg="å¹³å‡ç¼“å­˜è¯·æ±‚é‡ (æ‰€æœ‰å›¾ç‰‡)"; /* (build_stats.php) --  */
+$stat_cache_size="ç¼“å­˜å¤§å°"; /* (build_stats.php) --  */
+$stat_cache_convert_time="ç¼“å­˜åŠ é€Ÿæ—¶é—´"; /* (build_stats.php) --  */
+$stat_cache_size="ç¼“å­˜å·²ä½¿ç”¨ç©ºé—´"; /* (build_stats.php) --  */
+$cache_options="å›¾ç‰‡ç¼“å­˜é€‰é¡¹";
+$cache_max_size="æœ€å¤§ç¼“å­˜é™åˆ¶ï¼Œå•ä½ï¼šbytes (0 = æ— é™åˆ¶)";
+$path_2_cache="ç¼“å­˜ç›®å½• (é»˜è®¤ä¸º sql/cache)";
+$cache_optimize="ä¼˜åŒ–/æ¸…ç† å›¾ç‰‡ç¼“å­˜æ•°æ®"; 
+$cache_maintain="å›¾ç‰‡ç¼“å­˜ç»´æŠ¤";
+$cache_opt_msg="!! ç¼“å­˜å·²ç»ä¼˜åŒ– !!";
+$lang_plugins['cache']="å›¾ç‰‡ç¼“å­˜"; /* () --  */
+$stat_cache_title="å›¾ç‰‡ç¼“å­˜ç»Ÿè®¡"; /* (cache.php) --  */
+$bm_saved="è®¾ç½®å·²ä¿å­˜"; /* (admin.php) --  */
+$cache_optimize_by_size="åˆ é™¤æ‰€æœ‰å¤§äºç­‰äºæŒ‡å®šå¤§å°çš„ç¼“å­˜é¡¹ç›® (å•ä½ï¼škb)"; /* (cache.php) --  */
+$cache_optimize_by_date="åˆ é™¤æ‰€æœ‰æŒ‡å®šå¤©æ•°ä¹‹å†…æœªä½¿ç”¨çš„ç¼“å­˜é¡¹ç›®ï¼š"; /* (cache.php) --  */
+$elements_rem="é¡¹ç›®å·²åˆ é™¤"; /* (cache.php) --  */
+$general_anon_album_downs="å…è®¸/ç¦æ­¢ åŒ¿åå‹ç¼©ç›¸å†Œä¸‹è½½"; /* (build_general_conf.php) --  */
+$general_anon_album_downs_info="<-- å…è®¸åŒ¿åç”¨æˆ·ä¸‹è½½å‹ç¼©çš„ç›¸å†Œ"; /* (build_general_conf.php) --  */
+$general_download_speed="ä¸‹è½½é€Ÿåº¦é™åˆ¶ kb/sec (0=æ— é™åˆ¶)"; /* (build_general_conf.php) --  */
+$general_download_speed_info="<-- è®¾ç½®å›¾ç‰‡ä¸‹è½½çš„é€Ÿåº¦é™åˆ¶"; /* (build_general_conf.php) --  */
+$general_navigation="å¯¼èˆªæ "; /* (build_general_conf.php) --  */
+$general_navigation_info="<-- åœ¨ç¼©ç•¥å›¾é¡µé¢å¯ç”¨å¯¼èˆªæ "; /* (build_general_conf.php) --  */
+$toc_navigation="å¯¼èˆªæ "; /* (doc/) --  */
+$toc_zip_download="åŒ¿åç”¨æˆ·ä¸‹è½½ç›¸å†Œ"; /* (doc/) --  */
+$toc_albdownlimit="ä¸‹è½½é€Ÿåº¦é™åˆ¶"; /* (doc/) --  */
+$choose_zips_msg="é€‰æ‹©è¦ä¸‹è½½çš„å›¾ç‰‡"; /* (build_zip_view.php) --  */
+$zip_button="ä¸‹è½½å‹ç¼©æ–‡ä»¶"; /* (build_zip_view.php) --  */
+$type_of_archive="é€‰æ‹©ä¸‹è½½æ–‡ä»¶ç±»å‹"; /* (build_zip_view.php) --  */
+$create_tar="ç”Ÿæˆ tar æ–‡ä»¶"; /* (build_zip_view.php) --  */
+$create_tgz="ç”Ÿæˆ tar.gz æ–‡ä»¶"; /* (build_zip_view.php) --  */
+$create_bz2="ç”Ÿæˆ tar.bz2 æ–‡ä»¶"; /* (build_zip_view.php) --  */
+$create_zip="ç”Ÿæˆ zip æ–‡ä»¶"; /* (build_zip_view.php) --  */
+$create_rar="ç”Ÿæˆ rar æ–‡ä»¶"; /* (build_zip_view.php) --  */
+$menumsg['advanced']="é«˜çº§åŠŸèƒ½é€‰é¡¹"; /* () --  */
+$menumsg['printmode']="æ‰“å°æ¨¡å¼"; /* () --  */
+$menumsg['printprobs']="å…³é—­æ‰“å°?"; /* () --  */
+$menumsg['downloadmode']="ä¸‹è½½æ¨¡å¼"; /* () --  */
+$menumsg['mailmode']="é‚®å¯„æ¨¡å¼"; /* () --  */
+$menumsg['addcomment']="æ·»åŠ ç›¸å†Œç®€ä»‹"; /* () --  */
+$menumsg['delcomment']="åˆ é™¤ç›¸å†Œç®€ä»‹"; /* () --  */
+$menumsg['editcomment']="ç¼–è¾‘ç›¸å†Œç®€ä»‹"; /* () --  */
+$album_up="å·²æ›´æ–°"; /* (album_comment.php) --  */
+$album_ins="å·²æ’å…¥"; /* (album_comment.php) --  */
+$mail_link="é‚®ä»¶åˆ—è¡¨"; /* (header.php) --  */
+$mail_title="LinPHA é‚®ä»¶åˆ—è¡¨"; /* (mail.php) --  */
+$mail_send_link="å‘é€é‚®ä»¶"; /* (mail.php) --  */
+$mail_return_address="å¯„ä¿¡äººï¼š"; /* (mail.php) --  */
+$mail_block="é‚®ä»¶ç»„å¤§å°ï¼š"; /* (mail.php) --  */
+$mail_block_help="# æ¯æ¬¡å‘é€é‚®ä»¶çš„æ•°é‡ï¼Œä»¥é¿å…PHPçš„è¶…æ—¶ã€‚"; /* (mail.php) --  */
+$mail_options="é‚®ä»¶åˆ—è¡¨é€‰é¡¹"; /* (mail.php) --  */
+$mail_go_back="è¿”å›"; /* (various mail plugin files) --  */
+$mail_form_title="é‚®ä»¶ä¿¡æ¯"; /* (mail_form.php) --  */
+$mail_form_subject="ä¸»é¢˜:"; /* (mail_form.php) --  */
+$mail_form_msg="æ­£æ–‡ï¼š"; /* (mail_form.php) --  */
+$mail_total_sent="å·²å‘é€é‚®ä»¶ï¼š"; /* (mail_form.php) --  */
+$mail_subscribe="è®¢é˜…"; /* (mail_users.php) --  */
+$mail_unsubscribe="é€€è®¢"; /* (mail_users.php) --  */
+$mail_activate="æ¿€æ´»"; /* (mail_users.php) --  */
+$mail_user_name="æ‚¨çš„å§“åï¼š"; /* (mail_users.php) --  */
+$mail_user_email="æ‚¨çš„ç”µå­é‚®ä»¶:"; /* (mail_users.php) --  */
+$mail_user_email_confirm="ç¡®è®¤é‚®ä»¶ï¼š"; /* (mail_users.php) --  */
+$mail_user_code="æ¿€æ´»ç :"; /* (mail_users.php) --  */
+$mail_user_code_sent="ä¸€å°å¸¦æœ‰æ¿€æ´»ç çš„é‚®ä»¶å·²ç»å‘å¾€æ‚¨çš„ä¿¡ç®±ã€‚"; /* (mail_users.php) --  */
+$mail_user_code_subject="LinPHA é‚®ä»¶åˆ—è¡¨æ¿€æ´»"; /* (mail_users.php) --  */
+$mail_user_activated="æ‚¨çš„è´¦æˆ·å·²ç»æ¿€æ´»ï¼"; /* (mail_users.php) --  */
+$mail_user_activate_error="æ¿€æ´»æ‚¨çš„å¸å·æ—¶å‘ç”Ÿä¸€ä¸ªé”™è¯¯ï¼"; /* (mail_users.php) --  */
+$mail_user_email_not_found="å¹¶ä¸å­˜åœ¨äºæˆ‘ä»¬çš„é‚®ä»¶åˆ—è¡¨ä¸­."; /* (mail_users.php) --  */
+$mail_user_remove_ok="å·²ç»ä»æˆ‘ä»¬çš„é‚®ä»¶åˆ—è¡¨ä¸­åˆ é™¤."; /* (mail_users.php) --  */
+$mail_user_remove_fail="æ— æ³•ä»æˆ‘ä»¬çš„é‚®ä»¶åˆ—è¡¨ä¸­åˆ é™¤."; /* (mail_users.php) --  */
+$mail_user_empty="è¯·å¡«å†™æ‰€æœ‰é¡¹ç›®."; /* () --  */
+$mail_user_no_match="ç”µå­é‚®ä»¶ä¸ç¬¦."; /* () --  */
+$mail_user_exists="ç”µå­é‚®ä»¶å·²å­˜åœ¨äºæˆ‘ä»¬çš„é‚®ä»¶åˆ—è¡¨."; /* (mail_users.php) --  */
+$lang_plugins['mail']="é‚®ä»¶åˆ—è¡¨"; /* (admin.php) --  */
+$mail_activate_message="å°Šæ•¬çš„ %s,\n\nè¯·è¾“å…¥ä»¥ä¸‹ä¿¡æ¯æ¿€æ´»ä½ çš„é‚®ä»¶åˆ—è¡¨è´¦æˆ·.\n\næ¿€æ´»ç : %s\n\nè°¢è°¢!\nç®¡ç†å‘˜"; /* (submit_users.php) -- dont delete the %s and the \n ! */
+$mail_hint="æç¤º"; /* (mail.php) --  */
+$mail_user_permission="'mail' ç»„ä¸­çš„æ‰€æœ‰ç”¨æˆ·éƒ½å¯ä»¥å‘é€ä¿¡æ¯åˆ°é‚®ä»¶åˆ—è¡¨ã€‚"; /* (mail.php) --  */
+$mail_current_subscribers="å½“å‰è®¢é˜…ç”¨æˆ·"; /* (mail.php) --  */
+$mail_name="åç§°"; /* (mail.php) --  */
 $mail_mail="Email"; /* (mail.php) --  */
-$mail_subscribing_date="¶©ÔÄÈÕÆÚ"; /* (mail.php) --  */
-$mail_active="¼¤»î"; /* (mail.php) --  */
-$mail_sent_to="·¢ËÍÓÊ¼ş¸ø"; /* (mail.php) --  */
-$mail_replace_words="<b>[Name]</b> ºÍ <b>[Email]</b> ½«±»ÓÃ»§ĞÅÏ¢ÖĞÏàÓ¦²¿·ÖÌæ»»."; /* (form_mailing.php) --  */
-$misc_help="ÆäËû°ïÖú"; /* () --  */
-$mail_create_group="(ÄúÒª´´½¨ÊôÓÚÄú×Ô¼ºµÄ 'mail' Èº×é¡£)"; /* (mail.php) --  */
-$alb_th="×ÓÄ¿Â¼Î»ÓÚÏà²á"; /* (*_stage_album.php) -- overwrites old (wrong) entry */
-$arr_month_short = Array('1' => '1ÔÂ','2' => '2ÔÂ','3' => '3ÔÂ','4' => '4ÔÂ','5' => '5ÔÂ','6' => '6ÔÂ','7' => '7ÔÂ','8' => '8ÔÂ','9' => '9ÔÂ','10' => '10ÔÂ','11' => '11ÔÂ','12' => '12ÔÂ'); /* abrevations of months */
-$arr_month_long = Array('1' => 'Ò»ÔÂ','2' => '¶şÔÂ','3' => 'ÈıÔÂ','4' => 'ËÄÔÂ','5' => 'ÎåÔÂ','6' => 'ÁùÔÂ','7' => 'ÆßÔÂ','8' => '°ËÔÂ','9' => '¾ÅÔÂ','10' => 'Ê®ÔÂ','11' => 'Ê®Ò»ÔÂ','12' => 'Ê®¶şÔÂ'); /* months */
-$arr_day_short = Array('ÖÜÈÕ','ÖÜÒ»','ÖÜ¶ş','ÖÜÈı','ÖÜËÄ','ÖÜÎå','ÖÜÁù'); /* abrevations of weekdays */
-$arr_day_long = Array('ÖÜÈÕ','ÖÜÒ»','ÖÜ¶ş','ÖÜÈı','ÖÜËÄ','ÖÜÎå','ÖÜÁù'); /* weekdays */
-$layout="°æÃæÉèÖÃ";
-$features="¹¦ÄÜÉèÖÃ";
-$perform="ĞÔÄÜÉèÖÃ";
-$general_comment_in_subfolder = 'Ïà²á×ÓÄ¿Â¼µÄ¼ò½é';
-$general_comment_in_subfolder_info = '<-- ÔÚÔ¤ÀÀ×ÓÄ¿Â¼Ê±ÏÔÊ¾Ïà²á¼ò½é';
-$general_default_date_format = 'Ä¬ÈÏÈÕÆÚ¸ñÊ½';
-$general_default_date_format_info = '<- Èç£º06/28/2004£¬¸ü¶àÏêÇéÇë¿´°ïÖú';
-$general_default_time_format = 'Ä¬ÈÏÊ±¼ä¸ñÊ½';
-$general_default_time_format_info = '<- Èç£º01:45:50 PM£¬¸ü¶àÏêÇéÇë¿´°ïÖú';
-$general_new_images_folder = 'ĞéÄâÄ¿Â¼"×îĞÂÍ¼Æ¬"';
-$general_new_images_folder_info = '<- ÏÔÊ¾Ò»¸ö°üº¬ĞÂ¼ÓÈëÍ¼Æ¬µÄĞéÄâÄ¿Â¼';
-$general_new_images_folder_age = '¼¸ÌìÄÚµÄÍ¼Æ¬·ÅÔÚ"×îĞÂÍ¼Æ¬"Ä¿Â¼';
-$general_new_images_folder_age_info = '<- ÏÔÊ¾×î¶à¼¸ÌìÄÚµÄĞÂÍ¼Æ¬';
+$mail_subscribing_date="è®¢é˜…æ—¥æœŸ"; /* (mail.php) --  */
+$mail_active="æ¿€æ´»"; /* (mail.php) --  */
+$mail_sent_to="å‘é€é‚®ä»¶ç»™"; /* (mail.php) --  */
+$mail_replace_words="<b>[Name]</b> å’Œ <b>[Email]</b> å°†è¢«ç”¨æˆ·ä¿¡æ¯ä¸­ç›¸åº”éƒ¨åˆ†æ›¿æ¢."; /* (form_mailing.php) --  */
+$misc_help="å…¶ä»–å¸®åŠ©"; /* () --  */
+$mail_create_group="(æ‚¨è¦åˆ›å»ºå±äºæ‚¨è‡ªå·±çš„ 'mail' ç¾¤ç»„ã€‚)"; /* (mail.php) --  */
+$alb_th="å­ç›®å½•ä½äºç›¸å†Œ"; /* (*_stage_album.php) -- overwrites old (wrong) entry */
+$arr_month_short = Array('1' => '1æœˆ','2' => '2æœˆ','3' => '3æœˆ','4' => '4æœˆ','5' => '5æœˆ','6' => '6æœˆ','7' => '7æœˆ','8' => '8æœˆ','9' => '9æœˆ','10' => '10æœˆ','11' => '11æœˆ','12' => '12æœˆ'); /* abrevations of months */
+$arr_month_long = Array('1' => 'ä¸€æœˆ','2' => 'äºŒæœˆ','3' => 'ä¸‰æœˆ','4' => 'å››æœˆ','5' => 'äº”æœˆ','6' => 'å…­æœˆ','7' => 'ä¸ƒæœˆ','8' => 'å…«æœˆ','9' => 'ä¹æœˆ','10' => 'åæœˆ','11' => 'åä¸€æœˆ','12' => 'åäºŒæœˆ'); /* months */
+$arr_day_short = Array('å‘¨æ—¥','å‘¨ä¸€','å‘¨äºŒ','å‘¨ä¸‰','å‘¨å››','å‘¨äº”','å‘¨å…­'); /* abrevations of weekdays */
+$arr_day_long = Array('å‘¨æ—¥','å‘¨ä¸€','å‘¨äºŒ','å‘¨ä¸‰','å‘¨å››','å‘¨äº”','å‘¨å…­'); /* weekdays */
+$layout="ç‰ˆé¢è®¾ç½®";
+$features="åŠŸèƒ½è®¾ç½®";
+$perform="æ€§èƒ½è®¾ç½®";
+$general_comment_in_subfolder = 'ç›¸å†Œå­ç›®å½•çš„ç®€ä»‹';
+$general_comment_in_subfolder_info = '<-- åœ¨é¢„è§ˆå­ç›®å½•æ—¶æ˜¾ç¤ºç›¸å†Œç®€ä»‹';
+$general_default_date_format = 'é»˜è®¤æ—¥æœŸæ ¼å¼';
+$general_default_date_format_info = '<- å¦‚ï¼š06/28/2004ï¼Œæ›´å¤šè¯¦æƒ…è¯·çœ‹å¸®åŠ©';
+$general_default_time_format = 'é»˜è®¤æ—¶é—´æ ¼å¼';
+$general_default_time_format_info = '<- å¦‚ï¼š01:45:50 PMï¼Œæ›´å¤šè¯¦æƒ…è¯·çœ‹å¸®åŠ©';
+$general_new_images_folder = 'è™šæ‹Ÿç›®å½•"æœ€æ–°å›¾ç‰‡"';
+$general_new_images_folder_info = '<- æ˜¾ç¤ºä¸€ä¸ªåŒ…å«æ–°åŠ å…¥å›¾ç‰‡çš„è™šæ‹Ÿç›®å½•';
+$general_new_images_folder_age = 'å‡ å¤©å†…çš„å›¾ç‰‡æ”¾åœ¨"æœ€æ–°å›¾ç‰‡"ç›®å½•';
+$general_new_images_folder_age_info = '<- æ˜¾ç¤ºæœ€å¤šå‡ å¤©å†…çš„æ–°å›¾ç‰‡';
 $control_key="Ctrl"; /* (various) --  */
-$search_date="ÈÕÆÚ"; /* (search.php) -- reads: date from to... */
-$search_from="´Ó"; /* (search.php) -- reads: date from to... */
-$search_to="ÖÁ"; /* (search.php) -- reads: date from to... */
-$start_slide="¿ªÊ¼»ÃµÆÆ¬ÏÔÊ¾"; /* (img_view.php) --  */
-$pass_msg="ÇëÓÃÄúµÄĞÂÃÜÂë½øĞĞµÇÂ¼"; /* (build_my_settings.php) --  */
-$str_new_images = "×îĞÂÍ¼Æ¬"; /* (new_images.php) -- */
-$str_order_by = "ÅÅĞò°´"; /* (new_images.php) -- */
-$str_age = "Ê±¼ä"; /* (new_images.php) -- */
-$str_album = "Ïà²á"; /* (new_images.php) -- */
-$str_in_album = "ËùÊôÏà²á"; /* (new_images.php) -- */
-$str_img_newer_than = "ÒÔÏÂÍ¼Æ¬ÊÇÔÚ %s ÌìÄÚĞÂÌí¼ÓµÄ"; /* (new_images.php) -- */
-$timespanfmt = "%s Ìì, %s Ğ¡Ê±, %s ·Ö %s Ãë"; /* (new_images.php) -- */
-$str_delete_all_cached_images_with_watermarks="É¾³ıËùÓĞ´øË®Ó¡µÄÍ¼Æ¬»º´æ"; /* (watermark.php) --  */
-$str_error_changing_perm="´íÎó£¬Ã»ÓĞĞŞ¸Ä´ËÎÄ¼şµÄÈ¨ÏŞ£¡"; /* (plugins/ftp/index.php) --  */
-$str_change_perm="ĞŞ¸ÄÒÔÏÂµÄÈ¨ÏŞ:"; /* (plugins/ftp/index.php) --  */
-$str_read="¶Á"; /* (plugins/ftp/index.php) --  */
-$str_write="Ğ´"; /* (plugins/ftp/index.php) --  */
-$str_execute="Ö´ĞĞ"; /* (plugins/ftp/index.php) --  */
-$str_owner="ÓµÓĞÕß"; /* () --  */
-$str_group="Èº×é"; /* (plugins/ftp/index.php) --  */
-$str_all_other="ÆäËûËùÓĞ"; /* (plugins/ftp/index.php) --  */
-$str_copy="¸´ÖÆ"; /* (plugins/ftp/index.php) --  */
-$str_copy_to="¸´ÖÆ %s µ½:"; /* (plugins/ftp/index.php) --  */
-$str_rename_to="ÖØÃüÃû %s Îª£º"; /* (plugins/ftp/index.php) --  */
-$str_rotation_disabled="Í¼Æ¬Ğı×ªÒÑ½ûÓÃ"; /* (img_view.php) --  */
-$str_no_write_perm="ÎŞĞ´ÈëÈ¨ÏŞ"; /* (img_view.php) --  */
-$str_new_images_in_these_folders="ÒÔÏÂÏà²áÖĞÓĞĞÂÍ¼Æ¬:"; /* (new_images.php) --  */
-$str_reinstall_remove_dbconnect="Èç¹ûÄúÒªÖØĞÂ°²×° LinPHA£¬Äú±ØĞëÉ¾³ı ./sql/db_connect.php ÎÄ¼ş£¡(Äú¿ÉÒÔÊ¹ÓÃ¹ÜÀíÇøÓòÖĞµÄÎÄ¼ş¹ÜÀí¹¦ÄÜÀ´½øĞĞ´Ë²Ù×÷)"; /* (install_header.php) --  */
-$str_Version="°æ±¾"; /* (sec_stage_install.php) --  */
-$str_no_supported_database_activated="´íÎó: ÄúµÄ PHP µÄÅäÖÃÖĞÃ»ÓĞÉèÖÃÖ§³ÖµÄÊı¾İ¿â"; /* (sec_stage_install.php) --  */
-$str_extract_with="µ±ÉÏ´«Íê±Ï, ½âÑ¹ËõÎÄ¼şÓÃ"; /* (ftp/index.php) --  */
-$str_files_to_upload="ÒªÉÏ´«µÄÎÄ¼ş"; /* (ftp/index.php) --  */
-$posix_check_msg="¼ì²é POSIX Ö§³Ö..."; /* (sec_stage_install.php) --  */
-$posix_sum_found_msg="ÄúµÄ PHP »·¾³Ö§³Ö POSIX ¡£ÔÚÕûºÏµÄÎÄ¼ş¹ÜÀí¹¤¾ßÖĞµÄËùÓĞ¹¦ÄÜ¶¼ÄÜÕı³£Ê¹ÓÃ¡£"; /* (sec_stage_install.php) --  */
-$posix_sum_miss_msg="ÄúµÄ PHP »·¾³Ö§³Ö POSIX ¡£ÔÚÕûºÏµÄÎÄ¼ş¹ÜÀí¹¤¾ßÖĞÓĞĞ©¹¦ÄÜÎŞ·¨Ê¹ÓÃ(ÌØ±ğÊÇĞŞ¸ÄÎÄ¼şÈ¨ÏŞÊ±)."; /* (sec_stage_install.php) --  */
-$mod_cache_fail="´íÎó£ºÉèÖÃÎŞ·¨±£´æ¡£ÇëÈ·ÈÏÂ·¾¶ÊÇ·ñÕıÈ·²¢ÇÒÄúÓµÓĞ´ËÄ¿Â¼Ğ´ÈëµÄÈ¨ÏŞError: Settings could not be saved. Make sure your the path is spelled correctly and you have permissions to write into that directory."; /* (admin.php) --  */
-$str_create_archive="Éú³É %s ÎÄ¼ş"; /* (build_zip_view.php) --  */
-$str_download_error="´íÎó! ÓÉÓÚÄ³Ğ©Ô­ÒòÎŞ·¨¿ªÊ¼ÏÂÔØ, ±§Ç¸"; /* (build_zip_view.php) --  */
-$str_search_all_images_taken="ËÑË÷ËùÓĞÍ¼Æ¬¹²Ê¹ÓÃ %s"; /* (read_php_exif.php) --  */
-$str_try_a_lower_resolution="Èç¹ûÔØÈë½ÏÂı, Çë³¢ÊÔÓÃ½ÏµÍµÄ·Ö±æÂÊ:"; /* (image_panorama_view.php) --  */
-$str_current_resolution="ÏÖÔÚµÄ·Ö±æÂÊ:"; /* (image_panorama_view.php) --  */
-$href_group_conf="ÓÃ»§×é¹ÜÀí"; /* (admin.php + build_user_conf.php) -- Admin menu item + table heading */
-$href_tools_section="¹ÜÀí¹¤¾ß£º"; /* (admin.php) -- Tools section in admin menu */
-$lang_plugins['plugin']="²å¼ş"; /* (plugin.php) --  */
-$choose_mail_msg="Ñ¡ÔñÒªÓÊ¼ÄµÄÍ¼Æ¬"; /* () --  */
-$new_user_full_name="È«Ãû"; /* (build_my_settings.php) -- And build_user_conf.php */
-$href_category_conf="·ÖÀà¹ÜÀí"; /* (admin.php) --  */
-$cat_private="Ë½ÓĞ"; /* (build_category_conf.php) --  */
-$lang_plugins['facetmap']="Æ½ÃæÍ¼"; /* (plugins.php) --  */
-$str_add_more_apps="Ìí¼Ó¸ü¶àÓ¦ÓÃ³ÌĞò"; /* (include/basket_zip.php, ftp/index.p) --  */
-$session_check="¼ì²é Session ÉèÖÃ..."; /* (sec_stage_install.php) --  */
-$session_save_handler_ok_msg="Session ÉèÖÃÕıÈ·."; /* (sec_stage_install.php) --  */
-$session_save_handler_miss_msg="Session ÉèÖÃ²»ÕıÈ·."; /* (sec_stage_install.php) --  */
-$session_miss_msg="Session ÉèÖÃ²»ÕıÈ·¡£Äú±ØĞëÔÚ php.ini ÖĞÉèÖÃÒÔ¸üÕıÉÏÃæµÄ´íÎó·ñÔò LinPHA ¿ÉÄÜÎŞ·¨¹¤×÷£¡£¡"; /* (sec_stage_install.php) --  */
-$session_ok_msg="ËùÓĞµÄ Session ÉèÖÃ¶¼ÕıÈ·. ÏµÍ³¿ÉÒÔÕı³£ÎŞÎóµÄ¹¤×÷."; /* (sec_stage_install.php) --  */
-$new_user_error6="´íÎó£ºÄúÊ¹ÓÃµÄÊÇÄú×Ô¼ºµÄÕÊ»§Âğ£¿£¡£¿"; /* (build_my_settings.php) --  */
-$str_old_comments="¾ÉÆÀÂÛ (ÒÑ²»ÔÙÊôÓÚÄ³ÕÅÍ¼Æ¬):"; /* (build_stats.php) --  */
-$str_last_viewed_page="×îºóä¯ÀÀµÄÒ³Ãæ:"; /* (index.php) --  */
-$str_select_row="Ñ¡Ôñ±¾ĞĞ"; /* (basket.php) --  */
-$str_select="Ñ¡Ôñ"; /* (basket.php) --  */
-$str_new_window="ĞÂ´°¿Ú"; /* (basket.php) --  */
-$general_anon_mail_mode="ÔÊĞí/½ûÖ¹ ÄäÃûÓÃ»§Ê¹ÓÃÓÊ¼ÄÄ£Ê½"; /* (build_general_conf.php) --  */
-$general_anon_mail_mode_info="<-- ÔÊĞíÄäÃûÓÃ»§ÓÊ¼ÄÍ¼Æ¬"; /* (build_general_conf.php) --  */
-$general_mail_mode_max_size="ÓÊ¼ÄÄ£Ê½: ÓÊ¼ş´óĞ¡"; /* (build_general_conf.php) --  */
-$general_mail_mode_max_size_info="<-- ×î´óÖµ£¬µ¥Î»£ºbytes"; /* (build_general_conf.php) --  */
-$general_thumbnail_view="ËõÍ¼ÏÔÊ¾"; /* (build_general_conf.php) --  */
-$general_image_view="Í¼Æ¬ÏÔÊ¾"; /* (build_general_conf.php) --  */
-$general_ado_msg="SQL²éÑ¯»º´æ"; /* (build_general_conf.php) --  */
-$general_ado_msg_info="<-- SQL ·şÎñÆ÷Ì«Âı»ò PHP Ã»ÓĞÆôÓÃ¼ÓËÙÆ÷ÄÇÃ´ÇëÆôÓÃ´ËÏî"; /* (build_general_conf.php) --  */
-$general_ado_time_msg="SQL ²éÑ¯»º´æÊ±¼ä£º"; /* (build_general_conf.php) --  */
-$general_ado_time_msg_info="<-- ÉèÖÃ×î´ó»º´æÊ±¼ä£¬µ¥Î»·ÖÖÓ"; /* (build_general_conf.php) --  */
-$general_ado_path_msg="SQL ²éÑ¯»º´æÂ·¾¶£º"; /* (build_general_conf.php) --  */
-$general_ado_path_msg_info="<-- ´¢´æ²éÑ¯»º´æÊı¾İÂ·¾¶"; /* (build_general_conf.php) --  */
-$str_other_features="ÆäËû¹¦ÄÜ"; /* (build_general_conf.php) --  */
-$str_language_settings="ÓïÑÔÉèÖÃ"; /* (build_general_conf.php) --  */
-$str_sql_query_caching="SQL ²éÑ¯»º´æ"; /* (build_general_conf.php) --  */
-$general_thumb_border="ËõÂÔÍ¼±ß¿ò³ß´ç£¬µ¥Î»£ºÏñËØ"; /* (build_general_conf.php) --  */
-$general_thumb_border_info="<-- ÉèÖÃÎª0Ôò¹Ø±Õ, Ä¬ÈÏ: 5"; /* (build_general_conf.php) --  */
-$general_thumb_border_color="ËõÂÔÍ¼±ß¿òÑÕÉ«"; /* (build_general_conf.php) --  */
-$general_thumb_border_color_info="<-- ÍêÕûÏÔÊ¾"; /* (build_general_conf.php) --  */
-$str_recipient="ÊÕ¼şÈË"; /* (basket_mail.php) --  */
-$str_sender="·¢¼şÈË"; /* (basket_mail.php) --  */
-$str_mail_too_big="´íÎó£ºÓÊ¼şÌ«´ó¡£<br /><br />ÔÊĞíµÄ³ß´çÎª£º %sBytes¡£ÄúËùÑ¡ÔñµÄÍ¼Æ¬¹²¼Æ %sBytes.<br /><br />ÇëÉ¾³ıÒ»Ğ©Í¼Æ¬»òÕßÊ¹ÓÃÏÂÔØÑ¹ËõÏà²á¹¦ÄÜ£¡"; /* (basket_mail.php) --  */
-$str_size_of_email="ÓÊ¼ş´óĞ¡: %s."; /* (basket_mail.php) --  */
-$str_new_search="ÖØĞÂËÑË÷"; /* (search.php) --  */
-$str_edit_search="±à¼­ËÑË÷"; /* (search.php) --  */
-$str_View="ä¯ÀÀ"; /* (img_view.class.php) --  */
-$str_normal="±ê×¼"; /* (img_view.class.php) --  */
-$str_detail="ÏêÏ¸"; /* (img_view.class.php) --  */
-$search_result_empty="±§Ç¸£¬ÕÒ²»µ½ÈÎºÎÓëÖ®Ïà·ûµÄÄÚÈİ"; /* (search.php) --  */
-$str_chars_entered="¸ö×Ö·û"; /* (img_view.class.php) --  */
-$str_information_lost="ÓĞĞ©ĞÅÏ¢½«¶ªÊ§, ÇëĞŞ¸ÄÏà¹ØÄÚÈİ."; /* (img_view.class.php) --  */
-$general_random_image="Ê×Ò³Ëæ»úÏÔÊ¾Í¼Æ¬"; /* () --  */
-$general_random_image_info="<-- ÔÚÊ×Ò³Ëæ»úÏÔÊ¾Í¼Æ¬"; /* () --  */
-$general_random_image_size="Ëæ»úÏÔÊ¾Í¼Æ¬µÄ×î´ó³ß´ç"; /* () --  */
-$general_random_image_size_info="<-- ÉèÖÃÍ¼Æ¬×î´ó³ß´ç£¬µ¥Î»£ºÏñËØ"; /* () --  */
-$str_edit_watermark="±à¼­Ë®Ó¡"; /* (watermark.php) --  */
-$str_edit_permissions="±à¼­Ë®Ó¡È¨ÏŞ"; /* () --  */
-$str_Everyone="ÈÎºÎÈË"; /* () --  */
-$str_Nobody="¾ùÎŞÈ¨ÏŞ"; /* () --  */
-$str_only_logged_in_users="½öµÇÂ¼ÓÃ»§"; /* () --  */
-$str_except_these_groups="ÒÔÏÂ×é³ıÍâ:"; /* () --  */
-$str_additionally_groups="µ«ÊÚÈ¨ÒÔÏÂ×é:"; /* () --  */
-$str_allow_these_persons="Ã»ÓĞÎªÕâĞ© ÓÃ»§/Èº×é ÉèÖÃµÄË®Ó¡"; /* () --  */
-$str_album_based_permissions="»ùÓÚÏà²áµÄÈ¨ÏŞ"; /* () --  */
-$str_all_albums_but_without_these="ËùÓĞÏà²á, ³ıÁËÒÔÏÂµÄ:"; /* () --  */
-$str_only_on_these_albums="½öÕâĞ©Ïà²á:"; /* () --  */
-$str_allow_these_persons="ÔÊĞíÒÔÏÂÈËÔ±"; /* (db_api.php) --  */
-$str_no_watermarks="ÒÔÏÂÈËÔ±²»Ìí¼ÓË®Ó¡"; /* (db_api.php) --  */
-$str_watermark_perm_part1="Îªµ¥ÓÃ»§¡¢¶àÓÃ»§»òÕßÏà²áÉèÖÃË®Ó¡¡£"; /* (watermark.php) --  */
-$str_watermark_perm_part2="Ä¬ÈÏÎª'½öµÇÂ¼µÄÓÃ»§' ºÍ 'ËùÓĞÏà²á'."; /* (watermark.php) --  */
-$str_watermark_perm_part3="ÕâÒâÎ¶×ÅµÇÂ¼µÄÓÃ»§¿´µ½µÄËùÓĞÏà²áÖĞµÄÍ¼Æ¬¶¼²»´øË®Ó¡."; /* (watermark.php) --  */
-$inst_linpha_not_work_correctly="LinPHA »òĞí²»ÄÜÕı³£ÔË×÷"; /* (sec_stage_install.php) --  */
-$gd_jpg_missing_msg="ÄúµÄÏµÍ³µÄ GD ¿â²»Ö§³Ö jpeg£¡JPEG ¸ñÊ½µÄÍ¼Æ¬½«²»ÄÜÏÔÊ¾£¡"; /* (sec_stage_install.php) --  */
-$general_video_thumbnail="³¢ÊÔÎªÊÓÆµ´´½¨ËõÂÔÍ¼"; /* (build_generl_config.php) --  */
-$general_video_thumbnail_info="<--Èç¹û´´½¨³öÏÖÎÊÌâÇë½ûÓÃ´ËÏî"; /* (build_generl_config.php) --  */
-$general_update_notice="LinPHA ÏµÍ³¼ì²é¸üĞÂ"; /* (build_generl_config.php) --  */
-$general_update_notice_info="<-- ÔÊĞíÃ¿ÖÜ¼ì²éÒ»´Î"; /* (build_general_config.php) --  */
-$large="´ó"; /* (build_general_config) -- selectfield for mini images size */
-$directories="Ä¿Â¼"; /* (build_thumbnail_conf.php) --  */
-$do_nothing="¿ÕÏĞ"; /* (build_thumbnail_conf.php) --  */
-$create="´´½¨"; /* (build_thumbnail_conf.php) --  */
-$recreate="ÖØ½¨"; /* (build_thumbnail_conf.php) --  */
-$exif_disabled_in_conf="ÅäÖÃ½ûÖ¹ÏÔÊ¾ EXIF ĞÅÏ¢"; /* (build_thumbnail_conf.php) --  */
-$iptc_disabled_in_conf="ÅäÖÃ½ûÖ¹ÏÔÊ¾ IPTC ĞÅÏ¢"; /* (build_thumbnail_conf.php) --  */
-$silent_mode="°²¾²Ä£Ê½ (Èç£¬°²¾²µÄÔËĞĞ£¬²»ÏÔÊ¾ÈÎºÎµ÷ÊÔĞÅÏ¢)"; /* (build_thumbnail_conf.php) --  */
-$just_thumb_msg="ËõÂÔÍ¼"; /* (build_thumbnail_conf.php) --  */
-$log_title="LinPHA ÈÕÖ¾"; /* (log.php) --  */
-$log_options="LinPHA ÈÕÖ¾Ñ¡Ïî"; /* (log.php) --  */
-$log_method_label="¼ÇÂ¼µ½:"; /* (log.php) --  */
-$str_extra_headers="À©Õ¹±êÌâ£º"; /* (log.php) --  */
-$str_log_events['login']="ÓÃ»§µÇÂ¼"; /* (log.php) --  */
-$str_log_events['thumbnail']="ËõÂÔÍ¼Éú³É"; /* (log.php) --  */
-$str_log_events['update']="¸üĞÂ"; /* (log.php) --  */
-$str_log_events['db']="Êı¾İ¿â"; /* (log.php) --  */
-$str_log_events['filemanager']="ÎÄ¼ş¹ÜÀí"; /* (log.php) --  */
-$str_events="ÊÂ¼ş"; /* (log.php) --  */
-$find_duplicates="²éÕÒÖØ¸´Í¼Æ¬"; /* (build_thumbnail_conf.php) --  */
-$str_not_enabled_in_php_config="ÔÚ PHP ÅäÖÃ£¨php.ini£©ÖĞÃ»ÓĞÆôÓÃ"; /* (sec_stage_install.php) --  */
-$str_warning="¾¯¸æ"; /* (build_thumbnail_conf.php) --  */
-$str_thumbnails_deleted="ËõÂÔÍ¼½«±»É¾³ı"; /* (build_thumbnail_conf.php) --  */
-$str_statistics_deleted="ËùÓĞÍ³¼Æ½«±»É¾³ı"; /* (build_thumbnail_conf.php) --  */
-$str_random_index_image="Ê×Ò³Ëæ»úÍ¼Æ¬ÏÔÊ¾"; /* (build_general_conf.php) --  */
-$str_download_images="ÏÂÔØµ¥¸öÍ¼Æ¬"; /* (build_perms.php) --  */
-$str_add_image_comments="¶ÔÍ¼Æ¬·¢±íÆÀÂÛ"; /* (build_perms.php) --  */
-$str_add_image_description="Ìí¼ÓÍ¼Æ¬µÄÃèÊöºÍ·ÖÀà"; /* (build_perms.php) --  */
-$str_mail_add_all_users="½«ËùÓĞÓÃ»§¼ÓÈëÓÊ¼şÁĞ±í"; /* (plugins/mail.php) --  */
-$str_note_upload="<b>ÌáÊ¾:</b> Äú²»±ØÒ»¶¨ÒªÍ¨¹ı±íµ¥Ìá½»Í¼Æ¬. Äú¿ÉÒÔÓÃÈÎºÎÄúÏ²»¶µÄ·½Ê½ (ftp,scp,nfs,local,...). Ö»Òª½«ËüÃÇ·Åµ½ albums Ä¿Â¼¼´¿É."; /* (plugins/ftp/index.php) --  */
-$blacklist_opts="ºÚÃûµ¥Ñ¡Ïî (À¬»øĞÅÏ¢¹ıÂË)"; /* (varios) --  */
-$blacklist_onoff="Ê¹ÓÃĞÅÏ¢¹ıÂË"; /* (varios) --  */
-$blacklist_keywords="¹ıÂËµÄ´ÊÓï:"; /* (varios) --  */
-$str_entire_path="ÍêÕûÂ·¾¶"; /* (search.php) --  */
-$mail_format="ÓÊ¼ş¸ñÊ½£º"; /* (basket_mail.php) --  */
-$mail_format_is_txt="´¿ÎÄ±¾ (Í¼Æ¬¸½¼şĞÎÊ½)"; /* (basket_mail.php) --  */
-$mail_format_is_html="HTML (Í¼Æ¬ÅÅÁĞÆäÖĞ)"; /* (basket_mail.php) --  */
-$mail_toggle_active="ÓĞĞ§¼¤»î"; /* (mail.php) --  */
-$statistics="Í³¼Æ"; /* (various) --  */
-$stats_total_images="Í¼Æ¬×ÜÊı"; /* () --  */
-$stats_total_img_views="×Üä¯ÀÀÁ¿"; /* () --  */
-$stats_total_img_downs="×ÜÏÂÔØÁ¿"; /* () --  */
-$stats_total_img_selected="ä¯ÀÀÍ¼Æ¬Êı"; /* () --  */
-$stats_total_downs_selected="ÏÂÔØÍ¼Æ¬Êı"; /* () --  */
-$stats_downloads="ÏÂÔØ´ÎÊı"; /* () --  */
-$stats_downl_size="ÏÂÔØÁ÷Á¿"; /* () --  */
-$stats_coments_total="×ÜÆÀÂÛÊı"; /* () --  */
-$stats_coments_sel="ËùÑ¡ÆÀÂÛ"; /* () --  */
-$str_log_events['guestbook']="ÁôÑÔ"; /* (log.php) --  */
-$stats_realtime="ÆôÓÃ/¹Ø±ÕÊµÊ±Í³¼Æ"; /* (build_stats.php) --  */
-$stats_realtime_info="<-- ÊµÊ±ÏÔÊ¾Í³¼ÆĞÅÏ¢(²»Ê¹ÓÃ»º´æ)"; /* (build_stats.php) --  */
-$stats_cache_time="Í³¼Æ»º´æÊ±¼ä"; /* (build_stats.php) --  */
-$stats_cache_time_info="<-- Ö¸¶¨Ê±¼äË¢ĞÂÏÂÔØÁ÷Á¿Í³¼Æ"; /* (build_stats.php) --  */
-$stats_user_info="ÓÃ»§"; /* (stats_view.php) --  */
-$stats_image_info="Í¼Æ¬"; /* (stats_view.php) --  */
-$stats_comments_info="ÆÀÂÛ"; /* (stats_view.php) --  */
-$stats_general_info="³£¹æ"; /* (stats_view.php) --  */
-$spam_blocked="¹ıÂË´ÎÊı"; /* () --  */
-$mail_current_status="µ±Ç°×´Ì¬"; /* (mailing.php) --  */
-$mail_sending_to="·¢ËÍÖÁ£º"; /* (mailing.php) --  */
-$mail_counters="Í³¼Æ (³É¹¦/Ê§°Ü/×ÜÊı)"; /* (mailing.php) --  */
-$mail_send_fail="·¢ËÍÊ§°Ü£º"; /* (mailing.php) --  */
-$mail_send_ok="·¢ËÍÍê±Ï£º"; /* (mailing.php) --  */
-$mail_all_complete="È«²¿Íê³É£¡"; /* (mailing.php) --  */
-$mail_failed_list="Ê§°ÜµØÖ·ÁĞ±í"; /* (mailing.php) --  */
-$mail_ok_list="·¢ËÍµØÖ·ÁĞ±í"; /* (mailing.php) --  */
-$mail_mailer_error=" - ÓÊ¼Ä´íÎó£º"; /* (mailing.php) --  */
+$search_date="æ—¥æœŸ"; /* (search.php) -- reads: date from to... */
+$search_from="ä»"; /* (search.php) -- reads: date from to... */
+$search_to="è‡³"; /* (search.php) -- reads: date from to... */
+$start_slide="å¼€å§‹å¹»ç¯ç‰‡æ˜¾ç¤º"; /* (img_view.php) --  */
+$pass_msg="è¯·ç”¨æ‚¨çš„æ–°å¯†ç è¿›è¡Œç™»å½•"; /* (build_my_settings.php) --  */
+$str_new_images = "æœ€æ–°å›¾ç‰‡"; /* (new_images.php) -- */
+$str_order_by = "æ’åºæŒ‰"; /* (new_images.php) -- */
+$str_age = "æ—¶é—´"; /* (new_images.php) -- */
+$str_album = "ç›¸å†Œ"; /* (new_images.php) -- */
+$str_in_album = "æ‰€å±ç›¸å†Œ"; /* (new_images.php) -- */
+$str_img_newer_than = "ä»¥ä¸‹å›¾ç‰‡æ˜¯åœ¨ %s å¤©å†…æ–°æ·»åŠ çš„"; /* (new_images.php) -- */
+$timespanfmt = "%s å¤©, %s å°æ—¶, %s åˆ† %s ç§’"; /* (new_images.php) -- */
+$str_delete_all_cached_images_with_watermarks="åˆ é™¤æ‰€æœ‰å¸¦æ°´å°çš„å›¾ç‰‡ç¼“å­˜"; /* (watermark.php) --  */
+$str_error_changing_perm="é”™è¯¯ï¼Œæ²¡æœ‰ä¿®æ”¹æ­¤æ–‡ä»¶çš„æƒé™ï¼"; /* (plugins/ftp/index.php) --  */
+$str_change_perm="ä¿®æ”¹ä»¥ä¸‹çš„æƒé™:"; /* (plugins/ftp/index.php) --  */
+$str_read="è¯»"; /* (plugins/ftp/index.php) --  */
+$str_write="å†™"; /* (plugins/ftp/index.php) --  */
+$str_execute="æ‰§è¡Œ"; /* (plugins/ftp/index.php) --  */
+$str_owner="æ‹¥æœ‰è€…"; /* () --  */
+$str_group="ç¾¤ç»„"; /* (plugins/ftp/index.php) --  */
+$str_all_other="å…¶ä»–æ‰€æœ‰"; /* (plugins/ftp/index.php) --  */
+$str_copy="å¤åˆ¶"; /* (plugins/ftp/index.php) --  */
+$str_copy_to="å¤åˆ¶ %s åˆ°:"; /* (plugins/ftp/index.php) --  */
+$str_rename_to="é‡å‘½å %s ä¸ºï¼š"; /* (plugins/ftp/index.php) --  */
+$str_rotation_disabled="å›¾ç‰‡æ—‹è½¬å·²ç¦ç”¨"; /* (img_view.php) --  */
+$str_no_write_perm="æ— å†™å…¥æƒé™"; /* (img_view.php) --  */
+$str_new_images_in_these_folders="ä»¥ä¸‹ç›¸å†Œä¸­æœ‰æ–°å›¾ç‰‡:"; /* (new_images.php) --  */
+$str_reinstall_remove_dbconnect="å¦‚æœæ‚¨è¦é‡æ–°å®‰è£… LinPHAï¼Œæ‚¨å¿…é¡»åˆ é™¤ ./sql/db_connect.php æ–‡ä»¶ï¼(æ‚¨å¯ä»¥ä½¿ç”¨ç®¡ç†åŒºåŸŸä¸­çš„æ–‡ä»¶ç®¡ç†åŠŸèƒ½æ¥è¿›è¡Œæ­¤æ“ä½œ)"; /* (install_header.php) --  */
+$str_Version="ç‰ˆæœ¬"; /* (sec_stage_install.php) --  */
+$str_no_supported_database_activated="é”™è¯¯: æ‚¨çš„ PHP çš„é…ç½®ä¸­æ²¡æœ‰è®¾ç½®æ”¯æŒçš„æ•°æ®åº“"; /* (sec_stage_install.php) --  */
+$str_extract_with="å½“ä¸Šä¼ å®Œæ¯•, è§£å‹ç¼©æ–‡ä»¶ç”¨"; /* (ftp/index.php) --  */
+$str_files_to_upload="è¦ä¸Šä¼ çš„æ–‡ä»¶"; /* (ftp/index.php) --  */
+$posix_check_msg="æ£€æŸ¥ POSIX æ”¯æŒ..."; /* (sec_stage_install.php) --  */
+$posix_sum_found_msg="æ‚¨çš„ PHP ç¯å¢ƒæ”¯æŒ POSIX ã€‚åœ¨æ•´åˆçš„æ–‡ä»¶ç®¡ç†å·¥å…·ä¸­çš„æ‰€æœ‰åŠŸèƒ½éƒ½èƒ½æ­£å¸¸ä½¿ç”¨ã€‚"; /* (sec_stage_install.php) --  */
+$posix_sum_miss_msg="æ‚¨çš„ PHP ç¯å¢ƒæ”¯æŒ POSIX ã€‚åœ¨æ•´åˆçš„æ–‡ä»¶ç®¡ç†å·¥å…·ä¸­æœ‰äº›åŠŸèƒ½æ— æ³•ä½¿ç”¨(ç‰¹åˆ«æ˜¯ä¿®æ”¹æ–‡ä»¶æƒé™æ—¶)."; /* (sec_stage_install.php) --  */
+$mod_cache_fail="é”™è¯¯ï¼šè®¾ç½®æ— æ³•ä¿å­˜ã€‚è¯·ç¡®è®¤è·¯å¾„æ˜¯å¦æ­£ç¡®å¹¶ä¸”æ‚¨æ‹¥æœ‰æ­¤ç›®å½•å†™å…¥çš„æƒé™Error: Settings could not be saved. Make sure your the path is spelled correctly and you have permissions to write into that directory."; /* (admin.php) --  */
+$str_create_archive="ç”Ÿæˆ %s æ–‡ä»¶"; /* (build_zip_view.php) --  */
+$str_download_error="é”™è¯¯! ç”±äºæŸäº›åŸå› æ— æ³•å¼€å§‹ä¸‹è½½, æŠ±æ­‰"; /* (build_zip_view.php) --  */
+$str_search_all_images_taken="æœç´¢æ‰€æœ‰å›¾ç‰‡å…±ä½¿ç”¨ %s"; /* (read_php_exif.php) --  */
+$str_try_a_lower_resolution="å¦‚æœè½½å…¥è¾ƒæ…¢, è¯·å°è¯•ç”¨è¾ƒä½çš„åˆ†è¾¨ç‡:"; /* (image_panorama_view.php) --  */
+$str_current_resolution="ç°åœ¨çš„åˆ†è¾¨ç‡:"; /* (image_panorama_view.php) --  */
+$href_group_conf="ç”¨æˆ·ç»„ç®¡ç†"; /* (admin.php + build_user_conf.php) -- Admin menu item + table heading */
+$href_tools_section="ç®¡ç†å·¥å…·ï¼š"; /* (admin.php) -- Tools section in admin menu */
+$lang_plugins['plugin']="æ’ä»¶"; /* (plugin.php) --  */
+$choose_mail_msg="é€‰æ‹©è¦é‚®å¯„çš„å›¾ç‰‡"; /* () --  */
+$new_user_full_name="å…¨å"; /* (build_my_settings.php) -- And build_user_conf.php */
+$href_category_conf="åˆ†ç±»ç®¡ç†"; /* (admin.php) --  */
+$cat_private="ç§æœ‰"; /* (build_category_conf.php) --  */
+$lang_plugins['facetmap']="å¹³é¢å›¾"; /* (plugins.php) --  */
+$str_add_more_apps="æ·»åŠ æ›´å¤šåº”ç”¨ç¨‹åº"; /* (include/basket_zip.php, ftp/index.p) --  */
+$session_check="æ£€æŸ¥ Session è®¾ç½®..."; /* (sec_stage_install.php) --  */
+$session_save_handler_ok_msg="Session è®¾ç½®æ­£ç¡®."; /* (sec_stage_install.php) --  */
+$session_save_handler_miss_msg="Session è®¾ç½®ä¸æ­£ç¡®."; /* (sec_stage_install.php) --  */
+$session_miss_msg="Session è®¾ç½®ä¸æ­£ç¡®ã€‚æ‚¨å¿…é¡»åœ¨ php.ini ä¸­è®¾ç½®ä»¥æ›´æ­£ä¸Šé¢çš„é”™è¯¯å¦åˆ™ LinPHA å¯èƒ½æ— æ³•å·¥ä½œï¼ï¼"; /* (sec_stage_install.php) --  */
+$session_ok_msg="æ‰€æœ‰çš„ Session è®¾ç½®éƒ½æ­£ç¡®. ç³»ç»Ÿå¯ä»¥æ­£å¸¸æ— è¯¯çš„å·¥ä½œ."; /* (sec_stage_install.php) --  */
+$new_user_error6="é”™è¯¯ï¼šæ‚¨ä½¿ç”¨çš„æ˜¯æ‚¨è‡ªå·±çš„å¸æˆ·å—ï¼Ÿï¼ï¼Ÿ"; /* (build_my_settings.php) --  */
+$str_old_comments="æ—§è¯„è®º (å·²ä¸å†å±äºæŸå¼ å›¾ç‰‡):"; /* (build_stats.php) --  */
+$str_last_viewed_page="æœ€åæµè§ˆçš„é¡µé¢:"; /* (index.php) --  */
+$str_select_row="é€‰æ‹©æœ¬è¡Œ"; /* (basket.php) --  */
+$str_select="é€‰æ‹©"; /* (basket.php) --  */
+$str_new_window="æ–°çª—å£"; /* (basket.php) --  */
+$general_anon_mail_mode="å…è®¸/ç¦æ­¢ åŒ¿åç”¨æˆ·ä½¿ç”¨é‚®å¯„æ¨¡å¼"; /* (build_general_conf.php) --  */
+$general_anon_mail_mode_info="<-- å…è®¸åŒ¿åç”¨æˆ·é‚®å¯„å›¾ç‰‡"; /* (build_general_conf.php) --  */
+$general_mail_mode_max_size="é‚®å¯„æ¨¡å¼: é‚®ä»¶å¤§å°"; /* (build_general_conf.php) --  */
+$general_mail_mode_max_size_info="<-- æœ€å¤§å€¼ï¼Œå•ä½ï¼šbytes"; /* (build_general_conf.php) --  */
+$general_thumbnail_view="ç¼©å›¾æ˜¾ç¤º"; /* (build_general_conf.php) --  */
+$general_image_view="å›¾ç‰‡æ˜¾ç¤º"; /* (build_general_conf.php) --  */
+$general_ado_msg="SQLæŸ¥è¯¢ç¼“å­˜"; /* (build_general_conf.php) --  */
+$general_ado_msg_info="<-- SQL æœåŠ¡å™¨å¤ªæ…¢æˆ– PHP æ²¡æœ‰å¯ç”¨åŠ é€Ÿå™¨é‚£ä¹ˆè¯·å¯ç”¨æ­¤é¡¹"; /* (build_general_conf.php) --  */
+$general_ado_time_msg="SQL æŸ¥è¯¢ç¼“å­˜æ—¶é—´ï¼š"; /* (build_general_conf.php) --  */
+$general_ado_time_msg_info="<-- è®¾ç½®æœ€å¤§ç¼“å­˜æ—¶é—´ï¼Œå•ä½åˆ†é’Ÿ"; /* (build_general_conf.php) --  */
+$general_ado_path_msg="SQL æŸ¥è¯¢ç¼“å­˜è·¯å¾„ï¼š"; /* (build_general_conf.php) --  */
+$general_ado_path_msg_info="<-- å‚¨å­˜æŸ¥è¯¢ç¼“å­˜æ•°æ®è·¯å¾„"; /* (build_general_conf.php) --  */
+$str_other_features="å…¶ä»–åŠŸèƒ½"; /* (build_general_conf.php) --  */
+$str_language_settings="è¯­è¨€è®¾ç½®"; /* (build_general_conf.php) --  */
+$str_sql_query_caching="SQL æŸ¥è¯¢ç¼“å­˜"; /* (build_general_conf.php) --  */
+$general_thumb_border="ç¼©ç•¥å›¾è¾¹æ¡†å°ºå¯¸ï¼Œå•ä½ï¼šåƒç´ "; /* (build_general_conf.php) --  */
+$general_thumb_border_info="<-- è®¾ç½®ä¸º0åˆ™å…³é—­, é»˜è®¤: 5"; /* (build_general_conf.php) --  */
+$general_thumb_border_color="ç¼©ç•¥å›¾è¾¹æ¡†é¢œè‰²"; /* (build_general_conf.php) --  */
+$general_thumb_border_color_info="<-- å®Œæ•´æ˜¾ç¤º"; /* (build_general_conf.php) --  */
+$str_recipient="æ”¶ä»¶äºº"; /* (basket_mail.php) --  */
+$str_sender="å‘ä»¶äºº"; /* (basket_mail.php) --  */
+$str_mail_too_big="é”™è¯¯ï¼šé‚®ä»¶å¤ªå¤§ã€‚<br /><br />å…è®¸çš„å°ºå¯¸ä¸ºï¼š %sBytesã€‚æ‚¨æ‰€é€‰æ‹©çš„å›¾ç‰‡å…±è®¡ %sBytes.<br /><br />è¯·åˆ é™¤ä¸€äº›å›¾ç‰‡æˆ–è€…ä½¿ç”¨ä¸‹è½½å‹ç¼©ç›¸å†ŒåŠŸèƒ½ï¼"; /* (basket_mail.php) --  */
+$str_size_of_email="é‚®ä»¶å¤§å°: %s."; /* (basket_mail.php) --  */
+$str_new_search="é‡æ–°æœç´¢"; /* (search.php) --  */
+$str_edit_search="ç¼–è¾‘æœç´¢"; /* (search.php) --  */
+$str_View="æµè§ˆ"; /* (img_view.class.php) --  */
+$str_normal="æ ‡å‡†"; /* (img_view.class.php) --  */
+$str_detail="è¯¦ç»†"; /* (img_view.class.php) --  */
+$search_result_empty="æŠ±æ­‰ï¼Œæ‰¾ä¸åˆ°ä»»ä½•ä¸ä¹‹ç›¸ç¬¦çš„å†…å®¹"; /* (search.php) --  */
+$str_chars_entered="ä¸ªå­—ç¬¦"; /* (img_view.class.php) --  */
+$str_information_lost="æœ‰äº›ä¿¡æ¯å°†ä¸¢å¤±, è¯·ä¿®æ”¹ç›¸å…³å†…å®¹."; /* (img_view.class.php) --  */
+$general_random_image="é¦–é¡µéšæœºæ˜¾ç¤ºå›¾ç‰‡"; /* () --  */
+$general_random_image_info="<-- åœ¨é¦–é¡µéšæœºæ˜¾ç¤ºå›¾ç‰‡"; /* () --  */
+$general_random_image_size="éšæœºæ˜¾ç¤ºå›¾ç‰‡çš„æœ€å¤§å°ºå¯¸"; /* () --  */
+$general_random_image_size_info="<-- è®¾ç½®å›¾ç‰‡æœ€å¤§å°ºå¯¸ï¼Œå•ä½ï¼šåƒç´ "; /* () --  */
+$str_edit_watermark="ç¼–è¾‘æ°´å°"; /* (watermark.php) --  */
+$str_edit_permissions="ç¼–è¾‘æ°´å°æƒé™"; /* () --  */
+$str_Everyone="ä»»ä½•äºº"; /* () --  */
+$str_Nobody="å‡æ— æƒé™"; /* () --  */
+$str_only_logged_in_users="ä»…ç™»å½•ç”¨æˆ·"; /* () --  */
+$str_except_these_groups="ä»¥ä¸‹ç»„é™¤å¤–:"; /* () --  */
+$str_additionally_groups="ä½†æˆæƒä»¥ä¸‹ç»„:"; /* () --  */
+$str_allow_these_persons="æ²¡æœ‰ä¸ºè¿™äº› ç”¨æˆ·/ç¾¤ç»„ è®¾ç½®çš„æ°´å°"; /* () --  */
+$str_album_based_permissions="åŸºäºç›¸å†Œçš„æƒé™"; /* () --  */
+$str_all_albums_but_without_these="æ‰€æœ‰ç›¸å†Œ, é™¤äº†ä»¥ä¸‹çš„:"; /* () --  */
+$str_only_on_these_albums="ä»…è¿™äº›ç›¸å†Œ:"; /* () --  */
+$str_allow_these_persons="å…è®¸ä»¥ä¸‹äººå‘˜"; /* (db_api.php) --  */
+$str_no_watermarks="ä»¥ä¸‹äººå‘˜ä¸æ·»åŠ æ°´å°"; /* (db_api.php) --  */
+$str_watermark_perm_part1="ä¸ºå•ç”¨æˆ·ã€å¤šç”¨æˆ·æˆ–è€…ç›¸å†Œè®¾ç½®æ°´å°ã€‚"; /* (watermark.php) --  */
+$str_watermark_perm_part2="é»˜è®¤ä¸º'ä»…ç™»å½•çš„ç”¨æˆ·' å’Œ 'æ‰€æœ‰ç›¸å†Œ'."; /* (watermark.php) --  */
+$str_watermark_perm_part3="è¿™æ„å‘³ç€ç™»å½•çš„ç”¨æˆ·çœ‹åˆ°çš„æ‰€æœ‰ç›¸å†Œä¸­çš„å›¾ç‰‡éƒ½ä¸å¸¦æ°´å°."; /* (watermark.php) --  */
+$inst_linpha_not_work_correctly="LinPHA æˆ–è®¸ä¸èƒ½æ­£å¸¸è¿ä½œ"; /* (sec_stage_install.php) --  */
+$gd_jpg_missing_msg="æ‚¨çš„ç³»ç»Ÿçš„ GD åº“ä¸æ”¯æŒ jpegï¼JPEG æ ¼å¼çš„å›¾ç‰‡å°†ä¸èƒ½æ˜¾ç¤ºï¼"; /* (sec_stage_install.php) --  */
+$general_video_thumbnail="å°è¯•ä¸ºè§†é¢‘åˆ›å»ºç¼©ç•¥å›¾"; /* (build_generl_config.php) --  */
+$general_video_thumbnail_info="<--å¦‚æœåˆ›å»ºå‡ºç°é—®é¢˜è¯·ç¦ç”¨æ­¤é¡¹"; /* (build_generl_config.php) --  */
+$general_update_notice="LinPHA ç³»ç»Ÿæ£€æŸ¥æ›´æ–°"; /* (build_generl_config.php) --  */
+$general_update_notice_info="<-- å…è®¸æ¯å‘¨æ£€æŸ¥ä¸€æ¬¡"; /* (build_general_config.php) --  */
+$large="å¤§"; /* (build_general_config) -- selectfield for mini images size */
+$directories="ç›®å½•"; /* (build_thumbnail_conf.php) --  */
+$do_nothing="ç©ºé—²"; /* (build_thumbnail_conf.php) --  */
+$create="åˆ›å»º"; /* (build_thumbnail_conf.php) --  */
+$recreate="é‡å»º"; /* (build_thumbnail_conf.php) --  */
+$exif_disabled_in_conf="é…ç½®ç¦æ­¢æ˜¾ç¤º EXIF ä¿¡æ¯"; /* (build_thumbnail_conf.php) --  */
+$iptc_disabled_in_conf="é…ç½®ç¦æ­¢æ˜¾ç¤º IPTC ä¿¡æ¯"; /* (build_thumbnail_conf.php) --  */
+$silent_mode="å®‰é™æ¨¡å¼ (å¦‚ï¼Œå®‰é™çš„è¿è¡Œï¼Œä¸æ˜¾ç¤ºä»»ä½•è°ƒè¯•ä¿¡æ¯)"; /* (build_thumbnail_conf.php) --  */
+$just_thumb_msg="ç¼©ç•¥å›¾"; /* (build_thumbnail_conf.php) --  */
+$log_title="LinPHA æ—¥å¿—"; /* (log.php) --  */
+$log_options="LinPHA æ—¥å¿—é€‰é¡¹"; /* (log.php) --  */
+$log_method_label="è®°å½•åˆ°:"; /* (log.php) --  */
+$str_extra_headers="æ‰©å±•æ ‡é¢˜ï¼š"; /* (log.php) --  */
+$str_log_events['login']="ç”¨æˆ·ç™»å½•"; /* (log.php) --  */
+$str_log_events['thumbnail']="ç¼©ç•¥å›¾ç”Ÿæˆ"; /* (log.php) --  */
+$str_log_events['update']="æ›´æ–°"; /* (log.php) --  */
+$str_log_events['db']="æ•°æ®åº“"; /* (log.php) --  */
+$str_log_events['filemanager']="æ–‡ä»¶ç®¡ç†"; /* (log.php) --  */
+$str_events="äº‹ä»¶"; /* (log.php) --  */
+$find_duplicates="æŸ¥æ‰¾é‡å¤å›¾ç‰‡"; /* (build_thumbnail_conf.php) --  */
+$str_not_enabled_in_php_config="åœ¨ PHP é…ç½®ï¼ˆphp.iniï¼‰ä¸­æ²¡æœ‰å¯ç”¨"; /* (sec_stage_install.php) --  */
+$str_warning="è­¦å‘Š"; /* (build_thumbnail_conf.php) --  */
+$str_thumbnails_deleted="ç¼©ç•¥å›¾å°†è¢«åˆ é™¤"; /* (build_thumbnail_conf.php) --  */
+$str_statistics_deleted="æ‰€æœ‰ç»Ÿè®¡å°†è¢«åˆ é™¤"; /* (build_thumbnail_conf.php) --  */
+$str_random_index_image="é¦–é¡µéšæœºå›¾ç‰‡æ˜¾ç¤º"; /* (build_general_conf.php) --  */
+$str_download_images="ä¸‹è½½å•ä¸ªå›¾ç‰‡"; /* (build_perms.php) --  */
+$str_add_image_comments="å¯¹å›¾ç‰‡å‘è¡¨è¯„è®º"; /* (build_perms.php) --  */
+$str_add_image_description="æ·»åŠ å›¾ç‰‡çš„æè¿°å’Œåˆ†ç±»"; /* (build_perms.php) --  */
+$str_mail_add_all_users="å°†æ‰€æœ‰ç”¨æˆ·åŠ å…¥é‚®ä»¶åˆ—è¡¨"; /* (plugins/mail.php) --  */
+$str_note_upload="<b>æç¤º:</b> æ‚¨ä¸å¿…ä¸€å®šè¦é€šè¿‡è¡¨å•æäº¤å›¾ç‰‡. æ‚¨å¯ä»¥ç”¨ä»»ä½•æ‚¨å–œæ¬¢çš„æ–¹å¼ (ftp,scp,nfs,local,...). åªè¦å°†å®ƒä»¬æ”¾åˆ° albums ç›®å½•å³å¯."; /* (plugins/ftp/index.php) --  */
+$blacklist_opts="é»‘åå•é€‰é¡¹ (åƒåœ¾ä¿¡æ¯è¿‡æ»¤)"; /* (varios) --  */
+$blacklist_onoff="ä½¿ç”¨ä¿¡æ¯è¿‡æ»¤"; /* (varios) --  */
+$blacklist_keywords="è¿‡æ»¤çš„è¯è¯­:"; /* (varios) --  */
+$str_entire_path="å®Œæ•´è·¯å¾„"; /* (search.php) --  */
+$mail_format="é‚®ä»¶æ ¼å¼ï¼š"; /* (basket_mail.php) --  */
+$mail_format_is_txt="çº¯æ–‡æœ¬ (å›¾ç‰‡é™„ä»¶å½¢å¼)"; /* (basket_mail.php) --  */
+$mail_format_is_html="HTML (å›¾ç‰‡æ’åˆ—å…¶ä¸­)"; /* (basket_mail.php) --  */
+$mail_toggle_active="æœ‰æ•ˆæ¿€æ´»"; /* (mail.php) --  */
+$statistics="ç»Ÿè®¡"; /* (various) --  */
+$stats_total_images="å›¾ç‰‡æ€»æ•°"; /* () --  */
+$stats_total_img_views="æ€»æµè§ˆé‡"; /* () --  */
+$stats_total_img_downs="æ€»ä¸‹è½½é‡"; /* () --  */
+$stats_total_img_selected="æµè§ˆå›¾ç‰‡æ•°"; /* () --  */
+$stats_total_downs_selected="ä¸‹è½½å›¾ç‰‡æ•°"; /* () --  */
+$stats_downloads="ä¸‹è½½æ¬¡æ•°"; /* () --  */
+$stats_downl_size="ä¸‹è½½æµé‡"; /* () --  */
+$stats_coments_total="æ€»è¯„è®ºæ•°"; /* () --  */
+$stats_coments_sel="æ‰€é€‰è¯„è®º"; /* () --  */
+$str_log_events['guestbook']="ç•™è¨€"; /* (log.php) --  */
+$stats_realtime="å¯ç”¨/å…³é—­å®æ—¶ç»Ÿè®¡"; /* (build_stats.php) --  */
+$stats_realtime_info="<-- å®æ—¶æ˜¾ç¤ºç»Ÿè®¡ä¿¡æ¯(ä¸ä½¿ç”¨ç¼“å­˜)"; /* (build_stats.php) --  */
+$stats_cache_time="ç»Ÿè®¡ç¼“å­˜æ—¶é—´"; /* (build_stats.php) --  */
+$stats_cache_time_info="<-- æŒ‡å®šæ—¶é—´åˆ·æ–°ä¸‹è½½æµé‡ç»Ÿè®¡"; /* (build_stats.php) --  */
+$stats_user_info="ç”¨æˆ·"; /* (stats_view.php) --  */
+$stats_image_info="å›¾ç‰‡"; /* (stats_view.php) --  */
+$stats_comments_info="è¯„è®º"; /* (stats_view.php) --  */
+$stats_general_info="å¸¸è§„"; /* (stats_view.php) --  */
+$spam_blocked="è¿‡æ»¤æ¬¡æ•°"; /* () --  */
+$mail_current_status="å½“å‰çŠ¶æ€"; /* (mailing.php) --  */
+$mail_sending_to="å‘é€è‡³ï¼š"; /* (mailing.php) --  */
+$mail_counters="ç»Ÿè®¡ (æˆåŠŸ/å¤±è´¥/æ€»æ•°)"; /* (mailing.php) --  */
+$mail_send_fail="å‘é€å¤±è´¥ï¼š"; /* (mailing.php) --  */
+$mail_send_ok="å‘é€å®Œæ¯•ï¼š"; /* (mailing.php) --  */
+$mail_all_complete="å…¨éƒ¨å®Œæˆï¼"; /* (mailing.php) --  */
+$mail_failed_list="å¤±è´¥åœ°å€åˆ—è¡¨"; /* (mailing.php) --  */
+$mail_ok_list="å‘é€åœ°å€åˆ—è¡¨"; /* (mailing.php) --  */
+$mail_mailer_error=" - é‚®å¯„é”™è¯¯ï¼š"; /* (mailing.php) --  */
 $str_log_events['comments']="Comment Entry"; /* (log.php) --  */
-$str_edit_members="±à¼­ÓÃ»§"; /* (build_user.conf.php) --  */
-$edit_groups="±à¼­ÓÃ»§×é"; /* (build_user.conf.php) --  */
-$str_basket="ÆäËü"; /* (various) --  */
-$lang_plugins['log']="LinPHA ÈÕÖ¾"; /* (admin.php) --  */
-$rss_created="³É¹¦Éú³É XML RSS ÎÄ¼ş"; /* () --  */
-$rss_not_created="Ã»ÓĞÉú³É RSS £¬ÒòÎªÃ»ÓĞ·¢ÏÖÓëÖ®Ç°ÓĞÈÎºÎ¸Ä±ä"; /* () --  */
-$rss_settings_saved="RSS ÉèÖÃÒÑ±£´æ"; /* () --  */
-$lang_plugins['stats']="Í³¼Æ×ÊÁÏ"; /* (various) --  */
+$str_edit_members="ç¼–è¾‘ç”¨æˆ·"; /* (build_user.conf.php) --  */
+$edit_groups="ç¼–è¾‘ç”¨æˆ·ç»„"; /* (build_user.conf.php) --  */
+$str_basket="å…¶å®ƒ"; /* (various) --  */
+$lang_plugins['log']="LinPHA æ—¥å¿—"; /* (admin.php) --  */
+$rss_created="æˆåŠŸç”Ÿæˆ XML RSS æ–‡ä»¶"; /* () --  */
+$rss_not_created="æ²¡æœ‰ç”Ÿæˆ RSS ï¼Œå› ä¸ºæ²¡æœ‰å‘ç°ä¸ä¹‹å‰æœ‰ä»»ä½•æ”¹å˜"; /* () --  */
+$rss_settings_saved="RSS è®¾ç½®å·²ä¿å­˜"; /* () --  */
+$lang_plugins['stats']="ç»Ÿè®¡èµ„æ–™"; /* (various) --  */
 $lang_plugins['RSS']="RSS"; /* (various) --  */
-$str_no_watermarks="²»¼ÓË®Ó¡"; /* () --  */
-$str_with_watermarks="Ìí¼ÓË®Ó¡"; /* () --  */
-$str_create_cache_img="´´½¨Í¼Æ¬»º´æ"; /* () --  */
-$str_reset_button="ÖØÖÃ"; /* () --  */
-$cache_stats="Í¼Ïñ»º´æÍ³¼Æ"; /* () --  */
-$drop_duplicates="É¾³ıÖØ¸´ÎÄ¼ş"; /* () --  */
-$general_exif_rotate="ÆôÓÃ/½ûÓÃÍ¼Æ¬×Ô¶¯Ğı×ª"; /* () --  */
-$general_exif_rotate_info="<-- ¸ù¾İ EXIF Êı¾İ×Ô¶¯Ğı×ªÍ¼Æ¬"; /* () --  */
-$lang_plugins['maps']="Google/Yahoo µØÍ¼"; /* () -- maps plugin */
-$maps_setup_info_header="Google/Yahoo µØÍ¼ÉèÖÃ"; /* () -- maps plugin */
-$maps_setup_yahoo_id="ÄúµÄ Yahoo Application ID"; /* (maps plugin) --  */
-$maps_setup_google_key="ÄúµÄ Google Key"; /* (maps plugin) --  */
-$maps_setup_php_version_warning="±§Ç¸ - Õâ¸ö²å¼şÒªÇó PHP v4.2.0 »ò¸üĞÂ°æ±¾¡£ÇëÉı¼¶ PHP"; /* (maps plugin) --  */
-$maps_select_type="ÇëÑ¡ÔñµØÍ¼ÀàĞÍ£º"; /* (maps plugin) --  */
-$maps_select_type_info="<-- Ñ¡ÔñÊ¹ÓÃ Google »ò Yahoo µØÍ¼"; /* (maps plugin) --  */
-$maps_select_display_type="ÇëÑ¡ÔñµØÍ¼ÏÔÊ¾ÀàĞÍ£º"; /* (maps plugin) --  */
-$maps_select_display_type_info="<-- ÏÔÊ¾»ìºÏÍ¼¡¢ÎÀĞÇÍ¼»òÆÕÍ¨µØÍ¼"; /* (maps plugin) --  */
-$maps_zoom_level="Ä¬ÈÏ·Å´ó¼¶±ğ£º1-16 (Ä¬ÈÏ 16£¬ÊÀ½çµØÍ¼)"; /* (maps plugin) --  */
-$maps_zoom_level_info="<-- ÉèÖÃµØÍ¼Ä¬ÈÏ·Å´ó¼¶±ğ"; /* (maps plugin) --  */
-$maps_zoom_location="Ä¬ÈÏ¾ÓÖĞÏÔÊ¾µØÖ·"; /* (maps plugin) --  */
-$maps_zoom_location_info="<-- µØÍ¼Ä¬ÈÏ¾ÓÖĞÏÔÊ¾µÄµØÖ·"; /* (maps plugin) --  */
-$maps_google_ctrl_size="Google µØÍ¼¿ØÖÆ´óĞ¡"; /* (maps plugin) --  */
-$maps_google_ctrl_size_info="<-- µ÷½Ú Google µØÍ¼¸¡¿éºÍÃæ°åµÄ´óĞ¡"; /* (maps plugin) --  */
-$maps_str="µØÍ¼"; /* (maps plugin) --  */
-$map_type_ctrl="ÏÔÊ¾µØÍ¼ÀàĞÍ¿ØÖÆ"; /* (maps plugin) --  */
-$map_type_ctrl_info="<-- ÔÚµØÍ¼ÖĞÏÔÊ¾µØÍ¼ÀàĞÍ¿ØÖÆ"; /* (maps plugin) --  */
-$map_slide_ctrl="ÏÔÊ¾µØÍ¼Ëõ·Å¿ØÖÆ"; /* (maps plugin) --  */
-$map_slide_ctrl_info="<-- ÔÚµØÍ¼ÖĞÏÔÊ¾Ëõ·Å¿ØÖÆ"; /* (maps plugin) --  */
-$map_pan_ctrl="ÏÔÊ¾µØÍ¼Æ½ÒÆ¿ØÖÆ"; /* (maps plugin) --  */
-$map_pan_ctrl_info="<-- ÔÚµØÍ¼ÖĞÏÔÊ¾Æ½ÒÆ¿ØÖÆ"; /* (maps plugin) --  */
-$map_auto_popup="×Ô¶¯ÏÔÊ¾±ê¼Ç"; /* (maps plugin) --  */
-$map_auto_popup_info="<-- Êó±êÖ¸Ïò±ê¼Ç×Ô¶¯µ¯³öÏÔÊ¾±ê¼ÇĞÅÏ¢"; /* (maps plugin) --  */
-$map_album_add="¼ÓÈëÏà²á"; /* (maps plugin) --  */
-$map_marker_del="É¾³ı±ê¼Ç"; /* (maps plugin) --  */
-$map_search_location="ËÑË÷/Ìí¼ÓĞÂµØÖ·"; /* (maps plugin) --  */
-$map_location_here="ÕâÊÇÄúµÄµØÖ·"; /* (maps plugin) --  */
-$map_search_loc_button="Î»ÖÃËÑË÷"; /* (maps plugin) --  */
-$map_add_location="Ìí¼ÓĞÂµØÖ·"; /* (maps plugin) --  */
-$map_assign_album="·ÖÅäÏà²áµ½µØÍ¼µÄÖ¸¶¨µØÖ·"; /* (maps plugin) --  */
+$str_no_watermarks="ä¸åŠ æ°´å°"; /* () --  */
+$str_with_watermarks="æ·»åŠ æ°´å°"; /* () --  */
+$str_create_cache_img="åˆ›å»ºå›¾ç‰‡ç¼“å­˜"; /* () --  */
+$str_reset_button="é‡ç½®"; /* () --  */
+$cache_stats="å›¾åƒç¼“å­˜ç»Ÿè®¡"; /* () --  */
+$drop_duplicates="åˆ é™¤é‡å¤æ–‡ä»¶"; /* () --  */
+$general_exif_rotate="å¯ç”¨/ç¦ç”¨å›¾ç‰‡è‡ªåŠ¨æ—‹è½¬"; /* () --  */
+$general_exif_rotate_info="<-- æ ¹æ® EXIF æ•°æ®è‡ªåŠ¨æ—‹è½¬å›¾ç‰‡"; /* () --  */
+$lang_plugins['maps']="Google/Yahoo åœ°å›¾"; /* () -- maps plugin */
+$maps_setup_info_header="Google/Yahoo åœ°å›¾è®¾ç½®"; /* () -- maps plugin */
+$maps_setup_yahoo_id="æ‚¨çš„ Yahoo Application ID"; /* (maps plugin) --  */
+$maps_setup_google_key="æ‚¨çš„ Google Key"; /* (maps plugin) --  */
+$maps_setup_php_version_warning="æŠ±æ­‰ - è¿™ä¸ªæ’ä»¶è¦æ±‚ PHP v4.2.0 æˆ–æ›´æ–°ç‰ˆæœ¬ã€‚è¯·å‡çº§ PHP"; /* (maps plugin) --  */
+$maps_select_type="è¯·é€‰æ‹©åœ°å›¾ç±»å‹ï¼š"; /* (maps plugin) --  */
+$maps_select_type_info="<-- é€‰æ‹©ä½¿ç”¨ Google æˆ– Yahoo åœ°å›¾"; /* (maps plugin) --  */
+$maps_select_display_type="è¯·é€‰æ‹©åœ°å›¾æ˜¾ç¤ºç±»å‹ï¼š"; /* (maps plugin) --  */
+$maps_select_display_type_info="<-- æ˜¾ç¤ºæ··åˆå›¾ã€å«æ˜Ÿå›¾æˆ–æ™®é€šåœ°å›¾"; /* (maps plugin) --  */
+$maps_zoom_level="é»˜è®¤æ”¾å¤§çº§åˆ«ï¼š1-16 (é»˜è®¤ 16ï¼Œä¸–ç•Œåœ°å›¾)"; /* (maps plugin) --  */
+$maps_zoom_level_info="<-- è®¾ç½®åœ°å›¾é»˜è®¤æ”¾å¤§çº§åˆ«"; /* (maps plugin) --  */
+$maps_zoom_location="é»˜è®¤å±…ä¸­æ˜¾ç¤ºåœ°å€"; /* (maps plugin) --  */
+$maps_zoom_location_info="<-- åœ°å›¾é»˜è®¤å±…ä¸­æ˜¾ç¤ºçš„åœ°å€"; /* (maps plugin) --  */
+$maps_google_ctrl_size="Google åœ°å›¾æ§åˆ¶å¤§å°"; /* (maps plugin) --  */
+$maps_google_ctrl_size_info="<-- è°ƒèŠ‚ Google åœ°å›¾æµ®å—å’Œé¢æ¿çš„å¤§å°"; /* (maps plugin) --  */
+$maps_str="åœ°å›¾"; /* (maps plugin) --  */
+$map_type_ctrl="æ˜¾ç¤ºåœ°å›¾ç±»å‹æ§åˆ¶"; /* (maps plugin) --  */
+$map_type_ctrl_info="<-- åœ¨åœ°å›¾ä¸­æ˜¾ç¤ºåœ°å›¾ç±»å‹æ§åˆ¶"; /* (maps plugin) --  */
+$map_slide_ctrl="æ˜¾ç¤ºåœ°å›¾ç¼©æ”¾æ§åˆ¶"; /* (maps plugin) --  */
+$map_slide_ctrl_info="<-- åœ¨åœ°å›¾ä¸­æ˜¾ç¤ºç¼©æ”¾æ§åˆ¶"; /* (maps plugin) --  */
+$map_pan_ctrl="æ˜¾ç¤ºåœ°å›¾å¹³ç§»æ§åˆ¶"; /* (maps plugin) --  */
+$map_pan_ctrl_info="<-- åœ¨åœ°å›¾ä¸­æ˜¾ç¤ºå¹³ç§»æ§åˆ¶"; /* (maps plugin) --  */
+$map_auto_popup="è‡ªåŠ¨æ˜¾ç¤ºæ ‡è®°"; /* (maps plugin) --  */
+$map_auto_popup_info="<-- é¼ æ ‡æŒ‡å‘æ ‡è®°è‡ªåŠ¨å¼¹å‡ºæ˜¾ç¤ºæ ‡è®°ä¿¡æ¯"; /* (maps plugin) --  */
+$map_album_add="åŠ å…¥ç›¸å†Œ"; /* (maps plugin) --  */
+$map_marker_del="åˆ é™¤æ ‡è®°"; /* (maps plugin) --  */
+$map_search_location="æœç´¢/æ·»åŠ æ–°åœ°å€"; /* (maps plugin) --  */
+$map_location_here="è¿™æ˜¯æ‚¨çš„åœ°å€"; /* (maps plugin) --  */
+$map_search_loc_button="ä½ç½®æœç´¢"; /* (maps plugin) --  */
+$map_add_location="æ·»åŠ æ–°åœ°å€"; /* (maps plugin) --  */
+$map_assign_album="åˆ†é…ç›¸å†Œåˆ°åœ°å›¾çš„æŒ‡å®šåœ°å€"; /* (maps plugin) --  */
 $general_ignored_files="Files to ignore in collection"; /* (build_general_config.php) --  */
 $general_ignored_files_info="<-- files to ignore (comma seperated)"; /* (build_general_config.php) --  */
 $general_ignored_fileext="File extensions to ignore in collection"; /* (build_general_config.php) --  */

@@ -6,18 +6,18 @@
 
 $PHPMAILER_LANG = array();
 
-$PHPMAILER_LANG["provide_address"] = 'Äú±ØÐëÌá¹©ÖÁÉÙÒ»¸ö' .
-                                     'ÊÕ¼þÈËµØÖ·¡£';
-$PHPMAILER_LANG["mailer_not_supported"] = ' ÓÊ¼Ä²»Ö§³Ö¡£';
-$PHPMAILER_LANG["execute"] = 'ÎÞ·¨Ö´ÐÐ: ';
-$PHPMAILER_LANG["instantiate"] = 'ÎÞ·¨Ê¹ÓÃÓÊ¼þ¹¦ÄÜ¡£';
-$PHPMAILER_LANG["authenticate"] = 'SMTP ´íÎó: ÎÞ·¨ÑéÖ¤¡£';
-$PHPMAILER_LANG["from_failed"] = '´Ó¶øµÃ³öÊÕ¼þÈËµØÖ·´íÎó£º';
-$PHPMAILER_LANG["recipients_failed"] = 'SMTP ´íÎó£ºÒÔÏÂ' .
-                                       'ÊÕ¼þÈË´íÎó£º';
-$PHPMAILER_LANG["data_not_accepted"] = 'SMTP ´íÎó£ºÊý¾Ý¾Ü¾ø½ÓÊÜ¡£';
-$PHPMAILER_LANG["connect_host"] = 'SMTP ´íÎó£ºÎÞ·¨Á¬½Óµ½ SMTP Ö÷»ú¡£';
-$PHPMAILER_LANG["file_access"] = 'ÎÞ·¨·ÃÎÊÎÄ¼þ£º';
-$PHPMAILER_LANG["file_open"] = 'ÎÄ¼þ´íÎó£¬ÎÞ·¨´ò¿ªÎÄ¼þ£º ';
-$PHPMAILER_LANG["encoding"] = 'Î´Öª±àÂë£º';
+$PHPMAILER_LANG["provide_address"] = 'æ‚¨å¿…é¡»æä¾›è‡³å°‘ä¸€ä¸ª' .
+                                     'æ”¶ä»¶äººåœ°å€ã€‚';
+$PHPMAILER_LANG["mailer_not_supported"] = ' é‚®å¯„ä¸æ”¯æŒã€‚';
+$PHPMAILER_LANG["execute"] = 'æ— æ³•æ‰§è¡Œ: ';
+$PHPMAILER_LANG["instantiate"] = 'æ— æ³•ä½¿ç”¨é‚®ä»¶åŠŸèƒ½ã€‚';
+$PHPMAILER_LANG["authenticate"] = 'SMTP é”™è¯¯: æ— æ³•éªŒè¯ã€‚';
+$PHPMAILER_LANG["from_failed"] = 'ä»Žè€Œå¾—å‡ºæ”¶ä»¶äººåœ°å€é”™è¯¯ï¼š';
+$PHPMAILER_LANG["recipients_failed"] = 'SMTP é”™è¯¯ï¼šä»¥ä¸‹' .
+                                       'æ”¶ä»¶äººé”™è¯¯ï¼š';
+$PHPMAILER_LANG["data_not_accepted"] = 'SMTP é”™è¯¯ï¼šæ•°æ®æ‹’ç»æŽ¥å—ã€‚';
+$PHPMAILER_LANG["connect_host"] = 'SMTP é”™è¯¯ï¼šæ— æ³•è¿žæŽ¥åˆ° SMTP ä¸»æœºã€‚';
+$PHPMAILER_LANG["file_access"] = 'æ— æ³•è®¿é—®æ–‡ä»¶ï¼š';
+$PHPMAILER_LANG["file_open"] = 'æ–‡ä»¶é”™è¯¯ï¼Œæ— æ³•æ‰“å¼€æ–‡ä»¶ï¼š ';
+$PHPMAILER_LANG["encoding"] = 'æœªçŸ¥ç¼–ç ï¼š';
 ?>
