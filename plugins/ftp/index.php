@@ -163,7 +163,7 @@ switch($todo) {
 // ----------------------------------------------------------------------------
 function fsguideErrorHandler ($errno, $errstr, $errfile, $errline) {
 
-if(strpos($errstr, "PHP_SELF") === false){
+if(strpos($errstr, "PHP_SELF") === false && strpos($errstr, "deprecated") === false){
   if ( !isset( $GLOBALS['message'] ) )
     $GLOBALS['message']  = "<LI>" . $errstr . NL;
   else
