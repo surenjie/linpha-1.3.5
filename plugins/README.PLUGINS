@@ -1,0 +1,67 @@
+Rev 1.0 	01 Jun 2004 by fangehrn (linpha AT angehrn DOT com) 
+
+Short guide for writing linpha plugins
+======================================
+This guide is for developers only with skills in php programming
+
+Please note that not all plugins can be applied to linpha if the number 
+of plugins increases we will make them available as a seperate download.
+Please do all programming with the following PHP settings:
+register_globals = off !!
+error_reporting(E_ALL)
+
+It may be also good idea to post your idea of a plugin in the forum to 
+prevent double, thanks!
+
+Add a new plugin
+----------------
+Replace in the following lines 'test_plugin' with your plugin name
+
+- add a new row in the table "linpha_plugins" in your database
+  ID: keep emtpy
+  name: plugin name for example: test_plugin
+  active: 0
+
+- add in top of admin.php this line
+  $lang_plugins['test_plugin'] = 'test_plugin';
+  (this is for the other languages in linpha, don't skip!)
+
+- add a new icon in "graphics/test_plugin.png"
+
+- make a new folder "plugins/test_plugin"
+  add a new file "plugins/test_plugin/test_plugin.php"
+  (this file is included in the admin pages)
+  it should contain all the settings for this plugin
+
+- add new help entries and description of your plugin in "docs/index.php"
+  (in the array $toc at the bottom of the file)
+  and the "docs/lang/lang_doc.English.php"
+  (please follow the syntax from the exisiting entries!)
+
+- if you have to output some text, put them in variables which are defined
+  at the top of each file, for example: $test_plugin_descr = "Description of...";
+  we will add them later to the language files ourselves.
+
+- start coding your plugin...
+  
+Make use of the following functions:
+
+// check if the plugin is enabled
+if(read_plugins_config('test_plugin'))
+{
+   ...
+}
+
+// if you have to save some settings, add them in the table "linpha_config"
+// with a prefix of your plugin, for example: test_plugin_name or tp_name
+// use this functions to read and update your settings:
+$name = read_config('test_plugin_name');
+update_config('value','test_plugin_name');
+
+
+- once you have finished, send all the changed, new files and a link 
+where we can test your new plugin online to:
+rudi (bzrudi AT tuxpower DOT de) or 
+to me (linpha AT angehrn DOT com)
+
+happy coding !!

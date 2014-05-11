@@ -1,0 +1,72 @@
+############################################################################
+### TODO 1.0                                                             ###
+### TESTING, TESTING, TESTING :-)                                        ###
+### Expected release date: Friday, 09. September                         ###
+############################################################################
+
+SMALL todos
+############################################################################
+
+
+bzrudi's todos
+############################################################################
+currently working on: 
+
+
+flo's todos
+############################################################################
+currently working on: 
+
+
+vytautas' todos
+############################################################################
+currently working on:
+
+
+
+
+
+############################################################################
+TODOS 1.1
+############################################################################
+- show exif/iptc description in thumbnail view
+- make all mailing list settings (SMTP/SENDER/AUTH...) available to be easily 
+  modified by users via the mailing list plugin config page
+- add option for default file permission
+  (i think we should have such special settings not in the admin section,
+   only in the config table)
+- uninstall script: delete linpha tables (but not the linpha db itself), 
+  delete the folders sql/adocache, sql/cache, sql/tmp (read the config 
+  variables for correct location), delete sql/db_connect.php, delete sql backups 
+  and backups of db_connect.php  security..?!
+- option under login "deactivate ip check"
+- move all language entries which are only needed in the doc section from 
+  lang/ to docs/lang/ because most of them aren't used!  
+
+  
+done
+====
+- since new imagemagick creating videos thumbnails doesn't work anymore like this:
+  convert test.avi test.jpg, gives not test.jpg, but test.jpg-0, test.jpg-1, ... for each frame!
+  we have the same issue with animated gifs!
+  is there a command which takes only the first frame to test.jpg (and not test.jpg-0) ??
+- md5sum for videos !! stats are completly distored 
+  (download: SET downloads = downloads+1 WHERE md5sum = 'xzy', with videos 
+  every entry which doesn't have an md5sum is updated) (comments, descr, etc.)
+- limit chars for comments on the left side to a reasonable value
+- search for full path (not only filename)
+- make user/groups association id based, not groupname based
+- change image comment field from VARCHAR to TEXT (we don't lose the search
+   function, but maybe some performance issues while searching)
+- user management: split edit user and group allocation for better overview
+- remove "(exif)" in description field, but add info in commenting system if the image has already
+   an exif or iptc description
+- exif: add jpeg_comment field and show that entry instead of user_comment
+- option: search for double images in collection (Thumbnails EXIF/IPTC page)
+- make add description/add category available in permission framework
+- statistics: elements in cache in percent: only with default resolution to prevent > 100%
+- serach for \"james bond\"
+- allow admins to add manually email adresses to the mailing list plugin
+- add to faq: On Windows 2003 Server running IIS 6 you may need to grant READ (RX) permission to the iusr_ and iwam_ accounts to %systemroot%\system32\cmd.exe 
+- improve PHP's addslashes() due use of adodb's addq() function 
+  (for inserts only!) to make sqlite work as expected 

@@ -1,0 +1,77 @@
+################################################
+# Developer notes, coding hints...
+# bzrudi: 16 July 2004
+################################################
+Dear Developers,
+
+please read these lines before start coding. It is important
+to have a unique coding style IMHO ;-):
+
+1. Make use of phpdoc style commenting (see hints below)
+2. If possible write your code class based
+3. Classnames start uppercase (MySuperClass)
+4. Methods start lowercase (mySuperMethod())
+5. All other functions are lowercase with underline my_perfect_function()
+6. Defines are UPPERCASE
+7. Filenames for classes end with *.class.php
+8. All functions for a single file are placed at TOP! of the file 
+9. All new functions you add in /functions/*.php are placed TOP!
+10.If possible create as less new files as possible and please do not place 
+   them in linpha root if possible.. 
+11.Add GPL header
+12.Add short description for each file (phpdoc style)
+
+
+// ADOdb
+We make us of the ADOdb database abstraction layer. Please read this document
+for more information about ADOdb:
+http://phplens.com/lens/adodb/docs-adodb.htm
+
+
+// commenting please see http://phpdoc.org for details.
+
+We make use of the following tags:
+@author  authorname -> (@author  me) 
+
+@global  datatype  $globalvariablename ->
+(@global  mixed  $GLOBALS["myvar"]) 
+
+@param  datatype  $paramname  description ->
+(@param  bool  $baz  blabla) 
+
+@return  datatype  description ->
+(@return  Parser|false  phpDocumentor Parser object or error) 
+
+@uses
+file.ext|elementname|class::methodname()|class::$variablename|functionname() 
+|function functionname  unlimited number of values separated by commas ->
+(@see  
+new_images.php,left_menu.class.php,LeftMenuView::showNewImagesFolder()) 
+
+@todo  information string [unspecified format] -> (@todo  blablal) 
+
+@var  datatype  description -> (@var  int  imagetype from getimagesize())
+(only if necesarry!) 
+
+@package  packagename -> (@package  image)
+@subpackage  subpackagename -> (@subpackage  identify) 
+
+We make use of the following package names:
+
+image
+filesys
+database
+layout
+plugins
+security
+other 
+
+subpackages:
+image -> resizing
+image -> rotation
+image -> watermark
+image -> identify
+
+Thanks for contributing to LinPHA!
+
+cheers bzrudi

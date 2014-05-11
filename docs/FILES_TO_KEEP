@@ -1,0 +1,24 @@
+List of files to keep (or diff) during upgrade of third party software!
+
+AdoDB:
+/adodb/adodb_errorhandler.inc.php
+/adodb/drivers/adodb-sqlite.inc.php -> not anymore, removed changed stuff
+
+PHP_JPEG_Metadata_Toolkit:
+new changes:
+/include/phpmeta/EXIF.php
+- changed '<?' to '<?php')
+- outcommented line 2020-2026 (exif thumbnail)
+
+/include/phpmeta/Unicode.php
+- smart_htmlspecialchars() added QUOTES functionalities
+
+removed files:
+- Documentation/*
+- Example.php
+- get_*_thumb.php (security)
+
+
+more? what about getid3?
+
+cheers bzrudi

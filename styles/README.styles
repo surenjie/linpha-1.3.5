@@ -1,0 +1,18 @@
+This is a very short HOWTO about styles/themes but should help you to make 
+things work ;-)
+bzrudi Dec. 2003
+
+1. copy one of the *.css files to a new file called whatever you like, in 
+the form "mytheme.css". (WITHOUT spaces and/or special characters !!)
+2. open the LinPHA admin section "General configuration"
+3. select your file from the list of available themes in the select.
+4. save config! (of course you would not see any change over the original 
+theme this thime ;-)
+5. start playing arround and create the new theme :-)
+6. if you think your theme is ready to hit the masses and you like it to be 
+included in one of the next LinPHA releases, feel free to mail me a copy 
+(with all required images)
+
+thanks alot bzrudi
+
+mailto: linpha@tuxpower.de

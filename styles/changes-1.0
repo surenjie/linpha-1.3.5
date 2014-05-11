@@ -1,0 +1,18 @@
+Changes Linpha 1.0
+------------------
+
+There were several changes betwenn 1.0RC2 and the final 1.0
+on the left menu:
+
+td.leftmenuhead renamed to div.leftmenuhead
+div.leftmenu renamed to div.leftmenu_li_substages
+
+new css tags:
+.leftmenu_li_img
+.leftmenu_li_link
+.leftmenu_li_public
+.leftmenu_li_secret
+
+removed css tags:
+li.leftmenu
+li.secret

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<html><head><title>LinPHA Installation</title>
+<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+</head>
+<body>
+<h2><u>LinPHA Install/Usage Instructions (v. 1.3.2) 10. Jul. 2007</u></h2>
+
+<h3><u>REQUIREMENTS</u></h3>
+<ul>
+<li> Apache Webserver with PHP support (IIS is reported to work but not officially supported)
+<li> PHP (>=4.1.0) with MySQL/PostgreSQL/SQLite support
+<li> MySQL/PostgreSQL Database or PHP/SQLite support
+<li> Convert tool from ImageMagick AND/OR PHP with support for the GD library<br>
+	 (we recommend to use convert)
+</ul>
+
+<h3><u>RECOMMENDED</u></h3>
+<ul>
+<li> Especially on slow hardware PLEASE MAKE USE of a PHP accelerator!!!<br> Please see
+	 <a href='http://turck-mmcache.sourceforge.net/'>Turck mmcache</a> or
+	 <a href='http://www.php-accelerator.co.uk/'>ionCube PHP-Accelerator</a> for more information.
+</ul>
+
+<h3><u>UPDATE</u></h3>
+<ul>
+<li> Important: see <a href='http://linpha.sourceforge.net/wiki/index.php/Update'>UPDATE INSTRUCTIONS</a>
+</ul>
+
+<h3><u>INSTALL UNIX</u></h3>
+<ul>
+<li> cd to your webroot (i.e. htdocs subdir)
+<li> untar LinPHA (tar xvfz linpha-x.x.x.tar.gz)
+<li> chmod the linpha/sql directory (chmod 777 sql/) as root
+<li> point your browser to http://hostname/linpha/install/install.php
+<li> follow the install instructions...
+</ul>
+
+<h3><u>INSTALL MAC</u></h3>
+<ul>
+<li> same as UNIX installation
+<li> for high quality images and better performance get your copy of ImageMagick from<br>
+<a href='http://www.entropy.ch/software/macosx/welcome.html#imagemagick'>entropy.ch</a>
+(this version comes with an easy to use installer!)
+</ul>
+
+<h3><u>INSTALL WINDOWS</u></h3>
+
+We do highly recommend the use of XAMPP for all Windows users. XAMPP is a complete package<br>
+including Apache/MySQL/PHP/Perl... and is known to work perfect with LinPHA.<br>
+Please see <a href='http://apachefriends.org'>apachefriends</a> for details!
+<ul>
+<li> installation requires the <font color="FF0000">NTFS filesystem</font>
+<li> cd to your webroot (i.e. htdocs subdir)
+<li> untar/unzip LinPHA (use something like WinRAR)
+<li> if you wish to make use of the "convert" tool make sure it is in $PATH
+<li> point your browser to http://hostname/linpha/install/install.php
+<li> follow the install instructions...
+</ul>
+
+<h3><u>CVS INSTALL</u></h3>
+<ul>
+<li> see install instructions below as they are similar
+</ul>
+
+<h3><u>USAGE</u></h3>
+<font color='#FF0000'>LinPHA contains a subfolder <b>'/albums'</b> where you <b>MUST</b> store your photos</font><br>
+Example:<br>
+Let's say, you wish to create some folders containing your holiday photos.
+<ol>
+<li> You may create a subfolder named '/albums/holiday' in the LinPHA directory.<br>
+		 And store all your photos there. This is ok, but not for many photos.
+
+<li> So you may create other subfolders named by country, like<br>
+		'/albums/holiday/france' and '/albums/holiday/italy' and store your photos there.
+
+<li> Since LinPHA features up to three subfolders you may also create<br>
+		something like: '/albums/holiday/france/bretagne','/albums/holiday/france/paris'<br>
+		and store the photos there...
+
+<li> LinPHA also is capable of handle mixed subfolders which means, that a<br>
+		folder may contain both! pictures and other subfolders.
+</ol>
+
+<h3><u>OTHER NOTES</u></h3>
+Since the names of the subfolders are used to build up the LinPHA menu<br>
+structure, you should name them the way you wish the album names to be<br>
+displayed in the menu.<br><br>
+
+Now that we have some subfolders containing photos, you should<br>
+point your browser to the LinPHA index.php (http://hostname/linpha/index.php)<br>
+If everything went well, you should see all of your mainfolders created<br>
+in '/albums' in the left menu.<br><br>
+
+You can now explore your pictures by navigate through the menu. Because<br>
+there are no thumbnails yet, it may <b>TAKE SOME TIME</b> until your pictures occur.<br>
+LinPHA has to create and store them in the SQL DB once.<br><br>
+
+<b>WARNING</b>: depending on your hardware it may take several minutes to complete<br>
+the creation of thumbnails!! (celeron 400MHz 1,5 thumbs/sec)<br><br>
+
+If you think LinPHA is missing a required feature, please make use of the feature request form at
+<a href='http://sourceforge.net/tracker/?atid=508617&group_id=64772&func=browse'>Sourceforge.net</a><br><br>
+
+If you <b>READ</b> all the above, you should click <a href='install/install.php'>HERE</a> to start install ;-)<br><br>
+
+enjoy, bzrudi71
+
+</body></html>

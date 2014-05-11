@@ -1,0 +1,2352 @@
+###############################################
+###                                         ###
+###          LinPHA 1.3.4 RELEASE!          ###
+###                                         ###
+###############################################
+
+2008-04-15 bzrudi
+ * metadata_editor.php: check md5sum before executing SQL query
+ * more XSS prevention fixes
+ 
+2008-04-14 bzrudi
+ * login.php: fixed possible XSS (see LinPHA Bugs item #1939188)
+ * new_images.php: fixed possible XSS (see LinPHA Bugs item #1939188)
+
+2008-04-13 flo
+ * fixed LinPHA "maps_type" Local File Inclusion Vulnerability
+   reported here: http://secunia.com/advisories/29724/
+
+###############################################
+###                                         ###
+###          LinPHA 1.3.3 RELEASE!          ###
+###                                         ###
+###############################################
+
+2008-01-17  Tadashi Jokagi <elf2000 AT users DOT sourceforge DOT net>
+ * ftp/index.php: fixed xss and xss.
+ * viewer.php: fixed xss.
+ * functions/other.php: fixed xss.
+ * include/left_menu.class.php: fixed xss.
+ * plugins/stats/stats_view.php: fixed xss.
+ * updated Japanese translation.
+ * fixd typo.
+	
+2008-01-08 bzrudi
+ * footer.php: make copyright year dynamic in footer, e.g. 2002-XXXX
+ 
+
+2007-11-10 bzrudi
+ * [ 1810717 ] IPTC and HTML code in Caption -> fixed!
+
+2007-11-09 bzrudi
+ * identify.php: add support for multiple page PDF files. 
+   Patch by: thdavies - thanks alot!
+ 
+2007-10-25 bzrudi
+ * db_api.php: fix unreadable DHTML notice messages when using "Shadow" theme.
+   As seen when running "create all thumbs"
+ * changed linpha version to 1.3.3
+   
+2007-10-04 bzrudi
+ * add new language files - thanks to Bell Lu!
+   lang.zh-tw_big5.php, lang.zh-tw_utf8.php
+   
+2007-08-13 vytautas
+ * replace all stripos with strpos for php4 compatability
+
+2007-08-11 flo
+ * hopefully finally fixed get_thumb_order()
+    the changes after 1.3.2 are not security relevant
+
+2007-08-11 bzrudi
+ * Minor code cleanups for thumborder related stuff
+
+###############################################
+###                                         ###
+###          LinPHA 1.3.2 RELEASE!          ###
+###                                         ###
+###############################################
+
+2007-08-09  flo
+ * Fixed LinPHA New_images.PHP SQL Injection Vulnerability
+   http://www.securityfocus.com/bid/25119
+   pay attention when using user input in sql queries without quotes (ORDER by ...)
+   mysql > 4.1 supports subselects: "ORDER by id,(select password from users)"
+
+###############################################
+###                                         ###
+###          LinPHA 1.3.1 RELEASE!          ###
+###                                         ###
+###############################################
+
+2007-07-04  bzrudi
+ * Fixed (hopefully) all problems concerning Google search in maps plugin.
+
+ 2007-07-03  bzrudi
+ * build_general_config: Add option to define "files to ignore" and 
+   "file extensions to ignore" via admin backend. No longer use a static array 
+   in db_api.php, guess that's somewhat more userfriendly and often caused 
+   problems in the past. Will port this to LinPHA2 also.  
+ * Log Viewer: fixed fatal error when opening log viewer an no db present
+ * Plugins: Disable Stats plugin by default
+   
+2007-06-20  bzrudi
+ * Fixed [ 1721947 ] No error with "." in the DBname (partially)
+   MySQL and friends do not allow any special chars in DB names, so I add at
+   least a warning stating that. By that way I also fixed a couple of other
+   bugs in forth_stage_install ;-)
+ * Fixed [ 1668011 ] Error in download mode
+
+2007-04-06  vytautas
+ * Log Viewer: Implement Severity filter into SQL code and form
+   - Minor Interface adjustements
+
+2007-04-02  vytautas
+ * Log Viewer: Colour code the list according to severity
+   - Fix Interface 'bug'
+ * Add missing global statments in one function to fix DHTML display
+   of notices while generating thumbnails in certain cases
+
+2007-04-01  vytautas
+ * Mailing List Plugin interface correction
+ * Add Log Viewer to the Logger plugin:
+   - Initial version - lots of options to add and fix, currently it 
+     displays all db log entries with no filtering (to be implemented
+     soon)
+   - Add security: only admins can see the logs
+   - Implement Date filter into SQL code
+   - Implement Type filter into SQL code and form
+   
+2007-03-20  vytautas
+ * Added [My_LinPHA] replacement variable in the mailing list plugin 
+   to point to the current LinPHA installation.
+   (ooops fix a couple of typos)
+
+2007-03-18  bzrudi
+ * Added new Korean language file, thanks to Lee Chung-Ook!
+ 
+2007-03-06  vytautas
+ * Implement DHTML display of notices while generating thumbnails
+ * Add Epson CD Print image db file to ignore list
+
+2007-02-20  flo
+ * did the same for the watermark plugin in func.watermark.php:
+   Fix for no longer available argument "+profile "*"" in recent convert 
+   versions. It is replaced by "-strip" which is avialable since mid of 2003,
+   so should be save to use. For backward compatibility we will not use 
+   -thumbnail as with LinPHA2 ;-)
+   
+
+###############################################
+###                                         ###
+###          LinPHA 1.3.0 RELEASE!          ###
+###                                         ###
+###############################################
+
+2007-02-08  bzrudi
+ * Add frame to random index image. Thanks to Bastian!
+ * Finished help entries for the Maps plugin.
+ * Tagging linpha_1_3_0 :-)
+  
+2007-02-08  vytautas
+ * disable browser password saving in user config module
+ * Add Google Picasa ini file to the ignore list
+
+2007-02-04  bzrudi
+ * build_*_conf.php: minor layout fixes in alignment of submit buttons
+   Preparing 1.3.0 release!
+ 
+2007-01-31  bzrudi
+ * Fix for no longer available argument "+profile "*"" in recent convert 
+   versions. It is replaced by "-strip" which is avialable since mid of 2003,
+   so should be save to use. For backward compatibility we will not use 
+   -thumbnail as with LinPHA2 ;-)
+   Boring languages updates for the maps plugin 
+
+2007-01-04  bzrudi
+ * Fixed [ linpha-Bugs-1613655 ] 'Comment' box contains erraneous info - EXIF
+   Ah, and not to forget (again)
+   !! Happy New Year to all of you !!
+   
+2007-01-03  bzrudi
+ * Fixed [ linpha-Bugs-1619972 ] Can't Disable HQ thumbnails and photos
+   ( Caused due wrong use of !empty(), now all replaced by isset() ) 
+
+2006-11-20  bzrudi
+ * Added line-height:normal; as suggested by anon to fix Opera layout issues
+   in leftmenu, see http://sourceforge.net/forum/message.php?msg_id=4018920
+
+2006-10-29  bzrudi
+ * almost finished maps support, or at least what I expect of for the LinPHA 
+   1.x branch ;-) I removed all Garmin GPX file parsing support, as XML is a 
+   mess with PHP4. LinPHA2 will have it again.
+   There are some known minor problems but it should work now. 
+   TODO: finish language entries  
+
+2006-10-13  bzrudi
+ * PHPmeta toolkit updated to latest. Better support for GPS Tags (flo :-))
+   and improved IPTC support. This is required, as Serge is going to write a 
+   patch to support IPTC in TIFF images, thanks alot.
+   As I just did a quick diffing of files, and as there are some new additional 
+   files, please watch for notices and errors and please fix :-) 
+
+2006-10-09  flo
+ * updated ignore list
+
+2006-10-06  bzrudi
+ * implemented permissions settings for maps (add location and maps view)
+
+2006-10-05  bzrudi
+ * added basic support for Google maps. It seems to work basically so please
+   try it. There are not much admin option yet, but more to come. 
+   Please note: I did not test plugin setup, so it may be broken after the 
+   Google integration...	
+ * added support for location search using Google geocode api. It is autodefault
+   as soon as the Google key is available. Google does even allow street based 
+   search in european countrys and provides better results.
+    
+2006-10-03  bzrudi
+ * improved map plugin. It's now possible to assign at least an album to 
+   a location and show up a thumbnail in the marker on the map. 
+   To assign an album to a location, use the "advanced options" menu and choose
+   "Add to Map location"
+  
+2006-09-08  flo
+ * fixed bug 1551919
+   xss security check: string may also contain upper case letters
+
+2006-09-06 Vytautas
+ * Fix a typo bug
+
+2006-09-03  bzrudi
+ * added basic admin settings for maps plugin
+ * merging maps plugin from mapsupport branch to HEAD
+ * added Postgr es DB support to maps plugin
+ * fixed broken mysql maps install
+ * assign locations is now possible
+   + show locations from db in map
+ * tons of fixes and cleanups
+ * added new updated anthracite.css from wwp, thanks alot!
+
+2006-09-02  bzrudi
+ * quick dirty hack to make at least "search for location work" and show up
+   a yahoo AJAX map. Just to have an impression of how it may look like, no 
+   database action taken yet even no style or other things.
+ * My thoughts on worklow: When plugin is setup properly there will be a new 
+   link in left album menu "Maps View", just like "New Images".
+   It will show a worldmap, or any other area where you see your "markers" 
+   (markers are already define locations based on long and latitude and a name 
+   together with other information, stored in DB). You can then define a whole 
+   album or even an single image to that location (marker).
+   Best place would be our JavaScript "Advanced Options" menu IMHO.
+   Clicking a marker will show up additional information like a thumbnail and 
+   more. 
+   Clicking that thumbnail will forward you to the album where it is located.
+   There are tons of posibilities how to add a location, for now location 
+   search its pretty stupid and simple like this. Possible queries:
+   
+    * city,state
+    * city,state,zip
+    * zip
+    * street,city,state
+    * street,city,state,zip
+    * street,zip
+
+ * To activate:
+  	1. Activate plugin in admin plugin config
+  	2. Click "Google/Yahoo Maps" link in admin section - run setup
+  	3. get your own appid from yahoo ;-)
+  	   http://api.search.yahoo.com/webservices/register_application  
+	4. A new link in left menu "Maps View" should appear.
+	5. Play arround, not much yet! I know google maps are much better, but for 
+	   now we use Yahoo maps for several reasons
+
+ * As I'm in Hospital as of next Tuesday I have no idea yet when and how fast 
+   things get improved ;-)
+   	
+2006-09-01  bzrudi
+ * starting yahoo and google maps stuff in "mapsupport" branch
+ * at least, parsing of incl. demo files should work. There are known issues
+   with the xml reader which failed to read some elements, even if they exists
+   in XML data file. strange behaviour !?
+ * prepared maps plugin support in admin pages
+ * created initial setup page and make setup install required table
+
+###############################################
+###                                         ###
+###          LinPHA 1.2.0 RELEASE!          ###
+###                                         ###
+###############################################
+
+2006-09-01  bzrudi
+ * Tagged LinPHA 1_2_0 :-)
+
+2006-08-28  bzrudi
+ * some improvements and fixes as suggested by Bastian
+ * stats_view.php: include max_time in query for better ordering results
+   + set viewed/downloaded images view as default
+ * create_all_thumbs.php: use viewer.php to show up duplicates (href)
+   + show number of total images instead of "0" when running create 
+     and no new images were found
+ * img_view.class.php: some minor changes to make "<<BACK<<" button return to
+   create_all thumbs.php if needed     
+
+2006-08-25  flo
+ * exif autorot - tested successfully with a canon ixus 55, really nice!
+ * make_thumbs()
+   - fixed php notice
+   - exif autorot only on images, not on videos
+
+2006-08-25  bzrudi
+ * [ linpha-Bugs-1546398 ] Rotating images with exif info turned off -> FIXED
+ * enable EXIF image autorotate by default, seems to be stable - please test!
+ 
+2006-08-07
+ * add DHTML support for create_all_thumbs.php
+   TODO: convert 'omiting *' warnings to DHTML (currently they are
+   listed under the main page)
+
+2006-08-06  bzrudi
+ * enable support for PDF files.
+   closes-> RFE : [ 1196627 ] PDF / EPS file formats
+   PDF works pretty well, EPS is a mess, tried 3 different ImageMagick
+   versions with 3 different results ;-)
+
+2006-08-03  bzrudi
+ * speed and memory usage improvements in EXIF autorotate stuff and minor
+   bugfix for 180 degrees rotated images.
+ * fix for problem with image printing and wrong orientation due EXIF stuff
+ * build_perms.php: various fixes, cleanups and improvements
+
+2006-08-02  bzrudi
+ * implemented autorotate images by EXIF tag.
+   closes: [ 941493 ] Autorotate via EXIF Data
+   all rotation is virtual, so actually the image is left as is (we need no
+   write permissions, also EXIF data is not destroyed when rotated). There
+   is currently no support for image flipping, as I do not have any image
+   containing that tag ;-)  my camera does not support the "orientation" tag,
+   so please give it some testing as I just have one! image for testing...
+   requires recreate of thumbnails to take effect.
+   BTW: defaults to disabled for now as there is no config option yet for
+   "exif_image_autorotate", should also be an option during install...
+   You have to enable manually in config table for now.
+ * fixed broken install due broken query while inserting admin user. caused by
+   unwanted "'" in sec_stage_install.php, pretty hard to find, no fun ;-)
+ * added EXIF auto rotate option to admin settings "Features"
+   I'm not sure to enable it by default for now, as it requires some testing.
+   Even if all looks pretty well to me incl. watermarks and cache...
+
+2006-07-30  bzrudi
+ * added option to delete duplicates in image collection
+
+2006-07-28  bzrudi
+ * fixed broken "<< Back <<" href in all *.basket stages.
+
+2006-07-27  flo
+ * fixed php notice in date selection in the stats plugin
+
+2006-07-25  bzrudi
+ * spend today looking for security issues in LinPHA using Chorizo PHP
+   security scanner service. Pretty cool but sad to say I found some XSS.
+   (going to continue over the next days...)
+   + other.php: new function xss_security_check() to take care of various
+     variable checks
+   + viewer.php: fixed possible XSS in various $_GET['x'] vars
+   + stats_view.php: fixed possible XSS in various $_REQUEST['x'] vars
+   + album_comment.php: fixed possible XSS in various $_GET['x'] vars
+
+2006-07-24  bzrudi
+ * guestbook_view.php: minor improvement for SPAM protection as suggested by
+   jst71, thanks alot!
+
+2006-07-16  flo
+ * prevent get_thumbs.php to recreate the thumbnail if we just have no
+   permission this caused the "new image" feature to show old images as new
+
+2006-07-15  flo
+ * fixed bracket support detection during installation
+  if we use   exec($str, $array_output=array(), $return_value='');
+  it will always return empty $array_output and $return_value
+
+  you have to initialize $array_output and $return_value before!
+
+  $array_output = array(); $return_value = '';
+  exec($str, $array_output, $return_value);
+
+2006-06-19  bzrudi
+ * added new theme -> "AquaLight" by Thierry. Thanks alot!
+   ( I personally like it better than the Aqua default so we may switch to
+   AquaLight after some testing!? )
+
+2006-06-12  bzrudi
+ * [ 1499247 ] Uploader include problem --> FIXED
+   (caused by missing TOP_DIR in includes...)
+
+2006-05-19  bzrudi
+ * did a couple of missing language entries as mentioned by Nico
+
+2006-05-18  bzrudi
+ * recommited lost changes caused by SF HD failure.
+ * new updated French language file - Thanks to Nico!
+
+2006-05-08  bzrudi
+ * aplied two patches from wwp
+   fix for typos and not respected border settings from config.
+   + new theme anthracite
+   + db_api.php: finally fixed wrong number of images displayed
+     This was caused due double escaped album names in calculate_images()
+
+2006-05-07  flo
+ * fixed linpha vulnerability in guestbook (and probably comments)
+   (no intrusion possible, only defacement..)
+
+2006-04-23  bzrudi
+ * [ 1474752 ] Show EXIF info by default button doesn't work !! --> FIXED!
+
+2006-04-18  flo
+ * linpha stats
+   + checking Linpha - XSS Vulnerabilities from d4igoro
+     (http://d4igoro.blogspot.com/2006/04/linpha-xss-vulnerabilities.html)
+   + change "set date" field also automatically to custom if using the calendar
+
+
+###############################################
+###                                         ###
+###          LinPHA 1.1.1 RELEASE!          ###
+###                                         ###
+###############################################
+
+2006-04-17  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * tagged LinPHA linpha_1_1_1 :-)
+
+2006-04-13  flo
+ * applied 2 patches from bastian
+   count img view from slideshow in statistics plugin
+   only count images in "total numbers" with permissions
+
+2006-04-13  bzrudi
+ * [ 1469438 ] caption field too short --> FIXED!
+
+2006-04-10  Tadashi Jokagi <elf2000 AT users DOT sourceforge DOT net>
+ * DOCS/INSTALL.html updated.
+ * security reason, escape(htmlspecialchars, urlencode) is added to some character strings.
+ * ftp/index.php: fixed string containing '%' cannot be processed correctly.
+ * RSS/RSS.php: fixed multiple XSSs.
+ * functions/db_api.php: fixed SQL injection.
+ * update Japanese translation.
+
+2006-04-06  flo
+ * bug [ 1458246 ] "Undefined Access" after sending mail in Mail Mode ---- fixed
+
+2006-03-22  flo
+ * fixed bug with not readable albums causing a fatal error
+
+2006-03-21  flo
+ * fixed bug in image cache plugin
+
+2006-02-28  flo
+ * bug [ 1437796 ] cache-plugin unable to create folders ---- fixed
+
+2006-02-22  flo
+ * login.php: fixed broken email link (only with french language file, because of the apostroph in the text)
+
+2006-02-19  flo
+ * allow filemanager to copy files instead of only folders
+
+###############################################
+###                                         ###
+###          LinPHA 1.1.0 RELEASE!          ###
+###                                         ###
+###############################################
+
+2006-02-19  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * tagged LinPHA linpha_1_1_0 :-)
+
+2006-02-18  flo
+ * fixed linpha vulnerability found on secunia.com
+   + docs/index.php and install/*
+     include($lang) fixed
+   + plugins/log/logger.class.php
+     use htmlspecialchars() before write logger events to database or to text file
+     for example:
+     User <?php echo something evil ?>: login failed!
+     will be replaced by:
+     User &lt;?php echo &#039;cwd&#039; ?&gt;: login failed!
+
+2006-02-16  flo
+ * tested: linpha update 1.0 to 1.0.1
+   tested: linpha install 1.0.1
+   fixed: upgrade.php: fixed update error
+
+2006-02-06  Tadashi Jokagi <elf2000 AT users DOT sourceforge DOT net>
+ * ftp/*.php rawurlecode to urlencode.
+
+2006-02-09  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * made RSS feed valid. (http://feedvalidator.org/)
+   + TODO: provide feeds for new comments and guestbook entries
+
+2006-02-06  flo
+ * added wrapper script in plugins/RSS/showRSS.php which prints sql/tmp/rss.xml
+   and only if the plugin is enabled
+   (normally we have a .htaccess in sql/ and we cannot access directly sql/tmp/rss.xml)
+
+2006-02-09  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Don't rely on just removing all hrefs when a plugin is disabled, as we
+   still have access if href is known. Thanks to quixy for this hint!
+
+2006-02-07  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * db_api.php: make var $mydirectory global and add linpha_addslashes() for path compare in
+   function calculate_images().
+   *may/should* fix : [ 1211172 ] Wrong number of calculated photos
+
+2006-02-02  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * (still) just testing new mailing list...
+
+2006-02-02  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Mailing list plugin: Fix bug where all mail would fail after the first failed
+   email. Also added the error msg to the failed e-mails list in DHTML mode.
+
+2006-02-01  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * ftp/index.php: PHP 5.1.x workarround to prevent notices from strftime()
+
+2006-01-31  flo
+ * fixed notice during install (rss plugin needs the an undefined function in footer.php during install)
+ * fixed some bugs in date selection in stats plugin and improved date selection
+ * [ 1303355 ] Guestbook bug/annoyence --> FIXED
+
+2006-01-30  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * added search option for album comments (unchecked by default as it may cause
+   a large number of results and therefore may confuse some customers ;-))
+   closes -> RFE [ 1273262 ] Search Page - Option to search in the albumcomments
+
+2006-01-24  flo
+ * fixed very strange bug:
+    on a hosting a server i got an "internal server error" while clicking on the
+    statistics link, after 1/2 hour debugging i found the solution: on this
+    hosting server a new defined function in a switch() statement cause the
+    "internal server error", very strange....
+ * trying to fix this error in stats (seen on sf.net):
+   * mysql error: [1104: The SELECT would examine more than MAX_JOIN_SIZE
+rows; check your WHERE and use SET SQL_BIG_SELECTS=1 or SET
+SQL_MAX_JOIN_SIZE=# if the SELECT is okay] in EXECUTE("SELECT
+linpha_stats.md5sum, count(linpha_stats.id) AS nr_count,
+max(linpha_stats.stats_time) AS max_time FROM linpha_photos,
+linpha_first_lev_album, linpha_stats WHERE linpha_photos.prev_path LIKE
+CONCAT(linpha_first_lev_album.path,'%') AND 1=1 AND
+(linpha_photos.md5sum=linpha_stats.md5sum AND linpha_stats.type = 'view'
+AND linpha_stats.stats_time >= '0' AND linpha_stats.stats_time <=
+'9999999999' ) GROUP by linpha_stats.md5sum ORDER by nr_count DESC LIMIT
+0,10")
+   */
+  if(DB_TYPE == "mysql")
+  {
+    $GLOBALS['db']->Execute("SET SQL_BIG_SELECTS=1");
+  }
+
+
+2006-01-22  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * cronOthumb.php: fixed passwd auth bug
+
+2006-01-20  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Mailing list language entries and other minor improvements.
+ * Add logger plugin support for comment entries.
+
+2006-01-19  Tadashi Jokagi <elf2000 AT users DOT sourceforge DOT net>
+ * ftp plugin: fixed multibyte path name, fixed XSSs.
+
+2006-01-18  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Fix minor bug in the mailing list plugin - adding failed emails
+   to successful list aswell as failed.
+ * Fix css styles: "vertical-align: center;" to "vertical-align: middle;"
+
+2006-01-17  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Add DHTML Progress updates to the mailing list plugin to display more
+   status information while sending emails. Also fix the fault where one
+   erronius email would stop any further emails from being proccessed.
+
+2006-01-14  flo
+ * fixed bug in get_thumb_order()
+
+2006-01-06  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Added SPAM attack counting for guestbook and comments. OK, not really useful,
+   but should at least give me an impression of how well the SPAM blocker works
+   on SF and friends ;-) (results found in guestbook plugin)
+
+2006-01-02  flo
+ * Stats plugin: don't show pictures without having the permission
+
+Happy New Year to all !
+
+2005-12-29  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Fix a bug in logger plugin which prevented emailing of logs under
+   some conditions.
+
+2005-12-20  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * added ob_flush() before each flush() as recommended by the PHP
+   Team. Thanks to Bernie for the hint!
+ * upgrade.php: added set_time_limit(0); while converting to new stats system
+   to prevent timeout. (as seen on SF)
+
+2005-12-16  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * added stats caching option in admin section as performance sucks while
+   counting downloadsizes for anonymous users (image section)
+ * build_general_stats.php: moved some functions to /functions/other.php
+   to reuse them in statistics section
+   //TODO testing and language + help entries
+
+2005-12-16  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Modify logger and guestbook plugins to log guestbook entries as per
+   feature request #1380812
+
+2005-12-11  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * minor changes to finally make new RSS Plugin work
+
+2005-12-10 waxwork <colinbissegger_AT_yahoo_DOT_ca>
+ * Added RSS plugin v. 0.5
+ * Translation in French of the general help file
+
+2005-11-27  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php/forth_stage_install.php: Alter table users add downloads,
+   downloads_size. Linpha_config new values stats_anonymous_downloads and
+   stats_anonymous_downloads_size.
+ * stats_view.php: take advantages of pre-saved download values
+
+2005-11-26  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php/forth_stage_install.php: Add indexes to stats table - speed
+   improvement. (performance sucks without)
+ * img_view_class.php/file_download.php: fixed bug. Do no longer count video
+   "views" as downloads. (also takes care of new stats)
+
+2005-11-25  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php: convert old stats into new stats plugin
+
+2005-11-22  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * forth_stage_install.php: fixed installation on PG. Allow installation
+   with, and without password. Needs PG 8.0 testing, works fine with 7.x
+   for me.
+   + changed INT to BIGINT for PG stats table as INT ends at 2000000000 and
+   do we compare to 9999999999 ;-)
+   + some other PG related minor fixes
+ * stats_view.php: some fixes and cleanups
+
+2005-11-21  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * stats_view.php: fixed bug - number of user comments not displayed
+   + made "comments" section work - needs PG testing
+ * upgrade.php/forth_stage_install.php: set new stats system active by default
+ * admin.php and friends: statistics plugin link now points to stats permission
+   settings in admin section
+ * finished most lang entries
+
+2005-11-20  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * stats_view.php: used some CSS defines to have unique LinPHA look and feel
+   + removed notice and made image cache table show up correctly
+ * forth_stage_install.php: Disable stats for anon by default, renamed table
+   columns user and time from stats table to stats_user and stats_time.
+   User is a preserved attribute on postgres!
+ * stats.class.php/stats_view.php: make use of new column names and some fixes
+
+2005-11-09  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Update Language files with the changes to mailing list plugin
+
+2005-11-06  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * Add option to toggle the active state of users in the mailing list.
+   files modified: plugins/mail/mail.php actions/submit_mod_data.php
+   todo:           modify lang files as noted in mail.php
+
+2005-11-01  flo <linpha AT angehrn DOT com>
+ * fixed bug "only variables can be passed by reference in other.php
+
+2005-10-22  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * stats_view.php: fixed some unreadable fonts in shadow theme
+
+2005-10-20  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * stats_view.php: made work with sqlite and postgres
+   + new stats system - removed some warnings
+
+2005-10-18  vytautas <krivickas AT vic DOT australis DOT com DOT au>
+ * fix bug in build_stats.php: missing "); on line 81
+
+2005-10-01  flo <linpha AT angehrn DOT com>
+ * stats plugin in forth_stage_install.php
+   todo:
+    - import old statistics data, and probably add function to delete old statistics data
+    - show views and downloads from the new statistics plugin
+ * viewer.php removed notice on the subfolders
+ * linpha update: added button "check now"
+
+
+2005-09-29  flo <linpha AT angehrn DOT com>
+ * initial commit of the new statistic plugin
+   + todo: add entries in forth_stage_install.php or backport linpha 2.0 installer to linpha 1.0
+
+2005-09-25  flo <linpha AT angehrn DOT com>
+ * fixed some bugs in the slidesow (prev/next, etc.)
+
+2005-09-25  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1303294 ] Usergroups not created in pgsql -> no admin page --> FIXED
+   removed obsolete 'res' column from groups table during install
+   and changed all necesarry inserts
+ * [ 1303348 ] Title form length of photo album to small --> FIXED
+   set maxlength=100 (we have VARCHAR(100) defined for value column in DB)
+ * [ 1303351 ] TYPO admin area > Permissions --> FIXED
+
+2005-09-16  flo <linpha AT angehrn DOT com>
+ * enable basket in search and new images
+
+2005-09-11  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1287654 ] short php tag --> fixed
+
+2005-09-09  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php: set release number to 1.0 (a bit to late ;-))
+
+###############################################
+###                                         ###
+###          LinPHA 1.0 RELEASE!            ###
+###                                         ###
+###############################################
+2005-09-09  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * forth_stage_install.php: fixed bug where bracket_support var has no value
+   due missing use of $_POST
+
+2005-09-07  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * lang.Czech.php update by Petr!
+
+2005-09-05  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * cleanups and updated documentation to fit 1.0 release :-)
+
+2005-09-05  flo <linpha AT angehrn DOT com>
+ * removed double "write_config('im_bracket_support')"
+ * tested bracket support under windows
+   -> fixed bug (brackets don't have to be escaped)
+
+2005-09-04  flo <linpha AT angehrn DOT com>
+ * finaly fixed "watermark doesn't work anymore with latest imagemagick"
+    -> workaround with brackets doesn't work with imagemagick < 6.1
+    added version depended command
+    -> needs testing under windows!
+
+2005-08-29  flo <linpha AT angehrn DOT com>
+ * undone: "watermark didn't worked anymore with latest imagemagick"
+   doesn't work with older imagemagick versions!
+
+ * support for animated gifs and videos
+   "convert input.jpg[0] output.jpg"
+
+2005-08-22  flo <linpha AT angehrn DOT com>
+ * watermark didn't worked anymore with latest imagemagick
+  -> video thumbnails doesn't work correctly too!
+  see http://redux.imagemagick.org/discussion-server/viewtopic.php?p=14087#14087 for details
+  needs testing under windows! -- done!
+
+2005-08-14  flo <linpha AT angehrn DOT com>
+ * [ linpha-Bugs-1240227 ] case sensitivity problem w/ renaming folders --> FIXED
+
+2005-08-14  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * basket_build_mail.php: fixed bug in HTML message (missing images)
+ * ilinpha theme: added missing menu open icon
+
+2005-08-13  flo <linpha AT angehrn DOT com>
+ * finished md5sum for videos
+
+2005-08-12  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Added new option to basket_mail to set desired type of email. Either plain
+   Text or HTML.
+   (needs testing, as I disabled local maildeamon to forward mails ;-))
+
+2005-08-10  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1253654 ] mail header bug --> FIXED
+   [ 1246578 ] More details of problem --> FIXED
+   basket_build_mail.php: make use of phpmailer and attach messages to email,
+   no longer show them inline to prevent trouble with some mail clients.
+   (maybe an option to send HTML inline OR TEXT attachment would be useful)
+
+2005-08-08  flo <linpha AT angehrn DOT com>
+ * added open folder icons to all styles
+   todo: add icon for ilinpha style (currently the same as for locked folders is used)
+ * replaced 2 tables (leftmenuhead)
+ * db_api.php, img_view.class.php: enabling md5 for videos (using the filename instead of the file itself)
+ * edit_watermark.php, update_settings.php: fixed bug on restoring settings
+
+2005-08-07  flo <linpha AT angehrn DOT com>
+ * finished left_menu stuff
+   updated all styles
+ * replaced ~10 table (leftmenuhead) with css div
+
+2005-08-04  flo <linpha AT angehrn DOT com>
+ * left_menu.class.php
+   replaced ul - li for left menu with css
+   currently only the aqua style works
+   + better highlighting of open folders
+   todo: use an open folder icon for open folders
+
+2005-07-29  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * class.smtp.php/class.phpmailer.php: updated to latest release 1.73, as there
+   was a major denial of service bug in the 1.72 release.
+   btw. we still should make use of phpmailer for emailing images ;-)
+
+2005-07-27  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1245768 ] Description box/Comment deletion bug --> FIXED
+
+2005-07-24  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * submit_mod_data.php: removed warning in image_cache plugin wich causes
+   broken redirect after submit...
+
+2005-07-22  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1242276 ] IPTC not displayed --> FIXED
+
+2005-07-18  flo <linpha AT angehrn DOT com>
+ * viewer.php: show thumbnailborder in subdirectory listing
+ * left_menu.class.php: fixed bug where "new images" isn't clickable - thanks to bastian
+   + add the sign '>' on the left side on open folders
+ * limit chars for comments on the left side to a reasonable value
+ * search for full path (not only filename)
+
+2005-07-18  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * lang.Czech.php: latest updates from Petr Janecek, thanks alot!
+ * [ 1240224 ] Installation (SQLite install issue) --> FIXED
+ * [ 1240244 ] File Manager security bug --> FIXED
+
+2005-07-16  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1239614 ] Unlistable directory crashes statistics page --> FIXED
+  (fixed it finally due use of is_readable() function)
+
+2005-07-17  flo <linpha AT angehrn DOT com>
+ * fixed parse error in lang/phpmailer.lang-tr.php
+ * changed 2x ouml; to oe because they are used in javascript functions and they don't work there
+ * [ 1239807 ] "Create static link" to folder with apostrophe fails --> FIXED
+ * [ 1239614 ] Unlistable directory crashes statistics page --> FIXED
+ * [ 1227453 ] folder spacing --> FIXED
+     <ul style='margin: 0px; padding-left: 25px;'>
+     <li class='".$class."' style='padding-left: 3px;'>
+     the spaces between folder icon and folder name are very different
+     on different browsers
+     with this settings it should work with firefox and IE
+     if we don't set anything, we waste space on the left side and IE
+     doesn't have a space between icon and name
+ * use windows media player to play videos instead of quicktime
+    do we need different plugins to play videos?
+    with linux we don't have any problems, because mplayer plays anything...
+    with windows i think media player is the best choice
+     quicktime can't play divx, wmv, ...
+     media player can't play ? mov ? ra ? don't know...
+   NEEDS TESTING !!
+
+2005-07-16  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1238034 ] RC2 add comment error --> FIXED
+
+2005-07-16  flo <linpha AT angehrn DOT com>
+ * [ 1238257 ] minor UI issue --> FIXED
+
+
+###############################################
+###                                         ###
+###       LinPHA 1.0RC2 RELEASE!            ###
+###                                         ###
+###############################################
+2005-07-09  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * build_general_config.php: don't show exif/iptc advance settings if
+   disabled global (cleanup)
+
+2005-07-07  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1232329 ] User mod requires old password and blanks new password --> FIXED!
+   + split into basic account options and a seperate page for changing password.
+     So there is no need to type old and new password for just changing the
+     email address ;-)
+ * [ 1222595 ] Error in select image (stats page) --> FIXED
+
+2005-07-06  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * /docs/*: prepared for RC2 release
+ * /lang/lang.Swedish.php: updated, thanks to Marcus Jaensson
+ * db_api.php: fixed bug with image decription permission setting.
+   (at least with PostgreSQL)
+ * img_view.class.php: fixed some layout issues in commenting system
+ * other.php: fixed bug not highlighting (selected) categories in comment section
+   + fixed bug, categories not working with PostgreSQL
+ * store_comment.php/submit_mod_data.php: fixed bug in blacklist which causes
+   all keywords to be deleted if blacklist was disabled...
+
+2005-07-03  flo <linpha AT angehrn DOT com>
+ * fixed some bugs introduced with switch to group id:
+   - forgot to update folder permissiosn (thanks to bastian)
+
+2005-06-29  flo <linpha AT angehrn DOT com>
+ * fixed bug where admin menu not available during new install
+
+2005-06-26  flo <linpha AT angehrn DOT com>
+ * bug "image descriptions aren't updated on rotating images" fixed
+
+2005-06-24  flo <linpha AT angehrn DOT com>
+ * fixed some bugs introduced with switch to group id:
+    - admin menu not available
+    - error messages in img view
+
+2005-06-24  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php/metadata.class.php/forth_stage_install.php: Added missing
+   INDEX on md5sum in table *_meta_exif (thanks to anonymous ;-))
+
+2005-06-23  flo <linpha AT angehrn DOT com>
+ * improved edit group members, user memberships feature
+ * don't use group names anymore, but group ids
+ * moved all $_SESSION['user_level'] to in_group('admin')
+ * [ linphga-bugs-1222595 ] Error in select image (stats page) --- fixed
+
+2005-06-21  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Implemeted new SPAM protection for guestbook and comments based on a
+   blacklist. Blacklist is easy to maintain for both, comments and guestbook
+   section. Enabled by default.
+
+2005-06-20  flo <linpha AT angehrn DOT com>
+ * removed album based permissions in build_perm.php as it is absolutely useless...
+
+2005-06-17  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Changed image comments field from VARCHAR to TEXT to remove 255 chars limit.
+   NOTE: only updates for mysql DB's will take place, as there is no easy way
+   to make things work for Postgres and Sqlite. But changed it in
+   forth_stage_install.php to be the default for all databases...
+
+2005-06-15  flo <linpha AT angehrn DOT com>
+ * added an additional check for the permission entries and will create them on the fly
+   if some are missingu
+ * upgrade.php: UPDATE ".PREFIX."photos SET level=0 WHERE level is null
+ * permission framework: added additional checks to prevent notices
+ * done most language entries
+
+2005-06-14  flo <linpha AT angehrn DOT com>
+ * added .cvsignore and albums/.cvsignore
+
+2005-06-14  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1220048 ] SQL error (comments section) --> FIXED!
+
+2005-06-13  flo <linpha AT angehrn DOT com>
+ * remove "(exif)" in description field
+ * exif: add jpeg_comment field and show that entry instead of user_comment
+ * fixed level=0,level=1,level=null bug
+
+2005-06-04  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php: removed all updates for beta3 -> RC1
+ * Documentation: started outsourcing to DocManager
+ * /docs: removed now obsolete files
+ * img_view.class.php: added set max_length=255 in description field and
+   removed it from the comments area (as we plan to make it text rather than
+   varchar field)
+
+2005-05-17  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Documentation: added info about search keywords (info button search.php)
+
+2005-05-11  flo <linpha AT angehrn DOT com>
+ * started with adding column jpegcomment to the exif table
+   (on sqlite we cannot use ALTER, we have to:
+    1. create a temporary table
+    2. copy the original table into the temporary table
+    3. delete the original
+    4. recreate the original with new column definitions
+    5. copy the contents back
+    6. delete the temporary table
+     .....)
+
+2005-05-12  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * new option to search for duplicate images in collection
+   (thumbnails EXIF/IPTC)
+
+2005-05-11  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1196958 ] Plugin: SQL warnings fixed (thanks to quixy)
+ * search.php: removed notice when searching by EXIF date
+ * plugins/plugins.php: make DB Management avail for mysql DB's only, e.g.
+   hide plugin when running PgSQL or SQLite as it's MySQL only...
+ * viewer.php: workarround in random subfolder image query, level IS NULL
+   for MySQL and SQLite, level ='0' for PgSQL...
+
+2005-05-10  flo <linpha AT angehrn DOT com>
+ * show nice error image if image cache directory isn't writable
+ * static link: allow access of image directly with &img=test.jpg parameter and add &pn parameter
+
+2005-05-09  flo <linpha AT angehrn DOT com>
+ * fixed bug in search with magicquotes
+ * fixed bug in adodb cache mentioned in patch "[ 1192656 ] mkdir fix when calling guest book"
+ * viewer.php/other.php allow access like viewer.php?album=albums/holiday
+    and create menu entry "create static link"
+ * show something during batch create of cached images
+ * statistics: elements in cache in percent: only with default resolution to prevent > 100%
+    moved cache stats part from cache.php and build_stats.php as a new function to func.cache.php
+ * add description/add category available in permission framework
+
+2005-04-24  flo <linpha AT angehrn DOT com>
+ * fixed bug with random thumbnail on subfolders mentioned in bug [ 1180737 ]
+ * if subfolder is empty or thumbnails not yet created, don't show "latest image: 1.1.1970"
+    + show nothing instead
+
+2005-04-20  flo <linpha AT angehrn DOT com>
+ * get_thumbs_on_fly.php: fixed bug with different database timestamp
+   + in future use only unix timestamp...!
+
+2005-04-18  flo <linpha AT angehrn DOT com>
+ * build_stats.php: fixed division by zero bug
+ * mailing list plugin:
+   + allow admins to add manually email adresses to the mailing list plugin
+   + added button to add all linpha users to the mailing list
+     (automatically sort out duplicate entries)
+ * forth_stage_install.php: fixed bug with permission framework:
+   + used wrong table ('linpha_' instead of PREFIX)
+ * replaced all addslashes() with linpha_addslashes() except the files
+    adodb/drivers/adodb-postgres64.inc.php and plugins/ftp/index.php
+   + other.php: new function linpha_addslashes() escape on sqlite with ' and not with \
+   + include/phpmeta/Unicode.php smart_htmlspecialchars() added QUOTES funcionalities
+     (they are needed by sqlite)
+
+2005-04-11  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Removed all html_entity_decode() in store/delete_comment.php and rotate.php.
+   We do not need this function at all...
+
+2005-04-10  flo <linpha AT angehrn DOT com>
+ * [ linphga-bugs-1179752 ] Error while getting EXIF data in administration --- fixed
+ * search.php fixed bug with prev/next buttons
+ * db_api.php "Notice: Undefined offset: 1 in db_api.php on line 1429" removed
+    for some strang reasons if a table column is null $data has no entry in it at all
+
+###############################################
+###                                         ###
+###       LinPHA 1.0RC1 RELEASE!            ###
+###                                         ###
+###############################################
+
+2005-04-09  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * tagged LinPHA 1.0RC1 :-))
+
+2005-04-07  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * rotate.php: replaced PHP's html_entity_decode() due new function:
+   remove_htmlentities() for backward compatibility.
+   (html_entity_decode() requires PHP >= 4.3.0 )
+
+2005-04-04  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * search.php: added info button for EXIF/IPTC (admin mode only, as it's not of
+   interest for any user ;-))
+ * db_api.php: bugfix! level was "null" instead of "0" in linpha_photos due
+   unset $special_file var. So query for random images in subfolders failed
+   (...AND level <> '0')
+
+2005-04-02  flo <linpha AT angehrn DOT com>
+ * bug fix: db_api.php: update level in linpha_photos during directory update
+     and not while creating thumbnails as exif needs correct level
+ * bug fix: no double inserts of exif data through admin menu
+ * bug fix: metadata.class.php: on mysql 3.x we got an undefined index if exif
+     tags are empty... strange...
+
+2005-04-01  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php/forth_stage_install.php: *major* speed improvements due
+   add of missing indexes on some tables. Also droped some not necesarry
+   indexes which may slowdown the whole thing ;-)
+   Done for MySQL and PostgreSQL, maybe will have a look for SQLite later...
+   (LinPHA is up to 10 times faster (and more) now on most operations)
+   TODO: test installation for MySQL and Postgres...
+
+2005-04-01  flo <linpha AT angehrn DOT com>
+ * adodb/adodb-sqlite.inc.php, forth_stage_install.php
+    use TOP_DIR for open sqlite db instead of workaround with getcwd()
+    as it didn't worked correctly under windows
+ * docs/update.html|txt updated
+ * plugins/ftp/index.php added info in filemanagement section that the
+    images can be uploaded with ftp too
+
+
+2005-03-31  flo <linpha AT angehrn DOT com>
+ * upgrade.php: remove config entries anon_download anonymous_post
+    printing anon_album_downloads anon_mail_mode
+
+2005-03-31  bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * adodb-sqlite.inc.php: fixed windows related bug
+
+2005-03-30  flo <linpha AT angehrn DOT com>
+ * third/forth_stage_install.php: removed not needed fields for sqlite
+ * fixeg bug "ignored files/ext showed in forth level" (db_api.php)
+ * readded danish language file from corrupted files
+   thanks to Klaus Vink Slott and Tage Madsen
+   (https://sourceforge.net/forum/message.php?msg_id=3051655)
+
+2005-03-30 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Updated all install/update docs to RC1 release
+ * upgrade.php: changed URL for version check
+
+2005-03-29 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * create_all_thumbs.php: fixed broken recreate of exif/iptc data when using sqlite
+ * cronOthumb.php: prevent recreate of iptc/exif data
+
+2005-03-26 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * metadata.class.php: finally managed to make it work with sqlite. Using sqlite
+   it's not enough to just escpape "'" (singlequotes) using "\'" :-( Works for
+   all other DBs but for sqlite. To make it work all single quotes are
+   removed from exif values...
+   This time I found no more sqlite related errors, so we can add it to RC1
+
+2005-03-25 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * submit_new_data.php: made work with sqlite
+ * forth_stage_install.php: fixed sqlite bug which prevents creating of
+   linpha_groups table default entries (admin/friend...)
+ * other.php: fixed bug where fetchRow() misses ADODB_FETCH_ASSOC in
+   build_album_select() + removed warnings
+ * create_cached_images.php: fixed sqlite related timestamp bug
+ * cache/cache.php + watermark/update_settings.php: bugfix! redirect to image
+   cache plugin, rather than watermark plugin if we call
+   delete_all_cached_images() from image cache plugin.
+ * sec_stage_install.php: made SQLite active. Seems to work (beside the exif
+   storage stuff :-( !! HELP ME !! no more ideas ;-))
+   Tested with PHP4.x and 5.x (Sqlite 2.8.2)
+ * forth_stage_install.php: fixed bug in sqlite tables not autoincrementing
+   some primary keys...
+
+2005-03-24 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * log.php: language entries
+ * other.php: marked function get_timestamp_from_sqldate($date) obsolete due use
+   of $timestamp = $GLOBALS['db']->UnixTimeStamp(datevalue); which should
+   be even more portable.
+   Affects: img_view.class.php / other.php (itself)
+   + fixed sqlite related bug in build_javascript_menu()
+ * viewer.php: speedups and use of $GLOBALS['db']->UnixTimeStamp($result[0]);
+   to get unixtimestamp from db (no longer use mktime)
+ * db_api.php: more speed improvements
+ * mailing.php: added language translation array to make PHPMailer make use of
+   the right language files. (e.g. LinPHA language file naming convention
+   lang.English.php is translated to 'en' for all supported languages)
+ * adodb-sqlite.inc.php: new workarround to make mailing lists work
+
+2005-03-22 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * db_api.php: replaced all DBTimeStamp('date') querys due UnixTimeStamp() as
+   it seems that the return value is not a 'real' UnixTime. This should fix:
+   [ 1168164 ] All pictures are in folder "new images"
+   but requires more testing! (e.g. add/delete/move images)
+   + made "new_images" folder work with all databases
+ * plugins/log/update_setting.php: removed PRIMARY for time value in linpha_log.
+   (causes errors as it's unique and if we write some errors in just
+   a single second)
+   + cleanups and made work with sqlite
+ * forth_stage_install.php: prevent warnings when reinstalling
+   (cache/adocache/tmp dir already exists...)
+ * viewer.php: thanks to xdebug I finally managed to speedup show_subfolders()
+   arround 20-30%!!. (Guess we should have a look for more "slow querys"
+   using xdebug once everything is working as expected)
+ * create_all_thumbs.php: sqlite workarround
+ * metadata.class.php: new function cleansql()! escape sql exif strings using
+   regular expressions. sqlite still fails for some reasons :-(
+
+2005-03-18 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * db_api.php: cleanups + small fixes
+ * adodb-sqlite.inc.php: improved include handling to make plugins work
+ * metadata_class.php: take care of sqlite during exif table create
+ * forth_stage_install.php: generate random name for sqlite db file (security)
+
+2005-03-18 vytautas <krivickas_AT_vic_DOT_australis_DOT_com_DOT_au>
+ * Fix online counter not deleting old entries - caused by date handling changes
+
+2005-03-17 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * forth_stage_install.php: added missing 'marked_ignored' column to meta_iptc
+   for all db types...
+ * Fixed a couple of issues introduced due use of ADODB_FETCH_NUM instead of
+   ADODB_FETCH ASSOC. Reverted back, to make use of ASSOC, but this requires
+   change of selects with given table name, e.g. "p.md5sum" must be selected
+   as "p.md5sum AS md5sum" because sqlite returns p.md5sum instead of md5sum,
+   which indeed fails ;-)
+   Most things should work again, not working so far:
+    - counter
+    - "new_images" for postgres
+    - exif data storage in sqlite
+
+2005-03-12 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Major changes in date and time handling for most querys. This is necesarry
+   to get sqlite working some day. (Yet I already get thumbs and images but
+   also a couple of warnings and notices using sqlite ;-)
+   As this change concerns most of date handling in many files PLEASE have
+   a look for issues related to date operations like counter, photocache,
+   adding and removing images and folders!
+   So here are the common changes:
+   + no need to make a difference between PostgreSQL and MySQL e.g.
+     Till now we used to query date and time (UNIX TIME) this way:
+
+    if(DB_TYPE=="mysql"){
+    $rec_time=$GLOBALS['db']->Execute("SELECT UNIX_TIMESTAMP(date) FROM ".PREFIX."photos
+                WHERE name='".addslashes($name)."'
+                AND prev_path='".addslashes($prev_path)."'
+                ORDER BY date DESC");
+    }else{
+    $rec_time=$GLOBALS['db']->Execute("SELECT EXTRACT(EPOCH FROM date) FROM ".PREFIX."photos
+                WHERE name='".addslashes($name)."'
+                AND prev_path='".addslashes($prev_path)."'
+                ORDER BY date DESC");
+    }
+
+   This is obsolete due use of ADOdb Date functions, new way of date handling:
+
+    $timestamp = $GLOBALS['db']->DBTimeStamp('date');
+    $rec_time = $GLOBALS['db']->Execute("SELECT ".$timestamp." FROM ".PREFIX."photos
+                WHERE name='".addslashes($name)."'
+                AND prev_path='".addslashes($prev_path)."'
+                ORDER BY date DESC");
+    $db_time=$rec_time->FetchRow();
+
+   This should work for all DBs. Please remember that there must be no extra
+   quotes for $timestamp, as DBTimeStamp('date') itself returns quoted!
+
+   For inserts/updates please use the following:
+   $timestamp = $GLOBALS['db']->DBTimeStamp(time());
+
+   no longer use NOW()!!
+
+ * Sqlite is still disabled during install for now, but I'm pretty sure we can
+   get it working in a timely mannor (like to see it in 1.0 final ;-))
+
+2005-03-07 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * search.php: fixed problem with iptc check "all" button, not respecting the
+   correct number of defined $iptc_search_tags, as it uses $exif_search_tags ;-)
+
+2005-03-06 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Finished Help stuff (hopefully)
+ * Added cronOthumb.php to CVS to make it easier to maintain and to make sure
+   it won't get lost ;-) (will not be included in stable releases!)
+ * metadata.class.php/metadata.config.php: improvements in IPTC handling and
+   display
+ * other.php: cut_overloaded_strings() made function more intelligent
+   for example: split "hi blala lasdlaslslslslslslsls blalba"
+   into "hi blala lasdlaslsls... blalba"
+
+2005-03-05 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * lang.Czech.php: merged latest updates from petr janecek, thanks alot!
+ * provided new create_all_thumbs script (cronOthumb.php) for cron use
+   (LinPHA FAQ and docu section) requires RC1 or later
+
+2005-03-03 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * build_thumbnail_conf.php: did all lang entries + help
+ * /docs/lang/: Tons of help entry updates and rewrites
+ * build_stats.php: [ 1154969 ] latest comments page should be linkified
+   to images --> DONE!
+
+2005-03-03 vytautas <krivickas_AT_vic_DOT_australis_DOT_com_DOT_au>
+ * New Files: phpmailer language files added to /lang
+ * mailing.php: use the phpmailer language files to make any errors more readable.
+
+2005-03-01 vytautas <krivickas_AT_vic_DOT_australis_DOT_com_DOT_au>
+ * mailing.php: converted to use phpmailer as the mailing agent also converted
+   plain text to utf8 for international character support. For the list of todos on this
+   plugin see the actual file.
+* New Files: class.phpmailer.php and class.smtp.php to provide support for the
+   mailing list plugin and possibly later for other functions such as emailing images.
+
+2005-02-28 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * other.php: fixed bug in javascript menu. Edit/delete album comment did not
+   appear in menu, if adodb_cacheing was enabled.
+ * build_general_config.php: (features section) new option to disable LinPHA
+   update check.
+   + update.php: write_config('update_notice','1');
+ * added some missing help entries (still some missing ;-))
+ * /actions/build_other.php: renamed to build_thumbnail_conf.php
+ * marked langfiles lang.Danish.php, lang.zh-cn.php and lang.BrazilianPortugese.php
+   currupted, as the language autodetection makes it impossible for users to
+   even install LinPHA cleanly :-(
+   renamed all corrupted.lang.xyz.php so they do no longer appear as
+   availaible languages in selects and during install until fixed.
+ * lang.xyz.php: renamed "Other Options" -> "Thumbnails EXIF/IPTC"
+   (only for languages I'm sure not to destroy the encoding ;-))
+ * build_general_conf.php: cleanup! provide new single select instead of
+   2 single config option to set the behaviour off the next/previous button
+   in viewer.php.
+   Removed: "Enable/Disable prev/next mini images as full thumb..." option
+   + drop existing config entries from db (cleanup)
+   + language entries updated/removed
+
+2005-02-27 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * create_all_thumbs.php: do no longer start iptc create over and over again
+   + minor fixes
+ * metadata.class.php: saveIptcData() stores now md5sum for every file, even if
+   it does not contain any IPTC data to prevent recreate each time...
+ * img_view.class.php: improved iptc data handling
+ * upgrade.php: alter table meta_iptc (add marked_ignored)
+ * /phpmeta/Edit_File_Info.php + Edit_File_Info_Example.php + Write_File_Info.php
+   removed for security reasons. Content moved to metadata_editor.php as it's
+   required once we support iptc editing. (not used yet!)
+
+2005-02-27  flo <linpha AT angehrn DOT com>
+ * don't show exif thumbnail and removed files get_*_thumb.php (security)
+ * fixed bug in search, where search returns no results when using new "all"
+   button for IPTC. Works when single options are checked. (may also apply to
+   EXIF search !?)
+ * fixed bug in basket_check_permissions(), needed reset($_POST['img_id']);
+
+2005-02-26  flo <linpha AT angehrn DOT com>
+ * image.php: fixed bug with special video files
+ * other.php: fixed bug in basket_check_permissions()
+
+2005-02-26 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * create_all_thumbs.php: fixed progress info in percentage display
+   + new silent mode (e.g. do not print info for all files progressed. Just
+   show progress in steps of 5%. (no longer blow up browser with 12000 + lines
+   of output if create/recreate 4000+ thumbs and iptc/exif data :-))
+ * build_other.php: new silent option (checkbox)
+ * TODO: language entries + remove "This is probably not a..." in silent mode
+
+2005-02-25 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * metadata.class.php/img_view.class.php: fixed (hopefully) anoying bug with
+   the less/more/all/exif/iptc info links in viewer.php (this one costs me 3
+   days of my life ;-))
+
+2005-02-24 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * sec_stage_install.php: added check for jpeg support in GD if no convert
+   is available + language entries ([ 1145812 ] 1.8+ GD is required)
+ * [ 1150082 ] corrupted downloaded archives -- FIXED (thanks to Techwolf)
+ * create_all_thumbs.php: added progress info in percent + bugfix, see below
+ * /plugins/cache/func.cache.php: fixed bug causing recreate directories to fail
+   in create_all_thumbs.php due function photo_cache_cleanup_by_date()
+   (at least under postgres due wrong timestamp format in query)
+
+2005-02-23  flo <linpha AT angehrn DOT com>
+ * search.php: added "all" buttons for exif and iptc
+ * edit_watermark.php, update_settings.php: fixed bug example image and quality
+   couldn't be changed
+ * sec_stage_install.php: show all db select even if there are not supported
+   by current php config -> the user knows that linpha would support this db type
+ * build_other.php: improved language entries
+
+2005-02-22  flo <linpha AT angehrn DOT com>
+ * /docs/FILES_TO_KEEP: updated
+ * /adodb/adodb-errorhandler.inc.php: do not outcomment "echo $s.'<br />';"
+
+2005-02-21 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * /docs/FILES_TO_KEEP: new file! contains a list of modified files from
+   3'rd party software. So we should not overwrite them when udating ;-)
+
+2005-02-19 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * metadata_editor.php: bugfix! added missing $_GET to md5sum var check
+
+2005-02-18 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * img_view.class.php: fixed problem with broken description string in
+   comments page (string was cut when using quotes)
+ * metadata_config.php: added 'keywords' to the list of available search fields
+ * submit_general_changes.php: bugfix! when trying to save settings with
+   disabled "new images" feature, we got an error due unset
+   showNewImagesFolderDays var...
+ * upgrade.php: update 977 -> DROP TABLE IF EXISTS ".PREFIX."exif_data
+   + update 978 -> DROP TABLE IF EXISTS ".PREFIX."facetmap
+     (prevent trouble once we start implementing facetmap, better
+     start from scratch ;-))
+ * metadata_editor.php: improved security and cleanups
+ * metadata.config.php: new function translateIptcSearchTags() used in
+   search.php and metadata.class.php to convert IPTC tags to human readable
+   format. (e.g. caption_writer is now displayed as Caption Writer)
+ * search.php: make use of translateIptcSearchTags() now
+   + minor layout changes
+ * metadata.class.php: make use of translateIptcSearchTags() now
+
+2005-02-18 vytautas <krivickas_AT_vic_DOT_australis_DOT_com_DOT_au>
+ * [ 1009539 ] Messing up of special chars in db --> FIXED
+ * Fixed a problem with double encoding of special chars in various options
+   used a function from the phpmeta\Unicode.php to apply this fix.
+
+2005-02-17 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * create_all_thumbs.php: fixed bug with recreate of IPTC data
+   ($_POST['exif] was used as recreate argument ;-))
+
+2005-02-17 vytautas <krivickas_AT_vic_DOT_australis_DOT_com_DOT_au>
+ * adodb_errorhandler.inc.php: fix a bug that could potentially stop
+   sessions (including image display) from working.
+
+2005-02-16 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * sec_stage_install.php: removed all checks for PHP included EXIF support
+ * /include/read_exif.php: removed, now obsolete
+ * adodb_errorhandler.inc.php: made use of cut_string() instead of
+   cut_overloaded_strings() as it's faster and works better...
+
+2005-02-14 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * [ 1118333 ] exif_data not created (cvs) --> FIXED
+ * rotate.php: changed exif table name in query (linpha_meta_exif instead of
+   linpha_exif_data) Thanks to dayv!
+ * db_api.php: removed now obsolete function store_exif_data()
+ * /plugins/exifer: removed obsolete exifer directory and all files to make
+   sure we make use of the new phpmeta in all places ;-)
+ * /include/phpmeta/index.php: moved to /include/metadata_editor.php as we
+   need DB access to once support IPTC editing.
+   + changed jpeg_fname GET value to make use of md5sum instead (security)
+   + some minor cleanups
+ * include/metadata.class.php: make use of metadata_editor.php
+   + addslashes for IPTC values to prevent query error (thanks Vytautas!)
+
+2005-02-13 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php: cleanups and made it ready for RC1
+
+2005-02-13  flo <linpha AT angehrn DOT com>
+ * added slideshow button in advanced options menu
+
+2005-02-11 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * search.php: fixed problem with search by exif date (query made use of
+   datetime instead of datetimeoriginal)
+ * image.php: fixed bug in linpha_log() causing PosgreSQL query to fail
+   and create_all_thumbs.php to break...
+   (filename needs to be escaped by addslashes when having special chars)
+ * adodb_errorhandler.inc.php: fixed bug in linpha_log function
+   (made use of addslashes() and cut overloaded error messages to
+   245 chars, as sometimes the error msg is longer 255 chars
+   and does not fit in VARCHAR(255))
+
+2005-02-06  flo <linpha AT angehrn DOT com>
+ * [ linphga-bugs-1103121 ] Slideshow Doesent work in IE 6 and Opera 7.5
+    --> fixed partially
+   + workaround for opera browser which has problems with the
+     nextImage.onload = preloadImage_completed; statement
+     -> no preload of images in opera
+   + on WinXP SP2, the popup blocker blocks the popup of the slideshow
+     will have a look if we can code around that the popup works again as soon
+     as i have access to a xp sp2 machine
+
+2005-01-24 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * metadata.class.php/forth_stage_install: fixed bug in table create
+   ("PREFIX" not defined during install)
+   + fixed missing UNIQUE on IPTC md5sum
+ * logger.class.php: fixed parse error when storing DATABASE error events
+ * metadata_config.php: added missing DateTimeOriginal to appear in the list
+   of EXIF options for the search site
+
+2005-01-10 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * metadata.class.php: improved hrefs for exif details (e.g. do not show 'more'
+   href if we are already in level detail stage 3)
+   + added info levels to iptc view (less/more/all)
+   + added link to exif while viewing iptc data (more details (EXIF))
+ * various: removed not needed config var iptc_default, as it's autodefault
+   if enabled and image contains IPTC info...
+
+2005-01-09 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * db_api.php: do not calculate md5sum if file is video. We have a massiv
+   problem with the default 8MB limit here...
+
+2005-01-08  flo <linpha AT angehrn DOT com>
+ * new version of EXIF_Tags.php which supports now GPS, thanks to Evan Hunter!
+
+2005-01-07  flo <linpha AT angehrn DOT com>
+ * show exif/iptc/user image description and user comment on left side
+ * new settings for create/recreate thumbs
+ * finished create_all_thumbs.php with a new layout
+   md5sums are currently created for all files
+ * search works now with the new exif and iptc tables
+ * new file for exif/iptc definitions for seach and verbosity levels
+   (changable by the user) include/metadata.config.php
+ * forth_stage_install.php create linpha_meta_exif table
+ * image.php: create_video_thumbnail()
+   do the MJPG check not only under windows, but under all systems
+   there are known problems with creating thumbnails for unsupported videos
+ * ignore not supported files rather than insert in db and show broken thumbnail
+ * ignore 4 and more subfolders (forth_lev_func())
+ * upgrade.php added iptc config
+ * *_generel_conf.php added settings for iptc
+   cleaner layout with substages
+ * img_view.class.php/metadata.class.php prepared to show only iptc or exif
+ * new setting to disable creating video thumbnails with convert
+ * exif: use DateTimeOriginal instead of DateTime
+
+2005-01-07 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * metadata.class.php: made saveItpcData() and showIptcData() work. Minor
+   issues exist but the main parts are working foe now ;-)
+ * upgrade.php: fixed error in postgres table create and changed md5sum length
+   to varchar(32)
+ * forth_stage_install.php: added iptc table for postgres and mysql + cleanups
+ * metadata.config.php: added iptc stuff
+
+2005-01-06 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * upgrade.php: finished table layout for meta_iptc (needs mysql testing)
+ * metadata.class.php: added iptc saving function (not working yet)
+
+2005-01-06  flo <linpha AT angehrn DOT com>
+ * fixed error message in linpha update
+   don't produce warning even if allow_call_time_pass_reference is set to On in php.ini
+ * make_thumb(): use id
+ * create_all_thumbs.php: show errors!!
+ * translation array for exif data in metadata.class.php
+ * new table: linpha_meta_exif
+   todo: forth_stage_install.php
+ * "finished" implementing phpmeta exif read and write
+   modified include statements in EXIF.php and EXIF_Makernote.php
+
+2005-01-04  flo <linpha AT angehrn DOT com>
+ * combined prepare_thumbs() and make_thumbs() to one function because it didn't made sense
+ * don't call make_thumbs() from rw_new_entries() anymore, using get_thumbs.php instead
+ * upgrade.php: fixed errors in create table iptc, remove output of timer, use of linpha_log
+ * if adodb errorhandler is used, the function $db->ErrorMsg() does not work anymore
+   use errorhandler to output the error directly to the screen
+   -> no need anymore for : if(!$create) { echo $GLOBALS['db']->ErrorMsg().'<br />'; }
+
+2005-01-04 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * Added the 'The PHP JPEG Metadata Toolkit' as a replacement for 'exifer'
+   and the PHP included EXIF parser. This class also allows us to add support
+   for IPTC data found in most 'Photoshop' images. (/include/phpmeta/)
+   TODO: cleanups!
+   For details see here: http://www.ozhiker.com/electronics/pjmt/index.html
+ * /include/metadata.class.php: new file! to handle all the EXIF/IPTC stuff
+   (somewhat empty for now ;-)
+ * upgrade.php: added new table prefix_meta_iptc and prepared prefix_meta_exif
+
+2005-01-03 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+ * added missing adodb errorhandler file, required for postgres (adodb-error.inc.php)
+ * /log/update_settings.php: some changes to make it work with postgres
+   @flo, please make sure it's still working under mysql, thanks!
+
+2005-01-03  flo <linpha AT angehrn DOT com>
+ * use of dropdown menu for image_resized_view.php, according to patch 990423
+   thanks to mimkr!
+ * new feature (upgrade.php): check for linpha updates, imagemagick changes,
+   gd lib changes daily and only if in admin group
+ * changed behaviour of including files in header.php
+   now upgrade.php is included after session.php
+   this should be harmless
+
+2005-01-02  flo <linpha AT angehrn DOT com>
+ * permission framework finished
+ * linpha_log(): no need of langauge file anymore
+
+2005-01-01  flo <linpha AT angehrn DOT com>
+ * db_connect_error.html: added TOP_DIR for linpha logo
+   (even if it is a .html file, on errors, it will be included)
+ * permission framework for post image comments, download images, print, mail, album downloads
+
+2004-12-31  flo <linpha AT angehrn DOT com>
+ * changed logger from class to function
+   new use of logger is: linpha_log('filemanager','notice','text...');
+   there is a check within the function if it is active or not
+ * added adodb error handler to linpha logger
+   errors with adodb are now logged too
+   -> new file include/db_connect.php
+   -> modified file adodb/adodv-errorhandler.inc.php
+      (pay attention on upgrading to new adodb versions to keep this file)
+ * TODO after 1.0: sql/db_connect.php contains only:
+   $username = xxx; $pass = xxx; $db = linpha; $type = mysql;
+   include/db_connect.php does the include of adodb.inc.php and build the dsn string
+ * create linpha_log table only if it is used, and not during installation because
+   most users will never use it
+ * added logging events in rotate.php, prepare_thumbs()
+ * improved get_mem_limit(): take care if php is compiled without memory limit
+   (used in sec_stage_install.php and mail mode)
+ * linpha_session_write_close(): do not backup $_SESSION because it seems that
+   $_SESSION is still available after session_write_close()
+
+
+2004-12-30  flo <linpha AT angehrn DOT com>
+ * start slideshow from the image it was open (img_view.class.php)
+ * show image nr in slideshow (img_view.class.php)
+ * count images viewed in slideshow (get_thumbs_on_fly.php)
+ * not count images viewed in commenting system (img_view.class.php)
+ * logger plugin: made several changes
+   - log events to multiple methods
+   - change subject in mail
+   - global change of logfile and email headers
+   - moved logger.class.php to plugins/log
+   - TODO: adapt logger in filemanager
+   - TODO: adapt upgrade.php and install.php
+
+2004-12-29  flo <linpha AT angehrn DOT com>
+ * archiver.config.php: new archive application: 7-zip
+   thanks to adrian
+ * use of new function linpha_session_write_close() before exec() in
+   convert_image_convert() and rotate.php
+ * do not escape strings if safemode is on because they are automatically escaped
+   needs testing
+ * image.php: improved error handling for random index image
+ * [ linpha-bugs-999178 ] File download from img_view page --> FIXED
+ * [ linpha-bugs-1073728 ] Pb with Imagemagick and linpha !! --> FIXED
+ * escape_string(): updated to work with safe_mode
+
+
+2004-12-27  flo <linpha AT angehrn DOT com>
+ * moved database connection error stuff from db_connect.php to db_api.php and
+   removed the previous db check from db_api.php
+   it is better not to have to much stuff in db_connect.php because on updates
+   it isn't funny
+
+2004-12-17 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+ * [ 1086510 ] exif_default is not updated in the database --> FIXED
+
+2004-12-01 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+ * Removed all (hopefully) wrong replacements for '&' due $amp; in hrefs
+   which caused most hrefs to be broken.
+   (Indroduced with HTML patch...)
+
+2004-11-30 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+ * [ 1075078 ] HTML 4.01 Transitional patch -- Thanks alot Jonathan!
+ * /lang/lang_doc.Spanish.php : update from Ruben -- Thanks alot!
+
+2004-11-28  flo <linpha AT angehrn DOT com>
+
+ * fixed bug in plugins/mail/actions/submit_users.php and func.watermark.php
+
+2004-11-12 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+ * /sql/db_connect_error.html: new file! If we encounter an DB connection
+   error show up this nice HTML error file instead of LinpHA on white bg ;-)
+   + forth_stage_install.php: added support for error file
+ * ADOdb update to 4.54 (changes in BLOB handling...)
+ * log.php/submit_mod_data.php: hide not required input fields depending
+   on choosen logtype...
+   TODO: make use of some functions for same purposes
+ * ftp/index.php: made fonts readable in shadow theme when changing
+   file permissions
+   + added full logging support for filemanager events like
+     uploads/deletes/rms/cps...
+ * logout.php: added logging event
+
+2004-11-11 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+ * [ 1063702 ] new users permisions -- FIXED
+
+2004-11-06 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * Added new plugin "logger" kindly provided by Vytautas, thanks alot!
+    + made all changes to support postgres (hopefully) and some fixes
+    TODO:
+    - we should hide the lines (filenname, email, extra headers) in logger
+      plugin page, if select points to "none". In addition the lines should
+      only show up if the desired method needs them, e.g we need no filename
+      if method is db and so on ...
+      (add javascript to the select (like in install.php) for refresh)
+    - support other types of logging:
+      + uploads: track uploads in filemanager
+      + browser: track type of browser
+    - show the logger results in logger plugin page itself
+
+2004-11-05 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * build_my_settings.php: removed the "delete account" button for users not
+    in admin group to prevent trouble. (as requested in forum)
+
+2004-11-02 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * [ 1057983 ] function rw_new_entries -- FIXED
+    (removed obsolete var from querys)
+
+2004-11-01 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * image.php: fixed problem with missing linpha default logo in index.php
+    + fix in href title (paths containing special chars were broken)
+
+2004-10-31  flo <linpha AT angehrn DOT com>
+
+  * new feature: create all cached images from specified albums
+    + new file: plugins/cache/create_cached_images.php
+
+###############################################
+###                                         ###
+###       LinPHA 1.0beta3 RELEASE!          ###
+###                                         ###
+###############################################
+
+2004-10-31 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * [ 1057300 ] Typo in 4th stage install (CVS) -- FIXED
+  * image.php: cleanups and removal of "navi bar"
+  * lang.zh-tw.php: applied latest changes from bell lu, thanks alot!
+  * updated all docs
+
+2004-10-30  flo <linpha AT angehrn DOT com>
+
+  * bug fix with random index image
+  * finished language entries for watermark permissions
+
+2004-10-29  flo <linpha AT angehrn DOT com>
+
+    * fixed bug with imagemagick 6.1.1 rotating for printing didn't work anymore
+      changed behaviour to rotate image only after converting in a separate process
+    * added "delete all cached watermark images" in cache options too
+    * improved statistics
+    * fixed bug with magic_quotes_gpc = On in photo archive title
+    * fixed bug in random index image if no public folders available
+
+2004-10-28 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * Added layout option (select field) in admin section to set the size of
+    the random image in index.php
+
+2004-10-27  flo <linpha AT angehrn DOT com>
+
+  * updated description for print_permissions()
+
+2004-10-27 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * image.php/index.php: fixed problem with random image scaling if GD is used
+      TODO: set image size in layout section
+  * get_thumbs_on_fly.php/index.php: don't count random images as viewed
+  * watermark.php: finfished language entries + minor layout fixes
+
+2004-10-26  flo <linpha AT angehrn DOT com>
+    * index.php/header.php
+      + don't stripslashes on username
+      + don't show linebreaks if random index image is on
+
+    * [ linpha-RFE-938672 ] Watermark -- DONE
+      + new permission "framework", can later be used for all permission settings like
+        mail mode, download mode, print mode, etc.
+      + modified files: basket_build_mail.php, build_my_settings.php, db_api.php
+        edit_watermark.php, file_download.php, forth_stage_install.php, func.watermark.php
+        get_thumbs_on_fly.php, image_resized_view.php, index.php, other.php, search.php
+        update_settings.php, upgrade.php, watermark.php
+
+2004-10-26 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * [ linpha-RFE-961809 ] Index page: Random previews? -- DONE
+    added new option to enable random images from your photo collection
+    to be displayed in the index page, rather than the LinPHA logo...
+    default: disabled
+
+2004-10-25 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * img_view.class.php: fixed problem with commenting system (a php notice
+    was printed and stored in DB for image description ;-))
+  * index.php/header.php: take care of quotes in "full_user_name"
+
+2004-10-25  flo <linpha AT angehrn DOT com>
+  * image.php rotate image with imagerotate(): fixed inverted angle bug
+  * [ linpha-Bugs-1053307 ] Beta 2 - User Management -- FIXED
+      + take care of magic quotes
+      + mysettings and build_user_conf: users now don't need to login again after changing own account
+      + updated set_linpha_cookie() to take care of TOP_DIR to define the correct path in the cookie
+        -> logout.php could now be moved again to the actions/ folder
+
+2004-10-24  flo <linpha AT angehrn DOT com>
+
+  * [ linpha-Bugs-1053292 ] Filemanager shows nothing for uploaders
+    + added missing include() in admin.php
+
+  * [ linpha-Bugs-1053136 ] Beta 2 - Deconnect User -- FIXED
+    + move logout.php again from actions folder to root folder
+        because if i'm in the actions folder and i set a cookie, the cookie domains is ../actions
+        and this is invalid...
+
+  * [ linpha-Bugs-1052475] Slashes missing in "Create directory"-field -- FIXED
+     + replaced array_shift(get_included_files()) with real_path(TOP_DIR)
+  * img_view.class.php linpha comments
+    + simplified javascript functions to show number of entered chars
+    + added language entries
+    + moved 3 back to buttons to 1 in top of page
+
+2004-10-23  flo <linpha AT angehrn DOT com>
+
+  * [ linpha-Bugs-1052770] User/Group management -- FIXED
+  * [ linpha-Bugs-1052097] Pictures not shown in "secure" album -- FIXED
+     + caused by phpsniff stuff for slideshow
+        + removed transitions effects for IE
+        + include/browser.php, include/phpsniff.class.php, include/phpsniff.core.php, include/client_sniff.js
+          can now be removed!
+  * [ linpha-Bugs-1052475] Slashes missing in "Create directory"-field -- FIXED
+    + replaced PATH_TRANSLATED and SCRIPT_FILENAME with array_shift(get_included_files())
+  * javascript menu, use <script src=menu.js> instead of of include(menu.js) for cleaner sourcecode
+  * other.php, ftp/index.php improved posix error checks
+
+2004-10-22 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * [ linpha-Bugs-1052039 ] Error on /include/img_view.class.php--FIXED
+  * admin.php: fixed bug with hidden folder icons (SQL query cache needs
+    to be flushed after changes in group management, if enabled)
+
+###############################################
+###                                         ###
+###       LinPHA 1.0beta2 RELEASE!          ###
+###                                         ###
+###############################################
+
+  TODO: I don't like current behaviour of having to type my passwd 3 times
+    when just updating my email or fullname ;-)
+    TODO: I don't like current behaviour if i only type the old passwd and
+    leave the new ones empty and then i'm not able to login anymore
+
+2004-10-21  flo <linpha AT angehrn DOT com>
+  * updated mail.png and guestbook.png to make background transparency work even in IE
+
+2004-10-20  flo <linpha AT angehrn DOT com>
+
+  * mail.png: converted background to transparent
+  * search.php: choose between new and edit search if no results
+  * ohter.php/archiver.class.php
+      + added workaroung for PATH_SEPARATOR because the PATH_SEPARATOR constant was
+        introduced with PHP 4.3.0-RC2
+      + in PHP 4.1.0 on windows the PATH variable is not $_SERVER['PATH'] but
+        $_SERVER['Path'], added workaround
+  * browser.php/phpSniff.class.php/exif.php
+      + fixed include bug in PHP 4.1.0, don't use include_once('phpSniff.class.php');
+        but use include_once(dirname(__FILE__).'/phpSniff.class.php');
+  * db_api.php added check if database connection was successfull because AdoDB
+    only produces a warning, not an fatal error
+      + don't know if this is really the right place, it should propably better be
+        in db_connect.php
+  * sec_stage_install.php do not check if exif is supported like this
+    if(extension_loaded('exif') but use if(function_exists('exif_read_data'))
+  * third_stage_install.php added default value for db_host = 'localhost'
+    (was missing only on "No, i'm not..."
+  * img_view.class.php fixed error with GetID3 under windows: GETID3_HELPERAPPSDIR
+    needs to be defined
+  * image.php create video thumbnail: on windows, only if codec is mjpg, because
+    otherwise we get an access violation message box on the servers desktop of
+    convert.exe (already reported to imagemagick http://studio.imagemagick.org/magick/viewtopic.php?t=2868)
+  * archiver.class.php/archiver.config.php/basket_build_zip.php/basket_zip.php/lang_doc.English.php
+    + fixed very annoying bug: winrar cannot write into the empty file created with touch()!
+      need to delete the tempfile before exec()
+    + better errorhandling
+    + updated docs
+  * db_api.php/watermark.php new function reload_config(), use after
+    update_watermark() to update config array
+  * plugins/sql/sql.php use $_SERVER['PATH_TRANSLATED'] instead of $_SERVER['SCRIPT_FILENAME']
+  * plugins/ftp/includes/config.inc.php use $_SERVER['PATH_TRANSLATED'] instead of $_SERVER['SCRIPT_FILENAME']
+  * archiver.class.php fixed bug on extracting multiple uploaded zip files
+
+2004-10-20 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * viewer.php: fixed bug which causes display of wrong images in subfolder
+    preview (random thumbnail stuff)
+  * header.php: fixed notice for unset user_fullname var after update from beta1
+  * store_comment.php: fixed parse error
+  * submit_mod_data.php: fixed boring bug which causes changing "my setting" to
+    fail for a single user. (if(!empty(id)) returned false userid 0), bad fun.
+
+2004-10-19  flo <linpha AT angehrn DOT com>
+
+  * file_downloads.php: fixed count of downloads
+  * build_stats.php: exlude videos because every view of a video is a "download"
+
+2004-10-19 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * viewer.php: show_sub_folders(), do not display the gimp image in subfolder
+    preview if we have more subfolders with images available. Instead display
+    an image from the avail subfolders. (if it's not to overloaded we should
+    make it display a random image, needs performance testing)
+    UPDATE: did some testing and now finally implemented it, doesn't slow down
+    too much (at least with enabled SQL query cache ;-))
+  * build_stats.php: removed useless link to other resolutions for video files
+  * viewer.php:/db_api.php: use of cache_execute statement for subfolders
+    (arround 300% speedup boost (if there are many), at least on old sparc ;-))
+    + fixed bug which causes missing date entry for "latest:" info in subfolder
+      preview...
+  * img_view.class.php: added "back" button beneath image category and description
+  * updated all install/update docs to fit 1.0beta2...
+  * admin.php: some design improvements
+
+2004-10-18  flo <linpha AT angehrn DOT com>
+
+  * album_comment.php/store_comment.php fixed bug with missing $_GET['pn']
+  * login.php added linkbutton class to login button
+  * img_view.class.php fixed bug causing internet explorer making thumbnails not clickable
+  * added "de-ch" => "German" (and "de-at") in language autodetection for internet explorer
+  * header.php removed double login/logout link because the layout gets broken if too much plugins are activated
+    -> what should we do..?
+
+2004-10-15  flo <linpha AT angehrn DOT com>
+
+  * update doc entries
+
+2004-10-15 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * !!! FEATURE FREEZE for beta2 !!!
+  * Added missing help entries for ADOdB stuff and all others
+  * upgrade/forth_stage_install.php: changed thumb_border_color string from
+    'gray' to '#CCCCCC' as I'm not sure all browsers support it...
+    + removed facetmap plugin activation in linpha_plugins. Kept all other
+      tables and DB updates for facetmap. (incomplete/unstable this time)
+  * search.php: made all checkboxes (all/album/description...) selected again
+    if reset link was used (startup situation)
+    + fixed bug which causes us to stuck within empty result page if no
+      matches were found (no way to come back due $_SESSION['search'] var which
+      points us back to empty result page again and again ;-))
+    + layout improvements
+    + removed notices
+
+2004-10-14  flo <linpha AT angehrn DOT com>
+
+  * title for new_images and search in header.php for better overview
+  * added switch for normal and detail view
+
+2004-10-14 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * image_view.class.php: fixed problem in SQL statement which causes Postgres
+    to fail due syntax problems. (new_images page)
+    Hopefully it's still working under MySQL, please test!
+  * build_general_config.php: added missing style:'width:x px' to
+    form_generate_select() to allow unique witdh settings even for select boxes
+
+2004-10-13  flo <linpha AT angehrn DOT com>
+
+  * done most @todo's (mainly language entries)
+  * updated several files in functions and include folder which were missing addslashes() in sql queries
+    -> finished now
+
+
+2004-10-12 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * forth_stage_install.php: added missing adodb cache config entries
+  * create_all_thumbs.php: added missing flush function for adodb cache entries.
+    Caused menu to be broken after recreate all thumbs, (Thanks Vytautas)
+
+2004-10-11  flo <linpha AT angehrn DOT com>
+
+  * updated install (safemode and open_basedir)
+  * updated several files in plugins folder which were missing addslashes() in sql queries
+
+2004-10-10  flo <linpha AT angehrn DOT com>
+
+  * updated several files in actions folder which were missing addslashes() in sql queries
+  * added several missing permissions check in actions folder
+
+2004-10-09  flo <linpha AT angehrn DOT com>
+
+  * updated several files in root folder which were missing addslashes() in sql queries
+  * improved security in basket
+    + only allowed images can be mailed/downloaded/printed
+  * improved installation
+      + removed safemode and open_basedir check (-> check_convert() does this for us)
+      + added check for session.save_handler (remember the erros "blank index after installation..")
+      + updated language files
+
+2004-10-07  flo <linpha AT angehrn DOT com>
+
+  * thumbnail image border
+      + use table with style sheets for border, no imagemagick
+      (-> size and color configurable)
+      + function print_thumbnail($imgid)
+      + removed border selection in third_stage_install.php
+  * removed files linpha_comments, slideshow.php (now part of img_view.class.php)
+
+2004-10-05  flo <linpha AT angehrn DOT com>
+
+  * slideshow and linpha_comments are now part of the img_view class
+      + new possibiliets:
+        - slideshow with search results
+        - add comments to all new images
+  * several improvements
+
+2004-10-05 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * lang.French.php: added latest changes kindly provided by Nicolas Gauvrit, Thanks alot !
+
+2004-10-04  flo <linpha AT angehrn DOT com>
+
+  * rotate.php use referrer to go back
+
+2004-10-03  flo <linpha AT angehrn DOT com>
+
+  * stats: separate imagecomments which don't belong to any image anymore
+  * fixed subfolders error
+
+2004-10-02  flo <linpha AT angehrn DOT com>
+
+  * ignore files and folders which i don't have permissions to
+      + until now we got several error messages with these files
+  * encrypt email adress with javascript in guestbook
+  * fixed bug which caused create_all_thumbs.php to fail
+      + moved adodb cache stuff from header.php to db_api.php
+  * thumbnails for videos
+    + use .thm file if exists (Canon camers)
+    + try convert the image with imagemagick
+
+2004-10-01  flo <linpha AT angehrn DOT com>
+
+  * updated upgrade.php and forth_stage_install.php
+      + update groups to ;public;
+
+2004-09-29  flo <linpha AT angehrn DOT com>
+
+  * several minor improvements
+
+2004-09-28 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * Finished implemetation of ADO query caching.
+      + we have now a new global statement $GLOBALS['query_statement'] which is either
+        the standard "Execute" or the "CacheExecute" statement. So to make use of caching
+        just replace "Execute" due $GLOBALS['query_statement']. BUT:
+      - do NOT use for required realtime information
+        - do NOT use for query's other than SELECT (NO! INSERT/UPDATE)
+        - do NOT use as replacement for very simple query's like:
+        "SELECT name FROM users" it make no sense here, as it's to much overhead
+      + done for most important files (db_api.php, left_menu.class.php, others.php)
+  * lang.Russian.php: added new translation kindly provided by Lizard, Thanks alot!
+  * other.php: added russian lang file support
+
+2004-09-27 torge <torge_AT_flipp_DOT_net>
+
+  * Updated user_comments.php to allow edit of facetmap data.
+
+2004-09-27  flo <linpha AT angehrn DOT com>
+
+  * finished img_view.class.php
+      + everything should now work correctly again
+  * show referer in index.php after login
+  * improved check_posix() (at sf.net, the posix functions don't work correctly)
+  * moved facetmap link from header.php to left_menu.class.php
+  * moved logout.php to the actions/ folder
+    + create_all_thumbs.php and verify.php cannot be moved because the functions first_lev_func() etc. needs to be in TOP_DIR
+
+2004-09-27  flo <linpha AT angehrn DOT com>
+
+  * filesys.php: linpha_tempnam()
+      + don't use tempnam() anymore (-> speed improvement)
+  * search.php back to work
+    + needed several changes....
+
+2004-09-26 torge <torge_AT_flipp_DOT_net>
+
+  * Added facetmap field to linpha_photos table: forth_stage_install.php and upgrade_php.
+  * Added support for image type to the facetmap implementation.
+
+2004-09-26  flo <linpha AT angehrn DOT com>
+
+  * update grous in linpha_first_lev_album from public; to ;public;
+
+2004-09-23 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * AdoDB update to version 4.52
+      + additional file (adodb-cvslib.inc.php) to make sql query caching work
+  * upgrade.php: new entries for adodb caching
+  * build_general_settings.php: added option to enable ado cache (not yet working)
+      + did all documenting and made comments phpdoc conform
+  * More phpdoc style commenting in several files. I will setup a list of available
+      @package and @subpackages name declarations later this week to have an unique style.
+  * header.php: prepared to support ado caching
+
+2004-09-22  flo <linpha AT angehrn DOT com>
+
+  * info.php: For security reasons, phpinfo() is only allowed if you are logged in
+
+2004-09-22 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * img_view.class.php/viewer.php: removed not necesarry table in mainview (layout)
+  * Removed obsolete files to make sure we do not have old links left ;-)
+
+2004-09-21  flo <linpha AT angehrn DOT com>
+
+  * javascript menu back to work
+
+2004-09-21 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * forth_stage_install.php: fixed parse error and made postgres facetmap table work
+  * upgrade.php: made work with postgres
+  * folder.php: renamed to viewer.php (guess it better reflects what it's for :-)
+  * image.php/image_resized_view.php: made resized view work again
+  * various_files: made add/edit album comments work again
+    + TODO: make delete + back buttons work!
+
+2004-09-20  flo <linpha AT angehrn DOT com>
+
+  * new_images.php: now using img_view.class.php
+  * plugins/facetmap/browse_album.php: modified to work with img_view.class.php
+
+2004-09-20  flo <linpha AT angehrn DOT com>
+
+  * BIG CHANGES:
+
+  * use of new permission sql string:
+   + $query = $db->Execute("SELECT * FROM linpha_photos, linpha_first_lev_album
+     WHERE linpha_photos.prev_path LIKE ".$db->Concat("linpha_first_lev_album.path","'%'")."
+     AND (linpha_first_lev_album.groups LIKE '%;public;%' OR linpha_first_lev_album.groups
+     LIKE '%;friends;%')");
+   + no need for base64 anymore
+
+  * new thumbnail and image classes
+  * ### NEW FILES ###:
+    + folders.php
+    + include/
+      read_exif.php
+      img_view.class.php
+
+    + can be deleted (if anything goes well :-)):
+    forth_stage_album.php
+    img_view.php
+    sec_stage_album.php
+    third_stage_album.php
+    video_site.php
+    actions/
+      read_php_exif.php
+      read_exif.php
+    include/
+      album_comment.php
+      page_register.class.php
+      page_register.php
+
+2004-09-20 torge <torge_AT_flipp_DOT_net>
+
+  * Added FacetMap plugin config tool. No changes to the rest of the application other than
+    a new table.
+
+  * ### NEW FILES ###:
+  plugin/facetmap/
+    browse_album.php, facetmap.php, functions.php, submit.php
+
+
+2004-09-20 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * lang.Czech.php: added latest changes kindly provided by Petr Janecek, Thanks alot !
+  * basket_print.php: fixed wrong message
+  * lang.Dutch.php: added latest changes kindly provided by Lieven Nieuwlaet, Thanks alot !
+
+2004-09-15  flo <linpha AT angehrn DOT com>
+
+  * don't use $_GET['pn'] in img_view.php anymore, use imgid as referer to get better results
+   + if you are in sec_stage_album.php, then open an image, browse the folder in img_view.php,
+     then go back to sec_stage_album.php, you are automatically on the correct page
+
+2004-09-14  flo <linpha AT angehrn DOT com>
+
+  * advanced options menu works now even if javascript is deactivated
+
+  * linpha_tempnam() uses now the tmp_dir saved in the table linpha_config
+    + default is linpha/sql/tmp
+    + can be changed without any problems
+    + open_basedir and safe_mode restrictions should now be eleminated!
+
+  * archiver.class.php: fixed problems under windows
+    + command line tools like rar.exe cannot be in a directory which contains spaces (like 'c:/program fiels')!
+    + need to be installed in another directory or need to be added to the PATH variable
+    + now ignoring all which are in directories with spaces
+    + added help icon in basket_zip.php and ftp/index.php
+
+2004-09-13 torge <torge_AT_flipp_DOT_net>
+
+  * Cleaned up the build_general_conf.php categorizing the options.
+
+2004-09-11  flo <linpha AT angehrn DOT com>
+
+  * use ' -colorspace RGB' for all convert commands
+    + because all browsers only can display RGB images and no others
+
+  * read_config(): don't read from database anymore
+    + read all config entries at startup in array $linpha_config (db_api.php)
+    + read_config() reads from $linpha_config
+    + moved read_config() from db_api.php to other.php because install_header.php needs this function too
+
+  * improved cut_string() with '<span title=""></span>' builtin
+  * new function print_thumbnail_info() for unified thumbnail view in all pages
+
+  * file_download.php:
+    + security check didin't allow to view videos for anonymous users
+    + now, videos are exluded in this check
+    + todo: check if imgid is in an allowed album
+
+  * new file!: functions/identify.php
+    + moved functions to identify.php
+
+  * new check in linpha_getimagesize() before the identify stuff is executed:
+    + check if it is a video, because identify really sucks in detecting videos
+      (segmentation faults and wait times about 2 minutes for each file!)
+
+2004-09-11 torge <torge_AT_flipp_DOT_net>
+
+  * Removed: "other" page from admin.php. It is allready present under Tools/Other.
+
+2004-09-10  flo <linpha AT angehrn DOT com>
+
+  * admin.php readded page "other"
+  * basket.php show filename and file description
+  * linpha_comments.php/store_comment.php
+    + don't show videos while browsing
+    + bug fixes
+
+  * updated getid3
+    + updated to version 1.7.1
+    + new files in plugins/getid3 (maybe some files can be deleted)
+    + show videos in img_view.php
+    + deleted video_site.php
+    + deleted function receive_video_information()
+
+  * bug fixes and improved error handling (filesys.php, image.php, other,php, func.cache.php)
+
+2004-09-06  flo <linpha AT angehrn DOT com>
+
+  * fixed bug in search.php show description
+
+2004-09-05 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * forth_stage_install.php: fixed broken postgres installation...
+
+2004-08-28 torge <torge_AT_flipp_DOT_net>
+
+  * Separated Category Management from Other Options.
+
+2004-08-25 torge <torge_AT_flipp_DOT_net>
+
+  * Applyed patch from Jonathan - jlobrien,
+    [ 1013949 ] fixes for comments:
+  * Undefined variable "no_data" error messages
+  * removes three tabs that were being initially placed in
+    the comments textarea
+  * Moves the "Comments written to DB" message outside
+    of the textarea next to the "submit" and "back" buttons.
+    I did this because if the user hits submit twice, the
+    second submit will write the "Comments written..."
+    message into the picture comments. :)
+  * Changes the method used to determine when to write the
+    "Comments writtten to DB" message. Previously, the
+    message would be written out for deletes as well as
+    storing comments
+
+2004-08-25 torge <torge_AT_flipp_DOT_net>
+
+  * Added an option to show previous/next images as full thumbnails.
+    Files modified: img_view.php, actions/build_general_conf.php,
+    actions/submit_general_changes.php, include/upgrade.php,
+    install/forth_stage_install.php.
+  * index.php: added an space to welcome message.
+
+
+2004-08-21  torge <torge_AT_flipp_DOT_net>
+
+  * plugins/guestbook/guestbook_view.php: Create guestbook:
+    Added: style='height: 25px;' to heading.
+    Added style='border-collapse: collapse;' to main table to remove double
+    lines between cells.
+  * func.watermark.php: Dont apply watermark if plugin is disabled but
+    watermark is enabled in watermark config.
+
+
+2004-08-20  torge <torge_AT_flipp_DOT_net>
+
+  * header.php: Replaced height='100%' with style='height: 100%;'. Works
+    with Firefox and Internet Explorer 6.
+  * Updated language files, added $new_user_full_name. Modified
+    build_my_settings.php and build_user_conf.php to use new variable.
+
+2004-08-20 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * basket.php: left menu header message now takes of choosen mode
+    + minor layout cleanup in print mode
+  * upgrade.php: removed obolete updates < 0.9.4
+
+2004-08-20  torge <torge_AT_flipp_DOT_net>
+
+  * install/forth_stage_install.php & include/upgrade.php: Added fullname
+    to users table.
+  * install/forth_stage_install.php & include/upgrade.php: Added userid to
+    the config table to store user based settings. Works on mysql. Must be
+    tested on other platforms
+  * actions/build_my_settings.php, actions/build_user_conf.php,
+    actions/submit_mod_data.php, actions/submit_new_data.php: Edit full user
+    name in my settins and user config.
+  * header.php, index.php, verify.php, include/session.php: Show full user
+    name in index.php and header.
+  * actions/read_php_exif.php: Corrected a bug causing and empty table
+    when no exif info printed.
+
+
+2004-08-19  flo <linpha AT angehrn DOT com>
+
+  * include/archiver.class.php: fixed bug with file extension
+
+  * updated mail mode
+    todo: lang and help entries
+
+2004-08-19 torge <torge_AT_flipp_DOT_net>
+
+  * Fixed a missing translation in plugins/plugins.php
+  * Modified the layout of plugins/plugins.php to look like the general
+    configuration pages.
+  * Separated "my settings" and "admin" in main menu. Made "my settings"
+    available for admin users.
+  * Commented out the "back"-button in the admin pages.
+
+2004-08-18 torge <torge_AT_flipp_DOT_net>
+
+  * Exclude file "ZbThumbnail.info" when generating thumbnails. The file
+    is generated by Canon ZoomBrowser.
+  * Sorted and changed layout of the administration menu. Removed the
+    "login" text in the menu.
+  * Modified the administration menu separating the three general
+    configuration pages into three menu items.
+  * Modified the administration menu separating user and group management
+    into two menu items.
+  * Modified user and group management and merged the create table into
+    the modify table.
+
+2004-08-18 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * Added support for mov video files. Testet with convert and GD...
+  * *_stage_album.php: fixed layout problems with video filenames
+
+2004-08-17  flo <linpha AT angehrn DOT com>
+
+  * some improvements in new mail mode
+
+  * added forgotten files:
+    + include/basket_[mail|zip|print].php
+
+2004-08-16  flo <linpha AT angehrn DOT com>
+
+  * new mail mode
+    + new files:
+       basket.php
+       actions/basket_build_[mail|print|zip].php
+    + files can be removed:
+      print_view.php, print_final.php, build_zip_view.php, build_zip_final.php
+
+  * use encrypted id in get_thumbs.php and get_thumbs_on_fly.php
+    + re - working: benchmark, print, download
+
+2004-08-16  flo <linpha AT angehrn DOT com>
+
+  * new file: docs/lang/check_files.php
+    + checks if a file needs updating
+
+  * updated lang_doc.German.php
+
+2004-08-15  flo <linpha AT angehrn DOT com>
+
+  * use encrypted id in get_thumbs.php and get_thumbs_on_fly.php
+    + not yet working: benchmark, print, download
+
+  * build_stats
+    + show thumbnails of latest comments
+
+  * putHelpButton()
+    + workaround for browser which have javascript disabled
+
+  * image_panorama_view.php
+    + use ID instead of name and prev_path
+    + fixed bug (the .htaccess file caused the java plugin to fail)
+    + improvements
+
+  * file_download.php: improved security
+
+  * slideshow.php
+    + use ID instead of name and prev_path
+
+2004-08-14  flo <linpha AT angehrn DOT com>
+
+  * !!! use of TOP_DIR in all files instead of get_top_directory() !!!
+  * correct GPL header in all files
+  * use of new function html_header()
+    + [ linpha-Bugs-1008878 ] Content-type not sent in HTTP headers -- fixed!
+  * fixed bug in changing image cache dir and added language entry
+  * centralized used of session_start in include/session.php
+    + no need to use @session_start() instead of session_start() anymore
+      -> we get now a correct error message if session_start() failed
+        -> no more 'blank page after successfull install' posts in forum
+  * fixed bugs caused by moving guestbook.php
+  * fixed bug in http_accept_language()
+
+2004-08-13 bzrudi71 <linpha_AT_tuxpower_DOT_de>
+
+  * upgrade.php: made PostgreSQL work
+
+2004-08-12  flo <linpha AT angehrn DOT com>
+
+  * fixed bugs caused by moving guestbook.php
+
+2004-08-11  flo <linpha AT angehrn DOT com>
+
+  * big update of wrong md5sums! (upgrade.php)
+    + correct function get_file_md5sum()
+    + big update script...
+  * moved guestbook.php to plugins/guestbook/guestbook_view.php
+  * use of left menu class in guestbook and mailing list
+  * added get_timestamp_from_sqldate() with seconds
+    + todo: postgres!
+
+2004-08-10  flo <linpha AT angehrn DOT com>
+  * [ linpha-Bugs-1006321 ] Layout problems in albums without images
+    + fixed!
+
+###############################################
+###                                         ###
+###       LinPHA 1.0beta1 RELEASE!          ###
+###                                         ###
+###############################################
+
+
+---CUT---CUT---CUT---CUT---CUT---CUT---CUT---CUT---CUT---CUT---CUT
+
+FYI: The complete ChangeLog is available here: http://linpha.sf.net/downloads/ChangeLog.archived

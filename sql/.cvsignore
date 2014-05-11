@@ -1,0 +1,9 @@
+adocache
+cache
+tmp
+db_my.php
+db_pg.php
+db_sqlite.php
+db_connect.ph*
+*.sqlite
+db_*
