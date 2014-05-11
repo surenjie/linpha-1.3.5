@@ -1132,7 +1132,7 @@ if($DB_type == "pgsql")
             'log_method_guestbook' => 'none',
             'log_method_comments' => 'none',
             'update_time' => time(),
-            'update_notice' => '1',
+            'update_notice' => '0',
 			'iptcinfo' => '0',
 			'iptc_level' => 'medium',
             'video_thumbnail' => '1',
