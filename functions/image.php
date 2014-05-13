@@ -878,9 +878,9 @@ function convert_image_gd($input, $output, $q, $h, $w, $rotate, $watermark, $gdh
 
 	if(empty($output)) {
 		header("Content-Type: image/jpeg");
-		imagejpeg($scaled_image,'', $q);	// output to screen
+		imagejpeg($scaled_image,null, $q);	// output to screen
 	} elseif($output == 'no_header') {		// output to screen, but without header (used in creating thumbnails)
-		imagejpeg($scaled_image,'', $q);
+		imagejpeg($scaled_image,null, $q);
 	} else {
 		@imagejpeg($scaled_image,$output, $q);	// output to file
 	}

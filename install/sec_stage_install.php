@@ -120,13 +120,15 @@ if($convert_avail)
     }
     else
     {
-    	$convert_ok=true;
+        $convert_unsupported = false;
+        $convert_ok=true;
         $convert_status=("<b><font color='#32CD32'>".$req_found_msg."</font></b>");
     }
 }
 else
 {
-   	$convert_status="<b><font color='#FFFF00'>$req_miss_msg</font></b>";
+    $convert_status="<b><font color='#FFFF00'>$req_miss_msg</font></b>";
+    $convert_unsupported = false;
     $convert_ok=false;
 }
 

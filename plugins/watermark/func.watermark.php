@@ -391,7 +391,7 @@ function watermark_gd(&$scaled_image,$w,$h)
 		//## Merge watermark image into scaled image
 		$src_x = 0; $src_y = 0;
 		$arr_pos = calc_align($wm_config['wm_align'],$src_w,$src_h, $w, $h, $wm_config['wm_horizontal'], $wm_config['wm_vertical']);
-		imagecopymerge($scaled_image, $wm_img, $arr_pos['x'], $arr_pos['y'], $src_x, $src_y, $src_w, $src_h, $wm_config['wm_dissolve']);
+		@imagecopymerge($scaled_image, $wm_img, $arr_pos['x'], $arr_pos['y'], $src_x, $src_y, $src_w, $src_h, $wm_config['wm_dissolve']);
 	}
 }
 
