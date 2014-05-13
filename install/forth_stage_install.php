@@ -1077,7 +1077,7 @@ if($DB_type == "pgsql")
 			'filenames' => '1',
 			'autoconf'   => '1',
 			'counterstat' => '1',
-			'exifinfo' => '1',
+			'exifinfo' => '0',
 			'exif_level' => 'medium',
 			'exif_default' => '0',
 			'users' => '0',
