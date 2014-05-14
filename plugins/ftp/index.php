@@ -337,7 +337,7 @@ function rename_form()
 	<fieldset>
 		<legend><?php printf($str_rename_to,$originame); ?></legend>
 		<font class="mono"><?php echo $default['STARTDIR_LEFT']; ?>/</font>
-		<input type='text' name='rename_to' value='<?php echo htmlspcialchars(str_replace($default['STARTDIR_LEFT'].'/','',$originame),ENT_QUOTES); ?>'>
+		<input type='text' name='rename_to' value='<?php echo htmlspecialchars(str_replace($default['STARTDIR_LEFT'].'/','',$originame),ENT_QUOTES); ?>'>
 		<input type='hidden' name='todo' value='dorename'>
 		<input type='hidden' name='originame' value='<?php echo htmlspecialchars($originame,ENT_QUOTES); ?>'>
 		<input type='submit' name='Submit' value='<?php echo STR_RENAME; ?>'>
