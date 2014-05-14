@@ -25,7 +25,7 @@ include_once(TOP_DIR.'/include/db_connect.php');
 include_once(TOP_DIR.'/functions/db_api.php');
 
 // session stuff
-session_start();
+if(!isset($_SESSION)) { session_start(); }
 
 // Read Cookie
 if(read_config('autologin')) {
