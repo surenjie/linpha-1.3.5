@@ -1709,7 +1709,7 @@ function check_convert()
 		$convert = 'convert';
 	}
 	$array_path = get_PATH('PATH');
-	$array_lookfor = get_PATH(Array('/bin','/usr/bin','/usr/local/bin','/sw/bin'));
+	$array_lookfor = get_PATH(Array('/bin','/usr/bin','/usr/local/bin','/sw/bin','/opt/local/bin'));
 	
 	/**
 	* need a special check if safe_mode is on
