@@ -1072,6 +1072,7 @@ if($DB_type == "pgsql")
 			'photo_height' => '384',
 			'lang' => $_POST['language'],
 			'autolang' => '1',
+			'systemlang' => '',
 			'photos_row' => '3',
 			'photos_col' => '4',
 			'filenames' => '1',

@@ -183,15 +183,23 @@ function build_watermark_str($input,$output,$q,$w,$h,$convert_path)
 		//## Text and Shadow
 		$fontsize_str = ' -pointsize '.$wm_config['wm_fontsize'];
 
+		// watermark text
+		$systemtext_str = $wm_config['wm_text'];
+		// system lang
+		$systemlang_str = read_config('systemlang');
+		if($systemlang_str){
+			$systemtext_str = iconv('utf-8', $systemlang_str, $systemtext_str);
+		}
+		
 			// normal or no shadow
 		if($wm_config['wm_enable_shadow'] == 1)
 		{
 			$draw_str = ' -pointsize '.$wm_config['wm_shadow_fontsize'].	// Shadow fontsize
 				' -draw "fill '.$wm_config['wm_shadow_color'].		// Shadow color
-				' text 0,0 \''.$wm_config['wm_text'].'\'"'.		// Shadow itself
+				' text 0,0 \''.$systemtext_str.'\'"'.		// Shadow itself
 				$fontsize_str.						// Text fontsize
 				' -draw "fill '.$wm_config['wm_fontcolor'].		// Text color
-				' text '.$wm_config['wm_shadow_size'].','.$wm_config['wm_shadow_size'].' \''.$wm_config['wm_text'].'\'"';	// Text itself
+				' text '.$wm_config['wm_shadow_size'].','.$wm_config['wm_shadow_size'].' \''.$systemtext_str.'\'"';	// Text itself
 		}
 			// extended shadow
 		elseif($wm_config['wm_enable_shadow'] == 2)
@@ -199,10 +207,10 @@ function build_watermark_str($input,$output,$q,$w,$h,$convert_path)
 			$draw_str = $fontsize_str.					// Text fontsize
 				' -stroke '.$wm_config['wm_shadow_color'].		// Shadow color
 				' -strokewidth '.$wm_config['wm_shadow_size'].		// Shadow fontsize
-				' -draw "text 0,0 \''.$wm_config['wm_text'].'\'"'.	// Shadow itself
+				' -draw "text 0,0 \''.$systemtext_str.'\'"'.	// Shadow itself
 				' -gaussian 0x3 -stroke none'.				// Extended Shadow
 				' -fill '.$wm_config['wm_fontcolor'].			// Text color
-				' -draw "text 0,0 \''.$wm_config['wm_text'].'\'"';	// Text itself
+				' -draw "text 0,0 \''.$systemtext_str.'\'"';	// Text itself
 		}
 
 		//## Scale watermark always to X% of image size - Stuff
